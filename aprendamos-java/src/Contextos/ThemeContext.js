@@ -4,11 +4,11 @@ const theme = createTheme({
     palette:{
         stratos:{
             main: '#001B48',
-            contrastText: '#fff',
+            contrastText: '#D6E8EE',
         },
         regalBlue:{
             main: '#02457A',
-            contrastText: '#fff',
+            contrastText: '#D6E8EE',
         },
         bondiBlue:{
             main: '#018ABE',
@@ -18,6 +18,10 @@ const theme = createTheme({
         },
         boticelli:{
             main: '#D6E8EE',
+        },
+        text:{
+            primary: '#D6E8EE',
+            secondary: '#001B48'
         }
     },
     contrastThreshold: 10,
