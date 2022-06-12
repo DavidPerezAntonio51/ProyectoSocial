@@ -6,13 +6,18 @@
   --theme-color-boticelli: #D6E8EE;
 }
 
-.App {
-  text-align: center;
+body{
+  background:linear-gradient(to bottom, var(--theme-color-regal-blue), var(--theme-color-bondi-blue), var(--theme-color-morning-glory), var(--theme-color-boticelli));
+  height: 97vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textWhite{
+  color: red;
+}
+
+.Fondo {
+  background:linear-gradient(to bottom, var(--theme-color-regal-blue), var(--theme-color-bondi-blue), var(--theme-color-morning-glory), var(--theme-color-boticelli));
+  height: 97vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,8 +37,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.InicioPading {
+  position: relative;
+  top: 35vh;
 }
 
 @keyframes App-logo-spin {

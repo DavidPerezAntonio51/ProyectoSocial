@@ -8,6 +8,7 @@ const theme = createTheme({
         },
         regalBlue:{
             main: '#02457A',
+            contrastText: '#fff',
         },
         bondiBlue:{
             main: '#018ABE',
@@ -19,8 +20,8 @@ const theme = createTheme({
             main: '#D6E8EE',
         }
     },
-    contrastThreshold: 3,
-    tonalOffset: 0.3,
+    contrastThreshold: 10,
+    tonalOffset: 0.8,
 });
 
 function ThemeContextPersonalizado({children}) {
