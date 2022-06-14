@@ -12,7 +12,6 @@ function Rutas() {
         <Routes>
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
-                
                 <Route index element={<Temario/>}/>
             </Route>
         </Routes>

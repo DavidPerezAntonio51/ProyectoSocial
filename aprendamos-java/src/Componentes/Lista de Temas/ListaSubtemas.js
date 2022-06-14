@@ -3,6 +3,7 @@ import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import { useContext } from "react";
 import ProgressContext from "../../Contextos/ProgressContext";
 import CheckBoxControlled from "./CheckBoxControlled";
+import {Link} from 'react-router-dom';
 
 function ListaSubtemas({ indexTema }) {
     const Temas = useContext(ProgressContext);
@@ -18,7 +19,7 @@ function ListaSubtemas({ indexTema }) {
                             secondaryAction={
                                 <CheckBoxControlled Finalizado={data.Finalizado} indexTema={indexTema} SubTema={index}/>
                             }>
-                            <ListItemButton>
+                            <ListItemButton LinkComponent={Link} to={data.Link}>
                                 <ListItemText sx={{ color: "stratos.main" }} primary={data.Subtema} />
                                 <ListItemIcon>
                                     <PlayArrowRoundedIcon />
