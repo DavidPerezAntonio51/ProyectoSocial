@@ -1,0 +1,100 @@
+{
+    "temas":[
+        {
+            "Tema": "Introduccion a la Programacion",
+            "Subtemas":[
+                {
+                    "Subtema": "¿Qué es Programar? ¿Qué es un Algoritmo?",
+                    "Link": "/introduccion/que-es-programar",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema": "Veras que programar es fácil y lo puedes hacer",
+                    "Link":"/introduccion/programar-es-fácil",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema": "Pseudocodigo y diagramas de flujo",
+                    "Link":"/introduccion/pseudocodigo-y-diagramas-de-flujo",
+                    "Finalizado": false
+                }
+            ]
+        },
+        {
+            "Tema":"Manejo de la consola",
+            "Subtemas":[
+                {
+                    "Subtema": "Hola Mundo",
+                    "Link": "/manejo-consola/hola-mundo",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"Formatos de impresion en la consola",
+                    "Link": "/manejo-consola/formatos-de-impresion",
+                    "Finalizado": false
+                }
+            
+            ]
+        },
+        {
+            "Tema":"Tipos de datos",
+            "Subtemas":[
+                {
+                    "Subtema":"",
+                    "Link": "/tipos-de-datos/",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"",
+                    "Link":"/tipos-de-datos/",
+                    "Finalizado": false
+                }
+            ]
+        },
+        {
+            "Tema":"Estructuras Condicionales",
+            "Subtemas":[
+                {
+                    "Subtema":"Sentencia If",
+                    "Link":"/condicionales/sentencia-if",
+                    "Finalizado": false
+                }
+            ]
+        },
+        {
+            "Tema":"Estructuras Repetitivas",
+            "Subtemas":[
+                {
+                    "Subtema":"¿Qué es un ciclo en Programación",
+                    "Link":"/estructuras-repetitivas/que-es-un-ciclo",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"Ciclo for",
+                    "Link":"/estructuras-repetitivas/ciclo-for",
+                    "Finalizado":false
+                },
+                {
+                    "Subtema":"Ciclo while",
+                    "Link":"/estructuras-repetitivas/ciclo-while",
+                    "Finalizado":false
+                },
+                {
+                    "Subtema":"Ciclo do while",
+                    "Link":"/estructuras-repetitivas/ciclo-do-while",
+                    "Finalizado":false
+                }
+            ]
+        },
+        {
+            "Tema": "Arreglos",
+            "Subtemas":[
+                {
+                    "Subtema":"¿Qué es un arreglo en programación",
+                    "Link":"/arreglos/que-es-un-arreglo",
+                    "Finalizado": false
+                }
+            ]
+        }
+    ]
+}

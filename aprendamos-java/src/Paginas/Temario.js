@@ -1,13 +1,14 @@
-import { Box, Container } from "@mui/system";
+import Bienvenida from "../Componentes/Bienvenida/Bienvenida";
+import ListaTemas from "../Componentes/Lista de Temas/ListaTemas";
 
-function Temas() {
-    return (
-        <Container>
-            <Box>
-                Prueba Render
-            </Box>
-        </Container>
-    );
+function Temario() {
+    return ( 
+        <>
+            <Bienvenida/>
+            <br/>
+            <ListaTemas/>
+        </>
+     );
 }
 
-export default Temas;
+export default Temario;

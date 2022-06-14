@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "../Componentes/NavBar/NavBar";
 import UserContext from "../Contextos/UserContext";
 import Inicio from "../Paginas/Inicio";
-import Temas from "../Paginas/Temario";
+import Temario from "../Paginas/Temario";
 
 
 function Rutas() {
@@ -13,7 +13,7 @@ function Rutas() {
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
                 
-                <Route index element={<Temas/>}/>
+                <Route index element={<Temario/>}/>
             </Route>
         </Routes>
      );
