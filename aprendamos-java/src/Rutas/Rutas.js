@@ -13,16 +13,45 @@ function Rutas() {
         <Routes>
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
+                <Route path="introduccion">
+                    <Route path="que-es-programar/:idTema/idSubtema"></Route>
+                    <Route path="programar-es-fácil/:idTema/idSubtema"></Route>
+                    <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/idSubtema"></Route>
+                    <Route path="como-funciona-un-codigo/:idTema/idSubtema"></Route>
+                    <Route path="instalacion-java/:idTema/idSubtema"></Route>
+                    <Route path="instalacion-netBeans/:idTema/idSubtema"></Route>
+                </Route>
+
+                <Route path="manejo-consola">
+                    <Route path="hola-mundo/:idTema/:idSubtema"></Route>
+                    <Route path="formatos-de-impresion/:idTema/:idSubtema"></Route>
+                </Route>
+
+                <Route path="tipos-de-datos">
+                    <Route path="primitivos/:idTema/:idSubtema"></Route>
+                    <Route path="manejo-tipos-datos/:idTema/:idSubtema"></Route>
+                    <Route path="operacion-datos-primitivos/:idTema/:idSubtema"></Route>
+                </Route>
+
+                <Route path="condicionales">
+                    <Route path="sentencia-if/:idTema/:idSubtema"></Route>
+                    <Route path="sentencia-else/:idTema/:idSubtema"></Route>
+                    <Route path="sentencia-if-else/:idTema/:idSubtema"></Route>
+                    <Route path="sentencia-switch/:idTema/:idSubtema"></Route>
+                </Route>
+
                 <Route path="estructuras-repetitivas">
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
                     <Route path="ciclo-for/:idTema/:idSubtema"/>
                     <Route path="ciclo-while/:idTema/:idSubtema"/>
                     <Route path="ciclo-do-while/:idTema/:idSubtema"/>
                 </Route>
+
                 <Route path="arreglos">
                     <Route path="que-es-un-arreglo/:idTema/:idSubtema"/>
                     <Route path="manejo-de-arreglos/:idTema/:idSubtema"/>
                 </Route>
+
                 <Route index element={<Temario/>}/>
             </Route>
         </Routes>

@@ -38,7 +38,18 @@ function Bienvenida() {
                             ¿Porqué hacemos esto?
                         </Typography>
                         <Typography variant="h6">
-
+                            Hacemos esto porque queremos contribuir de manera positiva en la vida de todos aquellos
+                            que desean incursionar en el mundo de la programación, queremos ayudarte a que des tus primeros
+                            pasos y sobre todo te olvides de que la programación es algo muy dificil, veras que si quieres
+                            puedes y este pequeo curso te ayudara a que inicies. 
+                            <br></br>
+                            Hacemos esto porque creemos firmemente que el mundo mejorará a través de la educación y que los
+                            sueños pueden realizarse si se les pone el suficiente empeño.
+                            <br></br>
+                            Deseamos de todo corazón que este curso logre el objetivo en tu vida que es aprender a programar
+                            y que esto abra oportunidades profesionales que mejoren tu calidad de vida.
+                            <br></br>
+                            APRENDEMOS A PROGRAMAR EN JAVA... 
                         </Typography>
                     </Box>
                 </Grid>
