@@ -2,6 +2,7 @@
     "temas":[
         {
             "Tema": "Introduccion a la Programacion",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema": "¿Qué es Programar? ¿Qué es un Algoritmo?",
@@ -22,6 +23,7 @@
         },
         {
             "Tema":"Manejo de la consola",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema": "Hola Mundo",
@@ -38,6 +40,7 @@
         },
         {
             "Tema":"Tipos de datos",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema":"",
@@ -53,6 +56,7 @@
         },
         {
             "Tema":"Estructuras Condicionales",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema":"Sentencia If",
@@ -63,6 +67,7 @@
         },
         {
             "Tema":"Estructuras Repetitivas",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema":"¿Qué es un ciclo en Programación",
@@ -88,6 +93,7 @@
         },
         {
             "Tema": "Arreglos",
+            "Progreso":0,
             "Subtemas":[
                 {
                     "Subtema":"¿Qué es un arreglo en programación",

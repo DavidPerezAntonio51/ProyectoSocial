@@ -1,10 +1,12 @@
-import { Checkbox, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import {List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import { useContext } from "react";
 import ProgressContext from "../../Contextos/ProgressContext";
+import CheckBoxControlled from "./CheckBoxControlled";
 
 function ListaSubtemas({ indexTema }) {
     const Temas = useContext(ProgressContext);
+    
     return (
         <>
             <List>
@@ -14,11 +16,7 @@ function ListaSubtemas({ indexTema }) {
                             disablePadding
                             key={"Subtema" +indexTema+ index}
                             secondaryAction={
-                                <Checkbox
-                                    color="boticelli"
-                                    edge="end"
-                                    checked={data.Finalizado}
-                                     />
+                                <CheckBoxControlled Finalizado={data.Finalizado} indexTema={indexTema} SubTema={index}/>
                             }>
                             <ListItemButton>
                                 <ListItemText sx={{ color: "stratos.main" }} primary={data.Subtema} />

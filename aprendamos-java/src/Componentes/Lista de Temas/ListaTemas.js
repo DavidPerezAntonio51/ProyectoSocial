@@ -36,7 +36,7 @@ function ListaTemas() {
                 <Typography sx={{ flexGrow: 1, flexShrink: 0, color: "text.secondary" }}>
                   {data.Tema}
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>{"0/" + data.Subtemas.length}</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>{data.Progreso+"/" + data.Subtemas.length}</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{bgcolor:"bondiBlue.main"}}>
                 <ListaSubtemas indexTema={index}/>
