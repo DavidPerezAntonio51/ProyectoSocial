@@ -18,6 +18,21 @@
                     "Subtema": "Pseudocodigo y diagramas de flujo",
                     "Link":"/introduccion/pseudocodigo-y-diagramas-de-flujo",
                     "Finalizado": false
+                },
+                {
+                    "Subtema" : "¿Como funciona un código?",
+                    "Link" : "/introduccion/como-funciona-un-codigo",
+                    "Finalizado" : false
+                },
+                {
+                    "Subtema" : "Instalación de Java paso a paso",
+                    "Link" : "/introduccion/instalacion-java",
+                    "Finalizado" : false
+                },
+                {
+                    "Subtema" : "instalación de netBeans",
+                    "Link" : "/introduccion/instalacion-netBeans",
+                    "Finalizado" : false
                 }
             ]
         },
@@ -43,14 +58,19 @@
             "Progreso":0,
             "Subtemas":[
                 {
-                    "Subtema":"",
-                    "Link": "/tipos-de-datos/",
+                    "Subtema":"Primitivos: int, short, long, double, float, boolean, byte, char",
+                    "Link": "/tipos-de-datos/primitivos",
                     "Finalizado": false
                 },
                 {
-                    "Subtema":"",
-                    "Link":"/tipos-de-datos/",
+                    "Subtema":"Estructuras secuenciales (manejo de los tipos de dato) ",
+                    "Link":"/tipos-de-datos/manejo-tipos-datos",
                     "Finalizado": false
+                },
+                {
+                    "Subtema" : "Operaciones con datos primitivos",
+                    "Link" : "/tipos-de-datos/operacion-datos-primitivos",
+                    "Finalizado" : false
                 }
             ]
         },
@@ -61,6 +81,21 @@
                 {
                     "Subtema":"Sentencia If",
                     "Link":"/condicionales/sentencia-if",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"Sentencia else",
+                    "Link":"/condicionales/sentencia-else",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"Sentencia If - else",
+                    "Link":"/condicionales/sentencia-if-else",
+                    "Finalizado": false
+                },
+                {
+                    "Subtema":"Sentencia switch",
+                    "Link":"/condicionales/sentencia-switch",
                     "Finalizado": false
                 }
             ]
