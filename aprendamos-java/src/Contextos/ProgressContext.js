@@ -8,7 +8,6 @@ function ProgresoContext({ children }) {
     const [DataProgress, setDataProgress] = useState(JSON.parse(window.localStorage.getItem("aprendamos-java:Progress")));
     const incrementarProgreso=(Tema,Subtema)=>{
         let data = JSON.parse(window.localStorage.getItem("aprendamos-java:Progress"));
-        console.log(data);
         data[Tema].Progreso+= 1;
         data[Tema].Subtemas[Subtema].Finalizado=true;
         setDataProgress(data);
@@ -16,7 +15,6 @@ function ProgresoContext({ children }) {
     }
     const reducirProgreso=(Tema,Subtema)=>{
         let data = JSON.parse(window.localStorage.getItem("aprendamos-java:Progress"));
-        console.log(data);
         data[Tema].Progreso-= 1;
         data[Tema].Subtemas[Subtema].Finalizado=false;
         setDataProgress(data);

@@ -19,7 +19,7 @@ function ListaSubtemas({ indexTema }) {
                             secondaryAction={
                                 <CheckBoxControlled Finalizado={data.Finalizado} indexTema={indexTema} SubTema={index}/>
                             }>
-                            <ListItemButton LinkComponent={Link} to={data.Link}>
+                            <ListItemButton LinkComponent={Link} to={"/temas"+data.Link+"/"+indexTema+"/"+index}>
                                 <ListItemText sx={{ color: "stratos.main" }} primary={data.Subtema} />
                                 <ListItemIcon>
                                     <PlayArrowRoundedIcon />

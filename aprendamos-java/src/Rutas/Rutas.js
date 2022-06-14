@@ -12,6 +12,14 @@ function Rutas() {
         <Routes>
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
+                <Route path="estructuras-repetitivas">
+                    <Route path="que-es-un-ciclo/:idTema/:idSubtema"/>
+                    <Route path="ciclo-for/:idTema/:idSubtema"/>
+                </Route>
+                <Route path="arreglos">
+                    <Route path="que-es-un-arreglo/:idTema/:idSubtema"/>
+                    <Route path="manejo-de-arreglos/:idTema/:idSubtema"/>
+                </Route>
                 <Route index element={<Temario/>}/>
             </Route>
         </Routes>
