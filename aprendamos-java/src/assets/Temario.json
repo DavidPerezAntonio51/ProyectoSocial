@@ -99,6 +99,11 @@
                     "Subtema":"¿Qué es un arreglo en programación",
                     "Link":"/arreglos/que-es-un-arreglo",
                     "Finalizado": false
+                },
+                {
+                    "Subtema" : "Manejo de arreglos en JAVA",
+                    "Link" : "/arreglos/manejo-de-arreglos",
+                    "Finalizado": false
                 }
             ]
         }
