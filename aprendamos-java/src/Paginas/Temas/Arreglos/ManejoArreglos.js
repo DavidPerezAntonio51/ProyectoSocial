@@ -1,9 +1,9 @@
 
-function manejoArreglos() {
+function ManejoArray() {
     return ( 
         <>
         </>
      );
 }
 
-export default manejoArreglos;
+export default ManejoArray;

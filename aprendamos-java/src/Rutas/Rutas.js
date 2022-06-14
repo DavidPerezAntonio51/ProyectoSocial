@@ -6,7 +6,7 @@ import Inicio from "../Paginas/Inicio";
 import Temario from "../Paginas/Temario";
 import Arreglo from "../Paginas/Temas/Arreglos/QueEsUnArreglo";
 import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
-import manejoArreglos from "../Paginas/Temas/Arreglos/ManejoArreglos";
+import ManejoArray from "../Paginas/Temas/Arreglos/ManejoArreglos";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -50,7 +50,7 @@ function Rutas() {
 
                 <Route path="arreglos">
                     <Route path="que-es-un-arreglo/:idTema/:idSubtema" element = {<Arreglo/>}/>
-                    <Route path="manejo-de-arreglos/:idTema/:idSubtema" element = {<manejoArreglos/>}/>
+                    <Route path="manejo-de-arreglos/:idTema/:idSubtema" element = {<ManejoArray/>}/>
                 </Route>
 
                 <Route index element={<Temario/>}/>
