@@ -4,6 +4,7 @@ import NavBar from "../Componentes/NavBar/NavBar";
 import UserContext from "../Contextos/UserContext";
 import Inicio from "../Paginas/Inicio";
 import Temario from "../Paginas/Temario";
+import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
 
 
 function Rutas() {
@@ -13,7 +14,7 @@ function Rutas() {
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
                 <Route path="estructuras-repetitivas">
-                    <Route path="que-es-un-ciclo/:idTema/:idSubtema"/>
+                    <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
                     <Route path="ciclo-for/:idTema/:idSubtema"/>
                     <Route path="ciclo-while/:idTema/:idSubtema"/>
                     <Route path="ciclo-do-while/:idTema/:idSubtema"/>
