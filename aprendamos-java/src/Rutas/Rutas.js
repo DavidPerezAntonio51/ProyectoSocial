@@ -15,6 +15,8 @@ function Rutas() {
                 <Route path="estructuras-repetitivas">
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema"/>
                     <Route path="ciclo-for/:idTema/:idSubtema"/>
+                    <Route path="ciclo-while/:idTema/:idSubtema"/>
+                    <Route path="ciclo-do-while/:idTema/:idSubtema"/>
                 </Route>
                 <Route path="arreglos">
                     <Route path="que-es-un-arreglo/:idTema/:idSubtema"/>
