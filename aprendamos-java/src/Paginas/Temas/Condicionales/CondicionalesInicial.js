@@ -1,8 +1,8 @@
-function ConficionalesInicial(){
+function CondicionalesInicial(){
     return(
         <>
         </>
     );
 }
 
-export default ConficionalesInicial;
+export default CondicionalesInicial;
