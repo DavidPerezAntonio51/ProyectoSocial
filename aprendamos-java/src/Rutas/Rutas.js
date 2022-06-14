@@ -4,8 +4,9 @@ import NavBar from "../Componentes/NavBar/NavBar";
 import UserContext from "../Contextos/UserContext";
 import Inicio from "../Paginas/Inicio";
 import Temario from "../Paginas/Temario";
+import Arreglo from "../Paginas/Temas/Arreglos/QueEsUnArreglo";
 import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
-
+import manejoArreglos from "../Paginas/Temas/Arreglos/ManejoArreglos";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -48,8 +49,8 @@ function Rutas() {
                 </Route>
 
                 <Route path="arreglos">
-                    <Route path="que-es-un-arreglo/:idTema/:idSubtema"/>
-                    <Route path="manejo-de-arreglos/:idTema/:idSubtema"/>
+                    <Route path="que-es-un-arreglo/:idTema/:idSubtema" element = {<Arreglo/>}/>
+                    <Route path="manejo-de-arreglos/:idTema/:idSubtema" element = {<manejoArreglos/>}/>
                 </Route>
 
                 <Route index element={<Temario/>}/>
