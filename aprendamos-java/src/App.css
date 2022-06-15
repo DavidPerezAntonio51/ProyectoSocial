@@ -7,18 +7,16 @@
 }
 
 body{
-  background:linear-gradient(to bottom, var(--theme-color-regal-blue), var(--theme-color-bondi-blue), var(--theme-color-morning-glory), var(--theme-color-boticelli));
-  height: 97vh;
+  background-image: url(./Images/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
 }
 
 .textWhite{
   color: red;
 }
 
-.Fondo {
-  background:linear-gradient(to bottom, var(--theme-color-regal-blue), var(--theme-color-bondi-blue), var(--theme-color-morning-glory), var(--theme-color-boticelli));
-  height: 97vh;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
