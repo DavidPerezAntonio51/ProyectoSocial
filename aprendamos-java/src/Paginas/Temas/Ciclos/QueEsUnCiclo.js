@@ -16,12 +16,12 @@ function Ciclos() {
                     paddingTop: 5
                 }}>
                     <Grid item>
-                        <Typography variant="h3" sx={{ textAlign: "center" }}>
+                        <Typography variant="h3" sx={{ textAlign: "center"}}>
                             ¿Qué es un Ciclo en programación?
                         </Typography>
                     </Grid>
                 </Box>
-                <Grid item container>
+                <Grid item>
                     <Box sx={{
                         paddingX: 7,
                         backgroundColor: "boticelli.main",
@@ -40,8 +40,21 @@ function Ciclos() {
                             Duplicar el código de esa forma puede traer varios problemas consigo. El primero de estos problemas es
                             que los archivos fuente de tu código se harán innecesariamente grandes; en el caso de requerirse hacer
                             modificaciones en un futuro a tu código será muy complicado, muy tardado y muy cansado poder llevarlas
-                            a cabo.
+                            a cabo. A continuación te mostraremos un ejemplo de lo que no se debe hacer
                         </Typography>
+                        <br />
+                        <Typography variant="h6" component="p">
+                            Supongamos que te solicitamos un código que sume
+                        </Typography>
+                        <Grid container>
+                            <Grid item component="pre" >
+                                <Box sx={{ backgroundColor: "stratos.main", color: 'boticelli.main' }} >
+                                    <Typography variant="code" component="code" alignSelf={"center"} sx={{ overflowX: 'auto', display: 'block' }}>
+                                        
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                        </Grid>
                         <br />
                         <Typography variant="h6" component="p">
                             Pero no te preocupes {Usuario.User} para eso existen los llamados bucles o ciclos. Comencemos por lo
@@ -67,12 +80,12 @@ function Ciclos() {
                             Excelente ahora ya sabes a nivel teórico cual es la función de los ciclos en la programación, en los siguientes
                             temas conocerás mas a fondo los ciclos for, while y doWhile a nivel teórico y a nivel practico en Java.
                         </Typography>
-                        <Grid container justifyContent="space-between" alignItems="center" sx={{paddingTop:3}}>
-                            <Grid item>
-                                <VolverAlMenu/>
+                        <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
+                            <Grid item sx={{ paddingY:2}}>
+                                <VolverAlMenu />
                             </Grid>
-                            <Grid item>
-                                <SiguienteTema/>
+                            <Grid item sx={{ paddingY:2}}>
+                                <SiguienteTema />
                             </Grid>
                         </Grid>
                     </Box>

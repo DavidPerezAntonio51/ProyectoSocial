@@ -17,7 +17,7 @@ function CicloFor() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center" }}>
-                            ¿Qué es un Ciclo en programación?
+                            Ciclo for
                         </Typography>
                     </Grid>
                 </Box>
@@ -68,10 +68,10 @@ function CicloFor() {
                             temas conocerás mas a fondo los ciclos for, while y doWhile a nivel teórico y a nivel practico en Java.
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
-                            <Grid item>
+                            <Grid item sx={{ paddingY:2}}>
                                 <VolverAlMenu />
                             </Grid>
-                            <Grid item>
+                            <Grid item sx={{ paddingY:2}}>
                                 <SiguienteTema />
                             </Grid>
                         </Grid>

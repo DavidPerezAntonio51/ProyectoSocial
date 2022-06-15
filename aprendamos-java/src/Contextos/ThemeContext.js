@@ -27,6 +27,17 @@ const theme = createTheme({
             secondary: '#001B48'
         }
     },
+    typography:{
+         h3:{
+            fontSize:"calc(1.5rem + 2vw)"
+         },
+         h6:{
+            fontSize:"calc(0.5rem + 1vw)"
+         },
+         h4:{
+            fontSize:"calc(1.5rem + 1vw)"
+         }
+    },
     contrastThreshold: 10,
     tonalOffset: 0.8,
 });
