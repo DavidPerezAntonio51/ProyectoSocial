@@ -8,7 +8,7 @@
 
 body{
   background-image: url(./assets/Background/Background.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   margin: 0;
   font-size: calc(10px + 2vmin);
