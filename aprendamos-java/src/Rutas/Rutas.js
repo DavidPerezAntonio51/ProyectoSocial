@@ -8,6 +8,7 @@ import Arreglo from "../Paginas/Temas/Arreglos/QueEsUnArreglo";
 import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
 import ManejoArray from "../Paginas/Temas/Arreglos/ManejoArreglos";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
+import CondicionalElse from "../Paginas/Temas/Condicionales/CondicionalElse";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -37,7 +38,7 @@ function Rutas() {
 
                 <Route path="condicionales">
                     <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf />}></Route>
-                    <Route path="sentencia-else/:idTema/:idSubtema"></Route>
+                    <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse objeto = {Usuario.User} />}></Route>
                     <Route path="sentencia-if-else/:idTema/:idSubtema"></Route>
                     <Route path="sentencia-switch/:idTema/:idSubtema"></Route>
                 </Route>

@@ -2,38 +2,24 @@ import {Box, Container} from "@mui/system";
 import {Grid, TableContainer, Typography} from "@mui/material";
 import {Table, TableHead, TableRow, TableCell, TableBody} from "@mui/material";
 
-
-
-function createData(item, repre, sintaxis){
-    return {item, repre, sintaxis};
-}
-
-const rows = [
-    createData("AND (y)", "&&", "A && B"),
-    createData("OR (o)", "||", "A || B"),
-    createData("NOT (no)", "!", "!A")
-];
-
-function CondicionalIf(){
+function CondicionalElse(props){
     return(
         <>
         <Container>
             <Grid container>
                 <Grid item sx={{minWidth:"100%"}}>
                     <Box sx={{color:'text.secondary'}}>
-                        <Typography variant="h3" component="h4" sx={{textAlign:"center"}}>Sentencia IF</Typography>
+                        <Typography variant="h3" component="h4" sx={{textAlign:"center"}}>Sentencia ELSE</Typography>
                         <br />
-                        <Typography variant="body1" component="p">En esta sección se abordara el tema de condicionales utilizando la sentencia <Typography variant="b" component="b">IF</Typography>. La cual es una de las mas utilizadas y principales que nosotros como programadores debemos de tener por defecto en nuestro conocimiento.</Typography>
-                        <Typography variant="body1" component="p">De modo que aquí te explicaremos un poco de como hacer uso de dicho elemento y el como se debe explear de forma correcta.</Typography>
+                        <Typography variant="body1" component="p">En hora buena que terminaste <b>{props.objeto}</b>, con el primer condicional y el más importante para comprender el buen uso y funcionamiento de las sentencias basicas de todo lenguaje.</Typography>
+                        <Typography variant="body1" component="p">Ahora abordaremos la situación donde aceptamos el caso contrario al principal. Si retomamos el ejemplo de si tus padres te dicen que te portes bien <b>obtendras el dulce que desees</b> pero si haces todo lo contario <b>obtendras un regaño y talvez puedas estar castigad@</b>.</Typography>
                         <br />
-                        <Typography variant="h5" component="h4" sx={{textAlign:"left"}} >¿Qué es la sentencia IF?</Typography>
-                        <br />
-                        <Typography variant="body1" component="p">Es un mecanismo el cual nos permite tener un control en la ejcución de nuestro programa, al realizar una pregunta respecto a algun valor que estemos considerando.</Typography>
-                        <Typography variant="body1" component="p">Por ejemplo, cuando eras pequeño talvez tus padres te llegaron a poner una condición de "Si te portas bien te compraré el dulce que quieras". De este modo la variable o valor que se medía era tu comportamiento de esta manera sabías que si tenías un buen comportamiento obtendrás el dulce que desees, de esta manera es similar la forma en la que funciona la sentencia if.</Typography>
+                        <Typography variant="body1" component="p">De modo que utilizando este ejemplo ahora tenemos dos posibilidades, una es portarnos bien o hacer caso omiso, en una obtendremos un dulce para la cena y en la otra un castigo que a nadie le llama la atención. De modo que en comparación con el tema anterior es que tenemos un panorama más completo, el cual nos permite tener una idea completa de como se puede mostrar las diferentes posibilidades que dado nuestro comportamiento tendremos.</Typography>
+                        <Typography variant="body1" component="p">Con esto podremos tener una estructura condicional mas eficiente y robusta, dado que ahora realizaremos operaciones especificas en casos donde no se satisfaga la condición incial. La cual en contraste con la sentencia IF, no solo tendremos una sola operación por ejecutar, sino que podemos ahora tener dos para capturar los posibles casos.</Typography>
                         <br />
                         <Typography variant="h5" component="h4">Sintaxis</Typography>
-                        <Typography variant="body1" component="p">En todos los casos (o más bien los que conozco) siempre se realizará una comparación de una variable con un valor o de una variable con otra.</Typography>
-                        <Typography variant="body1" component="p">Algo como lo siguiente: </Typography>
+                        <Typography variant="body1" component="p">Ahora no creas que lo visto anteriormente ya no lo usaremos, sino que es nuestra base para ir mejorando nuestros conocimientos y con esto tener un mejor desarrollo para entender este lenguaje de programación.</Typography>
+                        <Typography variant="body1" component="p">De modo que tendríamos el siguiente ejemplo: </Typography>
                         <br />
                     </Box>
                     <Grid item sx={{p:5}}>
@@ -61,26 +47,7 @@ function CondicionalIf(){
                         <Typography variant="body1" component="p">La finalidad de los operadores es brindar a los desarrolladores una forma más eficaz de evaluar las expresiones que ellos intentan lograr, utilizando simbolos clave para tener acceso a estas. de modo que a continuación se muestran cuales son los operadores que podemos utilizar en este lenguaje.</Typography>
                         <br />
                         <center>
-                        <TableContainer sx={{backgroundColor:'text.secondary', width:'70%'}}>
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell align="left">Nombre operador</TableCell>
-                                        <TableCell align="left">Representación</TableCell>
-                                        <TableCell align="left">Sintaxis</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody sx={{color:'text.secondary'}}>
-                                    {rows.map((row, index)=>(
-                                        <TableRow key={index}>
-                                            <TableCell>{row.item}</TableCell>
-                                            <TableCell>{row.repre}</TableCell>
-                                            <TableCell>{row.sintaxis}</TableCell>
-                                        </TableRow>
-                                    ))}    
-                                </TableBody>
-                            </Table>
-                        </TableContainer>
+                        
                         </center>
                         <br />
                         <Typography variant="body1" component="p">Como podemos observar tenemos 3 operadores básicos para aplicarlos en las condiciones, estos representan operaciones binarias, como las vistas en algebra de boole.</Typography>
@@ -103,6 +70,6 @@ function CondicionalIf(){
         </Container>
         </>
     );
-}
+};
 
-export default CondicionalIf;
+export default CondicionalElse;
