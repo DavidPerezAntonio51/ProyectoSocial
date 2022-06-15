@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useContext } from "react";
+import { styled } from '@mui/material/styles';
 import UserContext from "../../../Contextos/UserContext";
-import { Grid, List, ListItem, Typography} from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Grid, List, ListItem, Typography, Card, CardContent, CardMedia, Paper} from "@mui/material";
+import { Box, Container, textAlign } from "@mui/system";
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -11,15 +12,22 @@ import Super2 from '../../../assets/img/imgListaSuper2.png';
 import Super3 from '../../../assets/img/imgListaSuper3.jpg';
 import Super4 from '../../../assets/img/imgListaSuper4.jpg';
 import Super5 from '../../../assets/img/imgListaSuper5.jpg';
-//import arre1 from '../../../assets/img/imgListaSuper2.jpg';
-//import arre2 from '../../../assets/img/imgListaSuper2.jpg';
+import arre1 from '../../../assets/img/imgArreglos1.jpg';
+import arre2 from '../../../assets/img/imgArreglos2.jpg';
 
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
 
 function Arreglo() {
     const Usuario = useContext(UserContext);
     return ( 
         <>
-            <Container>
+            <Container padding = "5">
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
@@ -32,7 +40,7 @@ function Arreglo() {
                             </Typography>
                             <br/>
                             <Typography variant = "h5" component = "h3">
-                                Introducción teórica
+                                <b>Introducción teórica</b>
                             </Typography>
                             <br/>
                             <Typography variant = "h5" component = "h3">
@@ -103,39 +111,74 @@ function Arreglo() {
                                 solo que a diferencia de lo que estamos acostumbrados la numeracion de los arreglos inicia en 0, ESTO ES MUY 
                                 IMPORTANTE que lo recuerdes, la numeracion de los elementos de los arreglos inicia en 0, es decir 
                                 la misma lista de de supermercado dentro de un arreglo estaria numerada asi: <br/>
+                                    <center>
                                     0.- Sopa spaguetti<br/>
                                     1.- Leche<br/>
                                     2.- Galletas<br/>
                                     3.- Jabon para la ropa<br/>
                                     4.- Papel aluminio<br/>
                                     <br/>
+                                    </center>
                                 A la posición que ocupan los elementos en el arreglo se le llama indice, por ejemplo en el arreglo lista del super el elemento
                                 Galletas es el elemento con el indice 2 del arreglo.
+
+                                <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {arre2} height = "300" width = "550"/>
+                                </Grid>
+                                
+                                En la imagen podemos ver como se comporta un arreglo, vemos que inicia en la posición 0 y termina
+                                en la n-1 donde n es la longitud del arreglo.
                                 <br/><br/>
+
                                 Antes de pasar al codigo tambien es importante entender que como en la lista de supermercado, podemos identificar cada
                                 elemento por el numero que ocupa en la lista, pero al igual que en la vida real no tendria sentido listar elementos de la ferreteria
-                                en la lista del super, ya que nunca encontrariamos esos elementos ahi, con los arreglos en JAVA es lo mismo, EN LOS ARREGLOS EN JAVA
-                                SOLO PODEMOS ALMACENAR DATOS DEL MISMO TIPO, es decir en un arreglo puedes almacenar los numeros enteros que quieras ya sean 2, 10 o hasta 1000
+                                en la lista del super, ya que nunca encontrariamos esos elementos ahi, con los arreglos en JAVA es lo mismo, <i>EN LOS ARREGLOS EN JAVA
+                                SOLO PODEMOS ALMACENAR DATOS DEL MISMO TIPO</i>, es decir en un arreglo puedes almacenar los numeros enteros que quieras ya sean 2, 10 o hasta 1000
                                 pero todos deben ser numeros enteros y asi para todos los tipos de dato.
+
+                                <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {arre1} height = "200" width = "550"/>
+                                </Grid>
+                                
+                                En la imagen vemos otra forma de representar los arreglos como vectores, y observamos nuevamente
+                                como se comportan los indices de un arreglo
                                 <br/><br/>
                                 En conclusión, ve los arreglos como listas de cosas y numeralas, eso es un arreglo no hay mas ciencia. Esa colección de elementos
                                 la vamos a recorrer con un bucle, para poder pasar por todos los elementos y poder acceder al valor de cada uno de ellos, pero dejemonos 
                                 de rodeos y vayamos a la aplicacion del codigo para que esto se entienda mejor. 
                             </Typography>
-                            <br/>
-
+                        </Box>
+                    </Grid>
+                </Grid>
+                
+                <Grid container>
+                    <Grid item sx={{ minWidth: "100%" }}>
+                        <Box sx={{
+                            backgroundColor: 'boticelli.main',
+                            color: "black",
+                            padding : 7
+                        }}>
                             <Typography variant = "h5" component = "h3">
-                                Ejemplos con JAVA
+                                <b>Ejemplos con JAVA</b>
+                            </Typography>
+                        </Box>
+                    </Grid>   
+                </Grid>
+
+                <Grid container>
+                    <Grid item sx={{ minWidth: "100%" }}>
+                        <Box sx={{
+                            backgroundColor: 'boticelli.main',
+                            color: "black",
+                            padding : 7
+                        }}>
+                            <Typography variant = "h5" component = "h3">
+                                <b>Ejercicios propuestos</b>
                             </Typography>
                             <br/>
 
                             <Typography variant = "h5" component = "h3">
-                                Ejercicios propuestos
-                            </Typography>
-                            <br/>
-
-                            <Typography variant = "h5" component = "h3">
-                                Despues de todo lo visto ha llegado el momento para que tu {Usuario.user} pruebes todo lo que has aprendido en esta lección,
+                                Despues de todo lo visto ha llegado el momento para que tu {Usuario.User} pruebes todo lo que has aprendido en esta lección,
                                 recuerda que tendras a la mano las respuestas por si tienes alguna duda pero intenta hacerlos por tu cuenta para 
                                 que aprendas. <br/>
                                 ¡EXITO!
@@ -182,8 +225,10 @@ function Arreglo() {
                             </Typography>
                             <br/>
                         </Box>
-                    </Grid>
+                    </Grid>   
                 </Grid>
+                            
+                        
             </Container>
         </>
      );
