@@ -147,41 +147,22 @@ function ManejoArray() {
 
                             <Typography variant = "h5" component = "h3">
                                 Ejercicio 1. <br/>
-                                Declara 3 arreglos
-                                <ul>
-                                    <li> Un arreglo de 10 numeros enteros </li>
-                                    <li> Un arreglo de las primeras 10 letras del alfabeto </li>
-                                    <li> Un arreglo de 5 cadenas de texto que deben ser: 
-                                    <ol>
-                                        <li> Tu primer nombre </li>
-                                        <li> Tu primer apellido </li>
-                                        <li> Tu segundo apellido </li>
-                                        <li> El numero de tu edad escrito con letras </li>
-                                        <li> Tu jobie favorito </li>
-                                    </ol>
-                                </li>
-                            </ul>
+                                Que el usuario llene un arreglo de 5 numeros y que el programa imprima los 
+                                elementos ordenados de manera ascendente, descendente y el numero elevado a la potencia 2
                         </Typography>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
                             Ejercicio 2. <br/>
-                            Con los 3 arreglos declarados del ejercicio 1, imprime lo siguiente: 
-                            <ul>
-                                <li> Los elementos 0, 5 y 9 del arreglo de numeros enteros </li>
-                                <li> Los elementos 0, 1, 7 y 8 del arreglo de las letras del alfabeto </li>
-                                <li> Imprime los elementos necesarios del arreglo de cadenas para formar tu nombre completo </li>
-                            </ul>
+                            Crear un arreglo con 5 cadenas, unir las 5 cadenas en una sola e imprimir cuantos caracteres tiene
+                            la nueva cadena
                         </Typography>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
                             Ejercicio 3. <br/>
-                            Declara 2 arreglos, los dos de 5 elementos, el primero debe contener cadenas correspondientes
-                            a los nombres de tus 5 mejores amigos, en el segundo deben ir las edades de cada uno de ellos
-                            imprime en consola lo siguiente: <br/>
-                            "Hola mi amigo numero 1 es 'NOMBRE DE TU AMIGO' y su edad es: 'EDAD DE TU AMIGO'"
-                            Asi hasta listar a tus 5 amigos del 1 al 5.
+                            Pide al usuario por teclado una frase y pasa sus caracteres a un array de caracteres. 
+                            Puedes hacer con o sin métodos de String.
                         </Typography>
                         <br/>
                     </Box>
