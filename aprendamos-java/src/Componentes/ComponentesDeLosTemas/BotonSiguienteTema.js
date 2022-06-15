@@ -13,7 +13,7 @@ function SiguienteTema() {
             Progress.incrementarProgreso(idTema,idSubtema);
             let siguienteSubtema = Number.parseInt(idSubtema)+1;
             let nextLink = Progress.DataProgress[idTema].Subtemas[siguienteSubtema].Link;
-            redireccionar("/temas"+nextLink+"/"+idTema+"/"+"/"+siguienteSubtema);
+            redireccionar("/temas"+nextLink+"/"+idTema+"/"+siguienteSubtema);
         }
     }
     return (

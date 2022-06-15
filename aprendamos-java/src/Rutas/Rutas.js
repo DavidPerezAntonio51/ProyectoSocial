@@ -9,6 +9,7 @@ import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
 import ManejoArray from "../Paginas/Temas/Arreglos/ManejoArreglos";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
 import CondicionalElse from "../Paginas/Temas/Condicionales/CondicionalElse";
+import CicloFor from "../Paginas/Temas/Ciclos/CicloFor";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -45,7 +46,7 @@ function Rutas() {
 
                 <Route path="estructuras-repetitivas">
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
-                    <Route path="ciclo-for/:idTema/:idSubtema"/>
+                    <Route path="ciclo-for/:idTema/:idSubtema" element={<CicloFor/>}/>
                     <Route path="ciclo-while/:idTema/:idSubtema"/>
                     <Route path="ciclo-do-while/:idTema/:idSubtema"/>
                 </Route>
