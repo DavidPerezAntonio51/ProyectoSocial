@@ -160,7 +160,7 @@ function Arreglo() {
                         }}>
                             <Typography variant = "h5" component = "h3">
                                 <b>Ejemplos con JAVA</b><br/>
-                                <b>¿Como se declara un arreglo en JAVA?</b>
+                                <b>¿Como se declara un arreglo?</b>
                                 <Grid item sx={{ p : 0 }}>
                                     <Box sx = { { width : "100%", height : "40%", backgroundColor : "#111111", color : "#e1e7f2", p : 1}}>
                                         <div>
@@ -188,7 +188,7 @@ function Arreglo() {
                             padding : 7
                         }}>
                             <Typography variant = "h5" component = "h3">
-                                <b>¿Como acceder a los valores de un indice en particular?</b>
+                                <b></b>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -203,7 +203,7 @@ function Arreglo() {
                             padding : 7
                         }}>
                             <Typography variant = "h5" component = "h3">
-                                <b>¿Como modificar los valores de un indice en particular?</b>
+                            <b>¿Como modificar los valores de un indice en particular?</b>
                             </Typography>
                         </Box>
                     </Grid>   
