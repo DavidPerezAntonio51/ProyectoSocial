@@ -7,10 +7,11 @@
 }
 
 body{
-  background-image: url(./Images/Background.png);
+  background-image: url(./assets/Background/Background.png);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
+  font-size: calc(10px + 2vmin);
 }
 
 .textWhite{

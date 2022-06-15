@@ -6,12 +6,13 @@ import UserContext from "../../Contextos/UserContext";
 function Bienvenida() {
     const Usuario = useContext(UserContext);
     return (
-        <Container>
+        <Container sx={{paddingY:5}}>
             <Grid container>
                 <Box sx={{
                     backgroundColor: 'boticelli.main',
                     color: "regalBlue.main",
-                    minWidth: "100%"
+                    minWidth: "100%",
+                    paddingTop:5
                 }}>
                     <Grid item>
                         <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
@@ -23,11 +24,10 @@ function Bienvenida() {
                     backgroundColor: 'boticelli.main',
                     color: "regalBlue.main",
                     maxWidth: "100%",
-                    paddingX: 7
+                    paddingX: 7,
+                    paddingY: 5
                 }}>
                     <Grid item>
-                        <br />
-                        <br />
                         <Typography variant="h4" component="h3">
                             ¿Quienes somos?
                         </Typography>
@@ -59,7 +59,7 @@ function Bienvenida() {
                             Deseamos de todo corazón que este curso logre el objetivo en tu vida que es aprender a programar
                             y que esto abra oportunidades profesionales que mejoren tu calidad de vida.
                             <br></br>
-                            APRENDEMOS A PROGRAMAR EN JAVA...
+                            APRENDAMOS A PROGRAMAR EN JAVA...
                         </Typography>
                     </Grid>
                 </Box>

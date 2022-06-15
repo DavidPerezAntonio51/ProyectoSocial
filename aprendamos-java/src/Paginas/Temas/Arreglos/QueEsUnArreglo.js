@@ -18,7 +18,7 @@ import Super5 from '../../../assets/img/imgListaSuper5.jpg';
 function Arreglo() {
     const Usuario = useContext(UserContext);
     return ( 
-        <>
+        
             <Container>
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
@@ -185,7 +185,7 @@ function Arreglo() {
                     </Grid>
                 </Grid>
             </Container>
-        </>
+        
      );
 }
 
