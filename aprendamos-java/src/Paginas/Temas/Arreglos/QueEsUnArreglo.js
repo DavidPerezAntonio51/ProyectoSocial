@@ -4,13 +4,14 @@ import { Box, Container } from "@mui/system";
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
+import Super1 from '../../../assets/img/ImgListaSuper1.jpg';
 
 
 function Arreglo() {
     return ( 
         <>
             <Container>
-                <Grid Container>
+                <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
@@ -45,7 +46,7 @@ function Arreglo() {
                                 <List>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src="../assets/imgListaSuper1" />
+                                            <Avatar alt="Remy Sharp" src={Super1} />
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 1.- Sopa spaguetti"
