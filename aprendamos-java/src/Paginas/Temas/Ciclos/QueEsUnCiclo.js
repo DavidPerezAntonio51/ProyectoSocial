@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useContext } from "react";
 import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
+import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import UserContext from "../../../Contextos/UserContext";
 
 function Ciclos() {
@@ -68,7 +69,7 @@ function Ciclos() {
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{paddingTop:3}}>
                             <Grid item>
-                                Boton 1
+                                <VolverAlMenu/>
                             </Grid>
                             <Grid item>
                                 <SiguienteTema/>
