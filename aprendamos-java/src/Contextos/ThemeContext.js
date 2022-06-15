@@ -12,12 +12,15 @@ const theme = createTheme({
         },
         bondiBlue:{
             main: '#018ABE',
+            contrastText: '#D6E8EE',
         },
         morningGlory:{
             main: '#97cADB',
+            contrastText: '#001B48',
         },
         boticelli:{
             main: '#D6E8EE',
+            contrastText: '#001B48',
         },
         text:{
             primary: '#D6E8EE',

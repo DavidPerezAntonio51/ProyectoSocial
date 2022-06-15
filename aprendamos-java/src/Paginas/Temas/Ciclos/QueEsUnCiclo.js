@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useContext } from "react";
+import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import UserContext from "../../../Contextos/UserContext";
 
 function Ciclos() {
@@ -19,7 +20,7 @@ function Ciclos() {
                         </Typography>
                     </Grid>
                 </Box>
-                <Grid item>
+                <Grid item container>
                     <Box sx={{
                         paddingX: 7,
                         backgroundColor: "boticelli.main",
@@ -33,25 +34,25 @@ function Ciclos() {
                             copiar y pegar varias veces este código usando el típico "CTRL+C" y "CTRL+V", es una solución lógica
                             y no está mal ya que aun estas aprendiendo, pero no es la mejor manera.
                         </Typography>
-                        <br/>
+                        <br />
                         <Typography variant="h6" component="p">
                             Duplicar el código de esa forma puede traer varios problemas consigo. El primero de estos problemas es
                             que los archivos fuente de tu código se harán innecesariamente grandes; en el caso de requerirse hacer
                             modificaciones en un futuro a tu código será muy complicado, muy tardado y muy cansado poder llevarlas
                             a cabo.
                         </Typography>
-                        <br/>
+                        <br />
                         <Typography variant="h6" component="p">
                             Pero no te preocupes {Usuario.User} para eso existen los llamados bucles o ciclos. Comencemos por lo
                             primero, la definición. Intenta aprenderla, ya que puede ser una pregunta de examen si estas cursando
                             esta materia en una escuela.
                         </Typography>
-                        <br/>
+                        <br />
                         <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
                             Definición: Un bucle o ciclo es una secuencia de instrucciones de código que se ejecuta repetidas veces,
                             hasta que la condición asignada a dicho bucle deja de cumplirse.
                         </Typography>
-                        <br/>
+                        <br />
                         <Typography variant="h6" component="p">
                             Muy bien {Usuario.User} ahora que ya conoces la definición hay que tener en cuenta unas recomendaciones
                             sobre los bucles, deben estar construidos de manera tal que se pueda tener control de la cantidad de
@@ -60,11 +61,19 @@ function Ciclos() {
                             de ejecución quedaría estancado en el ciclo, sobrecargando de tareas al procesador de la máquina que ejecuta
                             el programa.
                         </Typography>
-                        <br/>
+                        <br />
                         <Typography variant="h6" component="p">
-                            Excelente ahora ya sabes a nivel teórico cual es la función de los ciclos en la programación, en los siguientes 
+                            Excelente ahora ya sabes a nivel teórico cual es la función de los ciclos en la programación, en los siguientes
                             temas conocerás mas a fondo los ciclos for, while y doWhile a nivel teórico y a nivel practico en Java.
                         </Typography>
+                        <Grid container justifyContent="space-between" alignItems="center" sx={{paddingTop:3}}>
+                            <Grid item>
+                                Boton 1
+                            </Grid>
+                            <Grid item>
+                                <SiguienteTema/>
+                            </Grid>
+                        </Grid>
                     </Box>
                 </Grid>
             </Grid>

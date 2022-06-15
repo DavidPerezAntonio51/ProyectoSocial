@@ -17,12 +17,12 @@ function Rutas() {
             <Route path="/" element={Usuario.User===null?<Inicio/>:<Navigate to={"/temas"}/>}/>
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
                 <Route path="introduccion">
-                    <Route path="que-es-programar/:idTema/idSubtema"></Route>
-                    <Route path="programar-es-fácil/:idTema/idSubtema"></Route>
-                    <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/idSubtema"></Route>
-                    <Route path="como-funciona-un-codigo/:idTema/idSubtema"></Route>
-                    <Route path="instalacion-java/:idTema/idSubtema"></Route>
-                    <Route path="instalacion-netBeans/:idTema/idSubtema"></Route>
+                    <Route path="que-es-programar/:idTema/:idSubtema"></Route>
+                    <Route path="programar-es-fácil/:idTema/:idSubtema"></Route>
+                    <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/:idSubtema"></Route>
+                    <Route path="como-funciona-un-codigo/:idTema/:idSubtema"></Route>
+                    <Route path="instalacion-java/:idTema/:idSubtema"></Route>
+                    <Route path="instalacion-netBeans/:idTema/:idSubtema"></Route>
                 </Route>
 
                 <Route path="manejo-consola">
