@@ -26,8 +26,9 @@ const Item = styled(Paper)(({ theme }) => ({
 function Arreglo() {
     const Usuario = useContext(UserContext);
     return ( 
-        <>
-            <Container padding = "5">
+        
+            <Container padding = "5">    
+            <Container>
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
@@ -228,9 +229,9 @@ function Arreglo() {
                     </Grid>   
                 </Grid>
                             
-                        
-            </Container>
-        </>
+            </Container>          
+        </Container>
+        
      );
 }
 
