@@ -1,13 +1,22 @@
 import * as React from 'react';
+import { useContext } from "react";
+import UserContext from "../../../Contextos/UserContext";
 import { Grid, List, ListItem, Typography} from "@mui/material";
 import { Box, Container } from "@mui/system";
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Super1 from '../../../assets/img/ImgListaSuper1.jpg';
+import Super2 from '../../../assets/img/imgListaSuper2.png';
+import Super3 from '../../../assets/img/imgListaSuper3.jpg';
+import Super4 from '../../../assets/img/imgListaSuper4.jpg';
+import Super5 from '../../../assets/img/imgListaSuper5.jpg';
+//import arre1 from '../../../assets/img/imgListaSuper2.jpg';
+//import arre2 from '../../../assets/img/imgListaSuper2.jpg';
 
 
 function Arreglo() {
+    const Usuario = useContext(UserContext);
     return ( 
         <>
             <Container>
@@ -16,6 +25,7 @@ function Arreglo() {
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
                             color: "black",
+                            padding : 7
                         }}>
                             <Typography variant = "h4" component = "h2" sx={{ textAlign : "center" }}>
                                 ¿QUE ES UN ARREGLO?
@@ -46,7 +56,7 @@ function Arreglo() {
                                 <List>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src={Super1} />
+                                            <Avatar alt="Remy Sharp" src = {Super1} />
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 1.- Sopa spaguetti"
@@ -54,7 +64,7 @@ function Arreglo() {
                                     </ListItem>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src="../assets/imgListaSuper2" />
+                                            <Avatar alt="Remy Sharp" src = {Super2} />
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 2.- Leche"
@@ -62,7 +72,7 @@ function Arreglo() {
                                     </ListItem>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src="../assets/imgListaSuper3" />
+                                            <Avatar alt="Remy Sharp" src = {Super3} />
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 3.- Galletas"
@@ -70,7 +80,7 @@ function Arreglo() {
                                     </ListItem>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src="../assets/imgListaSuper4" />
+                                            <Avatar alt="Remy Sharp" src = {Super4}/>
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 4.- Jabon para la ropa"
@@ -78,7 +88,7 @@ function Arreglo() {
                                     </ListItem>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar alt="Remy Sharp" src="../assets/imgListaSuper5" />
+                                            <Avatar alt="Remy Sharp" src = {Super5} />
                                         </ListItemAvatar>
                                         <ListItemText
                                         primary=" 5.- Papel aluminio"
@@ -125,7 +135,7 @@ function Arreglo() {
                             <br/>
 
                             <Typography variant = "h5" component = "h3">
-                                Despues de todo lo visto ha llegado el momento para que pruebes todo lo que has aprendido en esta lección,
+                                Despues de todo lo visto ha llegado el momento para que tu {Usuario.user} pruebes todo lo que has aprendido en esta lección,
                                 recuerda que tendras a la mano las respuestas por si tienes alguna duda pero intenta hacerlos por tu cuenta para 
                                 que aprendas. <br/>
                                 ¡EXITO!
