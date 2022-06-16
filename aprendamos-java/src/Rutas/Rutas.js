@@ -38,7 +38,7 @@ function Rutas() {
                 </Route>
 
                 <Route path="condicionales">
-                    <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf />}></Route>
+                    <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf objeto={Usuario.User} />}></Route>
                     <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse objeto = {Usuario.User} />}></Route>
                     <Route path="sentencia-if-else/:idTema/:idSubtema"></Route>
                     <Route path="sentencia-switch/:idTema/:idSubtema"></Route>
