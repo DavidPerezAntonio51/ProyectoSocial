@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { useContext } from "react";
-import { styled } from '@mui/material/styles';
+import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
+import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import UserContext from "../../../Contextos/UserContext";
-import { Grid, List, ListItem, Typography, Card, CardContent, CardMedia, Paper, TextField } from "@mui/material";
-import { Box, Container, textAlign } from "@mui/system";
+import { Grid, List, ListItem, Typography} from "@mui/material";
+import { Box, Container} from "@mui/system";
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -16,15 +17,8 @@ import arre1 from '../../../assets/img/imgArreglos1.jpg';
 import arre2 from '../../../assets/img/imgArreglos2.jpg';
 import ArreglosInicial from './ArreglosInicial';
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
 
-function Arreglo(props) {
+function Arreglo() {
     const Usuario = useContext(UserContext);
     return ( 
         <Container padding = "5" sx={{ paddingY: 6 }}>    
@@ -35,7 +29,7 @@ function Arreglo(props) {
                         color: "black",
                         padding : 7
                     }}>
-                        <ArreglosInicial nombreUser ={props.objeto}></ArreglosInicial>
+                        <ArreglosInicial nombreUser ={Usuario.User}></ArreglosInicial>
                         <br/>
                         <Typography variant = "h4" component = "h2" sx={{textAlign:"center", paddingBottom:2, paddingTop:0.5}}>
                             ¿QUE ES UN ARREGLO?
@@ -194,6 +188,7 @@ function Arreglo(props) {
                                     </Typography>
                                 </Box>
                             </Grid>
+
                 <Grid item sx={{ minWidth: "100%" }}>
                     <Box sx={{
                         backgroundColor: 'boticelli.main',
@@ -225,49 +220,139 @@ function Arreglo(props) {
                                     </Typography>
                                 </Box>
                             </Grid>
-                
-                <Grid container>
-                    <Grid item sx={{ minWidth: "100%" }}>
-                        <Box sx={{
-                            backgroundColor: 'boticelli.main',
-                            color: "black",
-                            padding : 7
-                        }}>
-                            <Typography variant = "h5" component = "h3">
-                                <b></b>
-                            </Typography>
-                        </Box>
-                    </Grid>   
-                </Grid>
-
 
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
                             color: "black",
-                            padding : 7
+                            paddingX : 7,
+                            paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
-                            <b>¿Como modificar los valores de un indice en particular?</b>
+                            <b>¿Como modificar los valores de un indice en particular?</b><br/>
+                            Retomando el ejemplo anterior usameos el arreglo que inicializamos con 10 números enteros
                             </Typography>
                         </Box>
                     </Grid>   
                 </Grid>
+
+                <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
+                                <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                                    <Typography variant="subtitle" component="pre" alignSelf={"center"}>
+                            {`public class Main{
+    public static void main(String[] args){
+        //Declaracion e inicializacion de un arreglo con 10 numeros
+        int [] arregloEnteros = {1,2,3,4,5,6,7,8,9,0};
+        
+        //imprimimos el valor de la posicion 0 del arreglo
+        System.out.println("El valor del indice 0 del arreglo es: "+arregloEnteros[0]);
+        
+        /*Asignamos a la posicion 0 del arreglo que contiene inicialmente
+        un 1 el numero 5*/
+        arregloEnteros[0] = 5;
+        
+        //imprimimos el valor de la posicion 0 del arreglo despues del cambio
+        System.out.println("El nuevo valor del indice 0 del arreglo es: "+arregloEnteros[0]);
+        
+        
+        //Tambien podemos asignarle el valor de una variable
+        
+        //Declaramos e inicializamos una numero entero
+        int nuevoNumero = 10;
+        
+        //imprimimos el valor de la posicion 5 del arreglo
+        System.out.println("El valor del indice 5 del arreglo es: "+arregloEnteros[5]);
+        
+        /*Asignamos a la posicion 5 del arreglo que contiene inicialmente
+        un 6 el valor de la variable nuevoNumero que es 10*/
+        arregloEnteros[5] = 10;
+        
+        //imprimimos el valor de la posicion 5 del arreglo despues del cambio
+        System.out.println("El nuevo valor del indice 5 del arreglo es: "+arregloEnteros[5]);
+    }
+}`}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+
+                    <Grid container>
+                        <Grid item sx={{ minWidth: "100%" }}>
+                            <Box sx={{
+                                backgroundColor: 'boticelli.main',
+                                color: "black",
+                                paddingX : 7,
+                                paddingY : 2
+                            }}>
+                                <Typography variant = "h5" component = "h3">
+                                Resultado en la consola: 
+                                </Typography>
+                            </Box>
+                        </Grid>   
+                    </Grid>
 
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
                             color: "black",
-                            padding : 7
+                            paddingX : 7,
+                            paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
-                                <b>¿Como se imprime un arreglo?</b>
+                                <b>¿Como se imprime un arreglo?</b><br/>
+                                Para imprimir un arreglo tenemos que hacer uso del ciclo for ya que no seria conveniente hacerlo con 
+                                10 System.out.println como en el ejemplo anterior porque esto representaria un problema cuando tuvieramos arreglos
+                                muy grandes, imagina un arreglo de 10,000 numeros, nunca acabariamos de escribir 10,000 System.out.println pero el ciclo
+                                for nos facilita esto, ya veras como: 
                             </Typography>
                         </Box>
                     </Grid>   
                 </Grid>
+
+                <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
+                                <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                                    <Typography variant="subtitle" component="pre" alignSelf={"center"}>
+                            {`public class Main{
+    public static void main(String[] args){
+        //Declaracion e inicializacion de un arreglo con 10 numeros
+        int [] arregloEnteros = {1,2,3,4,5,6,7,8,9,0};
+        
+        /*Creamos un ciclo for que inicie en 0 y termine en 9
+          Asi recorremos las 10 posiciones de nuestro arreglo
+          Para acceder a la longitud de nuestro arreglo sin tener que contar 
+          cuantos elementos tiene dentro usamos el metodo length, que
+          devuelve la longitud de nuestro arreglo, en este caso es 10, por ello
+          para que vaya de 0 a 9 ponemos el menor que*/
+        for(int i = 0; i < arregloEnteros.length; i++){
+            /*Podemos un System.out.println dentro del for para que este
+            se muestre en la consola el mismo numero de veces que se itera el for*/
+            System.out.println("El indice "+i+"del arreglo es el numero: "+arregloEnteros[i]);
+            /*Por ultimo y como vemos en la linea de arriba, imprimimos a i que funcionara
+            como nuestro indice del arreglo e imprimimos lo que hay en el arreglo en ese indice
+            ves que i inicia en 0, pues se imprime el contador de indice 0 y el elemento 0
+            del arreglo y asi sucesivamente*/
+        
+        
+}`}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+
+                    <Grid container>
+                        <Grid item sx={{ minWidth: "100%" }}>
+                            <Box sx={{
+                                backgroundColor: 'boticelli.main',
+                                color: "black",
+                                paddingX : 7,
+                                paddingY : 2
+                            }}>
+                                <Typography variant = "h5" component = "h3">
+                                Resultado en la consola: 
+                                </Typography>
+                            </Box>
+                        </Grid>   
+                    </Grid>
 
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
@@ -326,12 +411,20 @@ function Arreglo(props) {
                             "Hola mi amigo numero 1 es 'NOMBRE DE TU AMIGO' y su edad es: 'EDAD DE TU AMIGO'"
                             Asi hasta listar a tus 5 amigos del 1 al 5.
                         </Typography>
-                        <br/>
+                        
+                        <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
+                            <Grid item sx={{ paddingY:2}}>
+                                <VolverAlMenu />
+                            </Grid>
+                            <Grid item sx={{ paddingY:2}}>
+                                <SiguienteTema />
+                            </Grid>
+                        </Grid>
+
                     </Box>
                 </Grid>   
             </Grid>          
         </Container>
-        
     );
 }
 
