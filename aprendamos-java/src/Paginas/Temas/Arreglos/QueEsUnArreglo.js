@@ -14,6 +14,7 @@ import Super4 from '../../../assets/img/imgListaSuper4.jpg';
 import Super5 from '../../../assets/img/imgListaSuper5.jpg';
 import arre1 from '../../../assets/img/imgArreglos1.jpg';
 import arre2 from '../../../assets/img/imgArreglos2.jpg';
+import ArreglosInicial from './ArreglosInicial';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
-function Arreglo() {
+function Arreglo(props) {
     const Usuario = useContext(UserContext);
     return ( 
         <Container padding = "5" sx={{ paddingY: 6 }}>    
@@ -34,14 +35,15 @@ function Arreglo() {
                         color: "black",
                         padding : 7
                     }}>
-                        <Typography variant = "h4" component = "h2" sx={{ textAlign : "center" }}>
+                        <ArreglosInicial nombreUser ={props.objeto}></ArreglosInicial>
+                        <br/>
+                        <Typography variant = "h4" component = "h2" sx={{textAlign:"center", paddingBottom:2, paddingTop:0.5}}>
                             ¿QUE ES UN ARREGLO?
                         </Typography>
                         <br/>
                         <Typography variant = "h5" component = "h3">
                             <b>Introducción teórica</b>
                         </Typography>
-                        <br/>
                         <Typography variant = "h5" component = "h3">
                             En términos técnicos un arreglo o tambien llamado vector es una colección ordenada
                             de datos y estos datos como vimos en lecciones anteriores
@@ -150,35 +152,79 @@ function Arreglo() {
                     </Grid>
                 </Grid>
                 
+                <Grid item sx={{ minWidth: "100%" }}>
+                    <Box sx={{
+                        backgroundColor: 'boticelli.main',
+                        color: "black",
+                        paddingX : 7,
+                        paddingY : 2
+                    }}>
+                        <Typography variant = "h5" component = "h3" sx={{textAlign:"center"}}>
+                            <b>Ejemplos con JAVA</b><br/>
+                        </Typography>
+                        <Typography  variant = "h5" component = "h3">
+                            <b>¿Como se declara un arreglo?</b><br/>
+                            La sintaxis para declarar un arreglo es la siguiente:<br/><br/>
+                            tipo_de_dato nombre_del_arreglo[];<br/>
+                            nombre_del_arreglo = new tipo_de_dato[tamaño];<br/>
+                            <br/>
+                            A continuación se muestra el codigo en java para declarar arreglos: 
+                        </Typography>
+                    </Box>
+                </Grid>   
+                
+                <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
+                                <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                                    <Typography variant="subtitle" component="pre" alignSelf={"center"}>
+                            {`public class Main{
+    public static void main(String[] args){
+        //Declaracion de arreglo de 10 numeros enteros
+        int arregloEnteros[]; //Declaracion del arreglo con su tipo de dato
+        arregloEnteros = new int[10]; //Asignacion de tamaño
 
-                <Grid container>
-                    <Grid item sx={{ minWidth: "100%" }}>
-                        <Box sx={{
-                            backgroundColor: 'boticelli.main',
-                            color: "black",
-                            padding : 7
-                        }}>
-                            <Typography variant = "h5" component = "h3">
-                                <b>Ejemplos con JAVA</b><br/>
-                                <b>¿Como se declara un arreglo?</b>
-                                <Grid item sx={{ p : 0 }}>
-                                    <Box sx = { { width : "100%", height : "40%", backgroundColor : "#111111", color : "#e1e7f2", p : 1}}>
-                                        <div>
-                                            <TextField
-                                            id="outlined-read-only-input"
-                                            label=""
-                                            defaultValue="Hello World"
-                                            InputProps={{
-                                                readOnly: true,
-                                            }}
-                                            />
-                                        </div>
-                                    </Box>
-                                </Grid>
-                            </Typography>
-                        </Box>
-                    </Grid>   
-                </Grid>
+        //Declaracion de arreglo de 10 caracteres
+        char arregloCaracteres[];
+        arregloCaracteres = new char[10];
+
+        //Declaracion de arreglo de 3 cadenas
+        String arregloCadenas[];
+        arregloCadenas = new String[3];
+    }
+}`}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                <Grid item sx={{ minWidth: "100%" }}>
+                    <Box sx={{
+                        backgroundColor: 'boticelli.main',
+                        color: "black",
+                        paddingX : 7,
+                        paddingY : 2
+                    }}>
+                        <Typography  variant = "h5" component = "h3">
+                        Si quisieramos asignar valores iniciales a los arreglos tenemos que hacerlo desde la declaración
+                        como se muestra a continuación: 
+                        </Typography>
+                    </Box>
+                </Grid> 
+
+                <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
+                                <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                                    <Typography variant="subtitle" component="pre" alignSelf={"center"}>
+                            {`public class Main{
+    public static void main(String[] args){
+        //Declaracion e inicializacion de un arreglo con 10 numeros
+        //Comienza por el tipo de dato que almacenara el arreglo
+        //Segido de los corchetes caracteristicos de un arreglo
+        //Despues el nombre que le queremos poner a nuestro arreglo
+        //Se iguala a una lista de numeros entre llaves y separados por comillas
+        //Cada numero forma un indice de arreglo
+        int [] arregloEnteros = {1,2,3,4,5,6,7,8,9,0};
+    }
+}`}
+                                    </Typography>
+                                </Box>
+                            </Grid>
                 
                 <Grid container>
                     <Grid item sx={{ minWidth: "100%" }}>
@@ -230,7 +276,7 @@ function Arreglo() {
                             color: "black",
                             padding : 7
                         }}>
-                            <Typography variant = "h5" component = "h3">
+                            <Typography variant="h4" component="h2" sx={{textAlign:'center'}}>
                                 <b>Ejercicios propuestos</b>
                             </Typography>
                             <br/>
@@ -244,7 +290,7 @@ function Arreglo() {
 
                             <Typography variant = "h5" component = "h3">
                                 Ejercicio 1. <br/>
-                                Declara 3 arreglos
+                                Declara 3 arreglos con las siguientes caracteristicas: 
                                 <ul>
                                     <li> Un arreglo de 10 numeros enteros </li>
                                     <li> Un arreglo de las primeras 10 letras del alfabeto </li>
