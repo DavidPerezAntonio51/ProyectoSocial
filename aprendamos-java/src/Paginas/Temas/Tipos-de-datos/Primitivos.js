@@ -98,7 +98,7 @@ export default function Primitivos() {
                         <br />
                         <Typography variant="h6" component="p" >
                             <List
-                            sx={{ width: '100%', maxWidth: '30vw', border: 1, borderColor: 'primary.main', borderRadius: 2, p: 2, textAlign: 'justify'  }}
+                            sx={{ width: '100%', maxWidth: '70vw', border: 1, borderColor: 'primary.main', borderRadius: 2, p: 2, textAlign: 'justify'  }}
                             component="nav"
                             aria-labelledby="nested-list-subheader"
                             subheader={
