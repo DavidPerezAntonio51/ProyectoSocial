@@ -13,6 +13,9 @@ import InstalaNetBeans from "../Paginas/Temas/Introduccion/InstalarNetBeans";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
 import CondicionalElse from "../Paginas/Temas/Condicionales/CondicionalElse";
 import CicloFor from "../Paginas/Temas/Ciclos/CicloFor";
+import Primitivos from "../Paginas/Temas/Tipos-de-datos/Primitivos";
+import ManejoDT from "../Paginas/Temas/Tipos-de-datos/ManejoDT";
+import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -35,9 +38,9 @@ function Rutas() {
                 </Route>
 
                 <Route path="tipos-de-datos">
-                    <Route path="primitivos/:idTema/:idSubtema"></Route>
-                    <Route path="manejo-tipos-datos/:idTema/:idSubtema"></Route>
-                    <Route path="operacion-datos-primitivos/:idTema/:idSubtema"></Route>
+                    <Route path="primitivos/:idTema/:idSubtema" element={<Primitivos/>}/>
+                    <Route path="manejo-tipos-datos/:idTema/:idSubtema" element={<ManejoDT/>}/>
+                    <Route path="operacion-datos-primitivos/:idTema/:idSubtema" element={<Operaciones/>} />
                 </Route>
 
                 <Route path="condicionales">

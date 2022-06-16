@@ -33,10 +33,10 @@ function ListaTemas() {
                 aria-controls={"panel" + index + "bh-content"}
                 id={"panel" + index + "bh-header"}
               >
-                <Typography sx={{ flexGrow: 1, flexShrink: 0, color: "text.secondary" }}>
+                <Typography sx={{ flexGrow: 1, flexShrink: 0, color: "aliceblue" }}>
                   {data.Tema}
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>{data.Progreso+"/" + data.Subtemas.length}</Typography>
+                <Typography sx={{ color: 'aliceblue' }}>{data.Progreso+"/" + data.Subtemas.length}</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{bgcolor:"bondiBlue.main"}}>
                 <ListaSubtemas indexTema={index}/>

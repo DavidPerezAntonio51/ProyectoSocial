@@ -16,7 +16,7 @@ function Bienvenida() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
-                            Hola {Usuario.User} bienvenido a Aprendamos Java
+                            Hola, {Usuario.User}, bienvenido a Aprendamos Java
                         </Typography>
                     </Grid>
                 </Box>
