@@ -197,7 +197,7 @@ export default function Primitivos() {
                                     <ListItemIcon>
                                     <DoubleArrowIcon />
                                     </ListItemIcon>
-                                    <ListItemText primary="Boolean" />
+                                    <ListItemText primary="boolean" />
                                     {open7 ? <ExpandLess /> : <ExpandMore />}
                                 </ListItemButton>
                                 <Collapse in={open7} timeout="auto" unmountOnExit>
