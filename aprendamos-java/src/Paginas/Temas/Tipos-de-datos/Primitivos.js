@@ -90,7 +90,6 @@ export default function Primitivos() {
                         paddingY: 5,                        
                         borderRadius: 2
                     }}>
-                    
                         <Typography 
                             sx={{fontSize: "1.2rem", textAlign: "justify"  }}
                             variant="h6" component="p">
