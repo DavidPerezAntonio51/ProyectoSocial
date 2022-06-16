@@ -5,6 +5,11 @@ import { Grid, Typography } from "@mui/material";
 import { Box, Container} from "@mui/system";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import ArreglosInicial from './ArreglosInicial';
+import consola3 from '../../../assets/img/imgConsola3.PNG';
+import consola4 from '../../../assets/img/imgConsola4.PNG';
+import consola5 from '../../../assets/img/imgConsola5.PNG';
+
+
 function ManejoArray() {
     const Usuario = useContext(UserContext);
     return ( 
@@ -114,6 +119,9 @@ function ManejoArray() {
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola3} height = "200" width = "550"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -179,6 +187,9 @@ function ManejoArray() {
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola4} height = "250" width = "650"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -252,6 +263,9 @@ function ManejoArray() {
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola5} height = "600" width = "830"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -262,7 +276,8 @@ function ManejoArray() {
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
                             color: "regalBlue.main",
-                            padding : 7
+                            paddingX : 7,
+                            paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
                                 <b>Ejercicios propuestos</b>

@@ -16,6 +16,8 @@ import Super5 from '../../../assets/img/imgListaSuper5.jpg';
 import arre1 from '../../../assets/img/imgArreglos1.jpg';
 import arre2 from '../../../assets/img/imgArreglos2.jpg';
 import ArreglosInicial from './ArreglosInicial';
+import consola1 from '../../../assets/img/imgConsola1.PNG';
+import consola2 from '../../../assets/img/imgConsola2.PNG';
 
 
 function Arreglo() {
@@ -286,6 +288,9 @@ function Arreglo() {
                             }}>
                                 <Typography variant = "h5" component = "h3">
                                 Resultado en la consola: 
+                                <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola1} height = "200" width = "550"/>
+                                </Grid>
                                 </Typography>
                             </Box>
                         </Grid>   
@@ -349,6 +354,9 @@ function Arreglo() {
                             }}>
                                 <Typography variant = "h5" component = "h3">
                                 Resultado en la consola: 
+                                <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola2} height = "400" width = "550"/>
+                                </Grid>
                                 </Typography>
                             </Box>
                         </Grid>   
