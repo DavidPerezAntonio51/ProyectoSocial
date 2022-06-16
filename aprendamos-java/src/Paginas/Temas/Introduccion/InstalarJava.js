@@ -29,7 +29,7 @@ function InstalarJava() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center" }}>
-                            øCÛmo podemos instalar Java?
+                            ¬øC√≥mo podemos instalar Java?
                         </Typography>
                     </Grid>
                 </Box>
@@ -42,58 +42,58 @@ function InstalarJava() {
                         paddingY: 5,
                     }}>
                         <Typography variant="body1" component="p">
-                            Muy bien {Usuario.User}, una vez que hemos visto lo que es un codigo y cÛmo es que funciona, ya podemos empezar la parte interesante,
+                            Muy bien {Usuario.User}, una vez que hemos visto lo que es un codigo y c√≥mo es que funciona, ya podemos empezar la parte interesante,
                             que es el proceso de programar, pero antes tenemos que realizar algunas configuraciones, empezando por descargar e instalar el software de Java.
                         </Typography>
-                        <br></br>   
+                        <br></br>
                         <Typography variant="h5" component="p">
                             JAVA JDK 17
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            Lo primero que debemos hacer acceder a la p·gina de <a href='https://www.oracle.com/java/technologies/downloads/' target='_blank'> descargas</a> oficial de Oracle,
-                            ahÌ se nos proveer·n diversas opciones para poder descargar el Kit de Desarrollo Est·ndar (JDK) de Java, este Kit es necesario ya que, sin Èl,
-                            no podremos compilar ning˙n programa en dicho
-                            lenguaje, adem·s sus componentes son necesarios para el IDE NetBeans, el cual explicaremos en la siguiente secciÛn.
+                            Lo primero que debemos hacer acceder a la p√°gina de <a href='https://www.oracle.com/java/technologies/downloads/' target='_blank'> descargas</a> oficial de Oracle,
+                            ah√≠ se nos proveer√°n diversas opciones para poder descargar el Kit de Desarrollo Est√°ndar (JDK) de Java, este Kit es necesario ya que, sin √©l,
+                            no podremos compilar ning√∫n programa en dicho
+                            lenguaje, adem√°s sus componentes son necesarios para el IDE NetBeans, el cual explicaremos en la siguiente secci√≥n.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img1} height="400" width="800" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Como podemos ver en la imagen tenemos diversas opciones y versiones de JDK para instalar, nuestra recomendaciÛn es descargar la ˙ltima versiÛn de Java 17,
-                            ya que es la que cuenta con m·s compatibilidad, y en general es m·s estable.
+                            Como podemos ver en la imagen tenemos diversas opciones y versiones de JDK para instalar, nuestra recomendaci√≥n es descargar la √∫ltima versi√≥n de Java 17,
+                            ya que es la que cuenta con m√°s compatibilidad, y en general es m√°s estable.
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            Dependiendo de tu sistema operativo, ser· la versiÛn que tengas que descargar, para este pequeÒo tutorial nos enfocaremos en la versiÛn de Windows utilizando
+                            Dependiendo de tu sistema operativo, ser√° la versi√≥n que tengas que descargar, para este peque√±o tutorial nos enfocaremos en la versi√≥n de Windows utilizando
                             un archivo ejecutable de tipo EXE.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img2} height="400" width="800" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Una vez descargado el ejecutable, procederemos a realizar la instalaciÛn, que es muy sencilla, simplemente sigue las instrucciones que se muestran en la ventana.
+                            Una vez descargado el ejecutable, procederemos a realizar la instalaci√≥n, que es muy sencilla, simplemente sigue las instrucciones que se muestran en la ventana.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img4} height="400" width="550" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Un punto importante es que verifiques donde vas a instalar JDK, ya que vas a necesitar conocer dicha ubicaciÛn para un paso posterior, en nuestro caso la dejaremos por
+                            Un punto importante es que verifiques donde vas a instalar JDK, ya que vas a necesitar conocer dicha ubicaci√≥n para un paso posterior, en nuestro caso la dejaremos por
                             defecto dentro de la carpeta de archivos de programa.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img5} height="400" width="550" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Entonces ahora dejamos que el instalador continue su proceso, cuando haya finalizado tendremos una opciÛn para poder ver la documentaciÛn de JDK (Next Steps),
-                            que de igual forma puedes acceder haciendo clic <a href='https://docs.oracle.com/en/java/javase/17/index.html' target='_blank'> aquÌ</a>, nunca st· de m·s revisar
-                            documentaciÛn oficial de Oracle.
+                            Entonces ahora dejamos que el instalador continue su proceso, cuando haya finalizado tendremos una opci√≥n para poder ver la documentaci√≥n de JDK (Next Steps),
+                            que de igual forma puedes acceder haciendo clic <a href='https://docs.oracle.com/en/java/javase/17/index.html' target='_blank'> aqu√≠</a>, nunca st√° de m√°s revisar
+                            documentaci√≥n oficial de Oracle.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img6} height="400" width="550" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            °Y listo {Usuario.User}! Ya tienes instalado el Kit de desarrollo de Java en tu computadora, ahora solo necesitas asignar las variables de entorno y estar·s un paso m·s cerca de poder
+                            ¬°Y listo {Usuario.User}! Ya tienes instalado el Kit de desarrollo de Java en tu computadora, ahora solo necesitas asignar las variables de entorno y estar√°s un paso m√°s cerca de poder
                             crear tu primer programa en este lenguaje.
                         </Typography>
                         <br></br>
@@ -102,24 +102,24 @@ function InstalarJava() {
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            Si ahora tuvieras un pequeÒo programa en lenguaje Java y quisieras probarlo en la consola, lo m·s probable es que te encuentres con un error indic·ndote que el comando para compilarlo es invalido,
+                            Si ahora tuvieras un peque√±o programa en lenguaje Java y quisieras probarlo en la consola, lo m√°s probable es que te encuentres con un error indic√°ndote que el comando para compilarlo es invalido,
                             esto se debe a que Java por defecto no configura sus variables de entorno en tu computadora.
                         </Typography>
                         <Typography variant="body1" component="p">
-                            Si quieres comprobar esto, basta con hacer una simple comprobaciÛn con el sÌmbolo del sistema, ·brelo y escribe el comando ìjavac -versionî, notar·s que Windows no reconoce dicho comando que forma
+                            Si quieres comprobar esto, basta con hacer una simple comprobaci√≥n con el s√≠mbolo del sistema, √°brelo y escribe el comando ‚Äújavac -version‚Äù, notar√°s que Windows no reconoce dicho comando que forma
                             parte de JDK, vamos a solucionar esto.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img3} height="350" width="550" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Pero antes de continuar, øTe estar·s preguntando quÈ es una variable de entorno?
+                            Pero antes de continuar, ¬øTe estar√°s preguntando qu√© es una variable de entorno?
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            En palabras simples, una variable de entorno es un valor din·mico cargado en la memoria, que puede ser utilizado por varios procesos que funcionan simult·neamente, en muchos casos durante la carrera, vas a ver la necesidad
-                            de utilizarlos al momento de utilizar un nuevo lenguaje de programaciÛn en tu computadora, m·s especÌficamente, utilizar·s la variable PATH, que especifica la ruta de acceso a los archivos ejecutables m·s
-                            importantes del sistema, que en este manual ser·n los archivos ejecutables de Java.
+                            En palabras simples, una variable de entorno es un valor din√°mico cargado en la memoria, que puede ser utilizado por varios procesos que funcionan simult√°neamente, en muchos casos durante la carrera, vas a ver la necesidad
+                            de utilizarlos al momento de utilizar un nuevo lenguaje de programaci√≥n en tu computadora, m√°s espec√≠ficamente, utilizar√°s la variable PATH, que especifica la ruta de acceso a los archivos ejecutables m√°s
+                            importantes del sistema, que en este manual ser√°n los archivos ejecutables de Java.
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
@@ -127,44 +127,44 @@ function InstalarJava() {
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            øRecuerdas que m·s arriba mencionamos que guardaras la ubicaciÛn de tu instalaciÛn de JDK?, bien ahora necesitaras ir a dicha direcciÛn y buscar una carpeta especifica, la carpeta ì\binî, si tu instalaciÛn fue correcta,
-                            no deberÌas tener ning˙n problema encontr·ndola, abre esta carpeta y ahora simplemente basta con que des clic en la barra de b˙squeda superior para que aparezca su ruta especifica, cÛpiala, ya que la necesitaremos para agregarla al PATH.
+                            ¬øRecuerdas que m√°s arriba mencionamos que guardaras la ubicaci√≥n de tu instalaci√≥n de JDK?, bien ahora necesitaras ir a dicha direcci√≥n y buscar una carpeta especifica, la carpeta ‚Äú\bin‚Äù, si tu instalaci√≥n fue correcta,
+                            no deber√≠as tener ning√∫n problema encontr√°ndola, abre esta carpeta y ahora simplemente basta con que des clic en la barra de b√∫squeda superior para que aparezca su ruta especifica, c√≥piala, ya que la necesitaremos para agregarla al PATH.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img11} height="200" width="650" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Para acceder a la lista de variables de entorno, basta con que escribas la palabra variables en la barra de b˙squeda de Windows, selecciona la opciÛn ìEditar las variables de entorno del sistemaî, se abrir· una pequeÒa ventana de propiedades,
-                            y casi en la esquina inferior derecha estar· el botÛn de variables de entorno, has clic en Èl.
+                            Para acceder a la lista de variables de entorno, basta con que escribas la palabra variables en la barra de b√∫squeda de Windows, selecciona la opci√≥n ‚ÄúEditar las variables de entorno del sistema‚Äù, se abrir√° una peque√±a ventana de propiedades,
+                            y casi en la esquina inferior derecha estar√° el bot√≥n de variables de entorno, has clic en √©l.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img7} width="500" height="250" />
-                            
+
                             <img src={img8} height="350" width="300" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             En esta nueva ventana veras dos tipos de variables de entorno, las variables de usuario, y las variables de sistema, para que estas variables puedan ser utilizadas por cualquier usuario del equipo sin tener que estar
-                            configur·ndolas cada que se quieran utilizar, utilizaremos las del sistema, y buscamos la secciÛn de ìPathî, la seleccionamos y damos clic en editar.
+                            configur√°ndolas cada que se quieran utilizar, utilizaremos las del sistema, y buscamos la secci√≥n de ‚ÄúPath‚Äù, la seleccionamos y damos clic en editar.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img9} height="350" width="300" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Se nos abre una nueva ventana con las variables de entorno del PATH ya existentes, damos clic en el botÛn nuevo y pegamos la direcciÛn que se copiÛ previamente en los pasos anteriores, aquella que termina en ì/binî,
-                            despuÈs damos clic en aceptar en todas las ventanas, y listo ya tenemos la variable de entorno de Java configurada.
+                            Se nos abre una nueva ventana con las variables de entorno del PATH ya existentes, damos clic en el bot√≥n nuevo y pegamos la direcci√≥n que se copi√≥ previamente en los pasos anteriores, aquella que termina en ‚Äú/bin‚Äù,
+                            despu√©s damos clic en aceptar en todas las ventanas, y listo ya tenemos la variable de entorno de Java configurada.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img12} height="350" width="300" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Para probar que todo funciona, simplemente abrimos otra ventana del sÌmbolo del sistema y nuevamente escribimos el comando ìjavac -versionî, si todo funcionÛ, nos deberÌa indicar la versiÛn de JDK que instalamos.
+                            Para probar que todo funciona, simplemente abrimos otra ventana del s√≠mbolo del sistema y nuevamente escribimos el comando ‚Äújavac -version‚Äù, si todo funcion√≥, nos deber√≠a indicar la versi√≥n de JDK que instalamos.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
                             <img src={img13} height="350" width="550" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            °Y ya est· {Usuario.User}! ya tenemos instalado y configurado Java, si tenemos alg˙n cÛdigo sencillo podemos probarlo sin inconvenientes desde el sÌmbolo del sistema,  o bien si utilizamos alg˙n IDE como NetBeans, podremos utilizarlo
-                            sin que nos marque alg˙n error, de hecho en la siguiente secciÛn hablaremos de cÛmo instalar y configurar dicho IDE.
+                            ¬°Y ya est√° {Usuario.User}! ya tenemos instalado y configurado Java, si tenemos alg√∫n c√≥digo sencillo podemos probarlo sin inconvenientes desde el s√≠mbolo del sistema,  o bien si utilizamos alg√∫n IDE como NetBeans, podremos utilizarlo
+                            sin que nos marque alg√∫n error, de hecho en la siguiente secci√≥n hablaremos de c√≥mo instalar y configurar dicho IDE.
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY: 2 }}>

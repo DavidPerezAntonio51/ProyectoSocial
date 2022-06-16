@@ -17,7 +17,7 @@ function InstalarNetBeans() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center" }}>
-                            緾髆o instalamos NetBeans?
+                            驴C贸mo instalamos NetBeans?
                         </Typography>
                     </Grid>
                 </Box>
@@ -36,13 +36,13 @@ function InstalarNetBeans() {
                         <br></br>
                         <Typography variant="body1" component="p">
                             NetBeans es un entorno de desarrollo integrado libre, hecho principalmente para el lenguaje de
-                            programaci髇 Java y cuenta con un n鷐ero importante de m骴ulos para extenderlo.
+                            programaci贸n Java y cuenta con un n煤mero importante de m贸dulos para extenderlo.
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            Se trata de un editor de c骴igo fuente, junto con recursos de construcci髇 autom醫icos y un depurador.
-                            Igualmente, brinda la funci髇 de autocompletado inteligente de c骴igo o IntelliSense. Y en el caso de la
-                            plataforma de Netbeans IDE, ofrece un compilador y un int閞prete.
+                            Se trata de un editor de c贸digo fuente, junto con recursos de construcci贸n autom谩ticos y un depurador.
+                            Igualmente, brinda la funci贸n de autocompletado inteligente de c贸digo o IntelliSense. Y en el caso de la
+                            plataforma de Netbeans IDE, ofrece un compilador y un int茅rprete.
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">

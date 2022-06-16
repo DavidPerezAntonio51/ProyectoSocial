@@ -17,7 +17,7 @@ function ComoFuncionaCodigo() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center" }}>
-                            ¿Cómo podemos programar con Java?
+                            Â¿CÃ³mo podemos programar con Java?
                         </Typography>
                     </Grid>
                 </Box>
@@ -30,8 +30,8 @@ function ComoFuncionaCodigo() {
                         paddingY: 5,
                     }}>
                         <Typography variant="body1" component="p">
-                            Ahora que ya explicamos como lo que es el pseudocódigo y los diagramas de flujo, vamos a revisar de manera
-                            más formal el codigo y cómo es que funciona.
+                            Ahora que ya explicamos como lo que es el pseudocÃ³digo y los diagramas de flujo, vamos a revisar de manera
+                            mÃ¡s formal el codigo y cÃ³mo es que funciona.
                         </Typography>
 
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
