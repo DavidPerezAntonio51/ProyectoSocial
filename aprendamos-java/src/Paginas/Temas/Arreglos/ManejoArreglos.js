@@ -12,7 +12,7 @@ function ManejoArray() {
             <Grid item sx={{ minWidth: "100%" }}>
                 <Box sx={{
                     backgroundColor: 'boticelli.main',
-                    color: "black",
+                    color: "regalBlue.main",
                     padding : 7
                 }}>
                     <ArreglosInicial nombreUser ={Usuario.User}></ArreglosInicial>
@@ -57,7 +57,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -74,7 +74,7 @@ function ManejoArray() {
                 </Grid>
 
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     public static void main(String[] args){
@@ -108,7 +108,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -123,7 +123,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -137,7 +137,7 @@ function ManejoArray() {
                 </Grid>
                 
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     //Declaramos e inicializamos un arreglo de 10 numeros
@@ -173,7 +173,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -188,7 +188,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -201,7 +201,7 @@ function ManejoArray() {
                     </Grid>   
                 </Grid>
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     public static void main(String[] args){
@@ -246,7 +246,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -261,7 +261,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             padding : 7
                         }}>
                             <Typography variant = "h5" component = "h3">
