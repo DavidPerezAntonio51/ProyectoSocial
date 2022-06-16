@@ -18,6 +18,9 @@ body{
   color: red;
 }
 
+.comentario{
+    color: var(--theme-color-morning-glory);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

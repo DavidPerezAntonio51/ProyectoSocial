@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { maxWidth } from "@mui/system";
 import { useContext } from "react";
 import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
@@ -6,6 +7,7 @@ import UserContext from "../../../Contextos/UserContext";
 
 function Ciclos() {
     const Usuario = useContext(UserContext);
+    const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return (
         <Container sx={{ paddingY: 6 }}>
             <Grid container>
@@ -16,7 +18,7 @@ function Ciclos() {
                     paddingTop: 5
                 }}>
                     <Grid item>
-                        <Typography variant="h3" sx={{ textAlign: "center"}}>
+                        <Typography variant="h3" sx={{ textAlign: "center" }}>
                             ¿Qué es un Ciclo en programación?
                         </Typography>
                     </Grid>
@@ -43,18 +45,44 @@ function Ciclos() {
                             a cabo. A continuación te mostraremos un ejemplo de lo que no se debe hacer
                         </Typography>
                         <br />
-                        <Typography variant="h6" component="p">
-                            Supongamos que te solicitamos un código que sume
+                        <Typography variant="h6" component="p" sx={{fontWeight: "bold"}}>
+                            Supongamos que te solicitamos un código que imprima tu nombre 600 veces
                         </Typography>
-                        <Grid container>
-                            <Grid item component="pre" >
-                                <Box sx={{ backgroundColor: "stratos.main", color: 'boticelli.main' }} >
-                                    <Typography variant="code" component="code" alignSelf={"center"} sx={{ overflowX: 'auto', display: 'block' }}>
-                                        
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                        </Grid>
+                        <Typography variant="h6" >
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main"}}>
+                                {"public class Main{"}
+                                <br/>
+                                {tab}{"public static void main(String[] args){"}
+                                <br/>
+                                {tab}{tab}{'String nombre = "'}{Usuario.User}{'";'}
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 1 vez el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 2 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 4 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 5 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 6 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 7 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 8 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 9 veces el nombre"}</span>
+                                <br/>
+                                {tab}{tab}{"System.out.println(nombre);"}<span className="comentario">{"// imprimimos 10 veces el nombre"}</span>
+                                <br/>
+                                {tab}{"}"}
+                                <br/>
+                                {"}"}
+                            </Box>
+                        </Typography>
+                        <br />
+                        <Typography variant="h6" component="p">
+                            Como puedes observar solo con haberlo hecho 10 veces el código a crecido bastante.
+                        </Typography>
                         <br />
                         <Typography variant="h6" component="p">
                             Pero no te preocupes {Usuario.User} para eso existen los llamados bucles o ciclos. Comencemos por lo
@@ -81,10 +109,10 @@ function Ciclos() {
                             temas conocerás mas a fondo los ciclos for, while y doWhile a nivel teórico y a nivel practico en Java.
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
-                            <Grid item sx={{ paddingY:2}}>
+                            <Grid item sx={{ paddingY: 2 }}>
                                 <VolverAlMenu />
                             </Grid>
-                            <Grid item sx={{ paddingY:2}}>
+                            <Grid item sx={{ paddingY: 2 }}>
                                 <SiguienteTema />
                             </Grid>
                         </Grid>
