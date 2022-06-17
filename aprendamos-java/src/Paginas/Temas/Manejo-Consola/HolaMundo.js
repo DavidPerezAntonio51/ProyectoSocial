@@ -19,7 +19,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import CodeIcon from '@mui/icons-material/Code';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
@@ -80,7 +80,7 @@ function HolaMundo(props){
                             >
                                  <ListItemButton onClick={handleClick1}>
                                     <ListItemIcon>
-                                    <DoubleArrowIcon />
+                                    <CodeIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Netbeans" />
                                     {open1 ? <ExpandLess /> : <ExpandMore />}
@@ -111,7 +111,7 @@ function HolaMundo(props){
                                 
                                 <ListItemButton onClick={handleClick2}>
                                     <ListItemIcon>
-                                    < DoubleArrowIcon />
+                                    < CodeIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="CMD" />
                                     {open2 ? <ExpandLess /> : <ExpandMore />}
