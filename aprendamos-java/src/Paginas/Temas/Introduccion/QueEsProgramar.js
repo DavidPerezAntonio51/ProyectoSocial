@@ -40,7 +40,7 @@ const QueEsProgramar = () => {
                         Hoy en día es muy común el utilizar aplicaciones con el fin de realizar tareas específicas como lo son: Netflix, para ver series y películas en cualquier momento; Facebook, nos permite establecer comunicación con diferentes personas entre algunas otras actividades; Indeed, que permite ver diferentes ofertas laborales, entre muchas otras. Es ahí donde esta la necesidad de hacer crecer la comunidad con este set de habilidades, ya que permitirá brindarles la capacidad para generar sus propias herramientas y asi facilir las actividades que podrían abarcar mucho tiempo en solo unos cuantos segundos con la ayuda de la tecnología, y es ahí donde entras tú {Usuario.User} con tu propósito de conocer más acerca de este mundo, y así, en un futuro puedas facilitar ciertas actividades o desarrolles alguna plataforma de utilidad para un cierto mercado. 
                     </Typography>
                     <center>
-                        <img src={require("../../../assets/img/programacion.png")}></img>
+                        <img src={require("../../../assets/img/programacion.png")}  alt="Imagen programación"></img>
                     </center>
                 </Box>
             </Grid>

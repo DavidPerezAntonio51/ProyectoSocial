@@ -37,7 +37,7 @@ const TuTambienPuedes = () => {
                         Puede que todo esto resulte abrumador, pero no te preocupes, programar no es una actividad que se aprende de la noche a la mañana, eso es super claro, pero si dedicas tiempo y dedicación, podrás convertirte en un programador con un gran set de conocimientos. ¡Tú puedes, {Usuario.User} no te rindas! 
                     </Typography>
                     <center>
-                        <img src={require("../../../assets/img/Success.png")}></img>
+                        <img src={require("../../../assets/img/Success.png")}  alt="Imagen motivacional"></img>
                     </center>
                     <Typography align="center" component="p" variant="body1">
                         "El exito es dependiente del esfuerzo"
