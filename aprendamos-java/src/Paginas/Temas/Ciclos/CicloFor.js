@@ -28,7 +28,7 @@ function CicloFor() {
                 </Box>
                 <Grid item container>
                     <Box sx={{
-                        paddingX: 7,
+                        paddingX: 5,
                         backgroundColor: "boticelli.main",
                         color: "regalBlue.main",
                         maxWidth: "100%",
@@ -205,16 +205,18 @@ function CicloFor() {
                                     <br/>
                                     {tab}{tab}{'int alto = 10'}
                                     <br/>
-                                    {tab}{tab}{"for(int i = 1; i<=alto; i++){"}<span className="comentario">//el primer </span>
+                                    {tab}{tab}{"for(int i = 1; i<=alto; i++){"}<span className="comentario">//el primer ciclo se ejecuta la cantidad marcada en la variable alto</span>
                                     <br/>
-                                    {tab}{tab}{tab}{"for(int j = 1; i<=ancho; i++){"}
+                                    {tab}{tab}{tab}{"for(int j = 1; i<=ancho; i++){"}<span className="comentario">//este ciclo se ejecuta a cantidad de veces del largo, y eso se repite por el alto</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{tab}{"System.out.print('*');"}<span className="comentario">//se imprime el simbolo uno a lado del otro la cantidad de veces marcada en el ancho</span>
                                     <br/>
                                     {tab}{tab}{tab}{'}'}
+                                    <br/>
+                                    {tab}{tab}{tab}{"System.out.print('\\n');"}<span className="comentario">//se hace un salto de linea por cada unidad de la altura</span>
                                     <br />
                                     {tab}{tab}{"}"}
                                     <br/>
-                                    {tab}{tab}{'System.out.println("El total a pagar es: " + total);'}<span className="comentario">//mostramos el total a pagar</span>
-                                    <br />
                                     {tab}{"}"}
                                     <br />
                                     {"}"}

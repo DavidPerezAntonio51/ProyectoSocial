@@ -25,7 +25,7 @@ function Ciclos() {
                 </Box>
                 <Grid item>
                     <Box sx={{
-                        paddingX: 7,
+                        paddingX: 5,
                         backgroundColor: "boticelli.main",
                         color: "regalBlue.main",
                         maxWidth: "100%",
