@@ -2,7 +2,10 @@ import {Box, Container} from "@mui/system";
 import {Grid, TableContainer, Typography} from "@mui/material";
 import {Table, TableHead, TableRow, TableCell, TableBody} from "@mui/material";
 import CondicionalesInicial from "./CondicionalesInicial";
-
+import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
+import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
+import UserContext from "../../../Contextos/UserContext";
+import { useContext } from "react";
 
 function createData(item, repre, sintaxis){
     return {item, repre, sintaxis};
@@ -14,14 +17,16 @@ const rows = [
     createData("NOT (no)", "!", "!A")
 ];
 
-function CondicionalIf(props){
+function CondicionalIf(){
+    const Usuario = useContext(UserContext);
+    const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return(
         
-        <Container >
+        <Container sx={{paddingY:3}}>
             <Grid container>
                 <Grid item sx={{paddingTop:7}}>
                     <Box sx={{color:'regalBlue.main', backgroundColor: "boticelli.main", paddingX: 7}}>
-                    <CondicionalesInicial nombreUser ={props.objeto}></CondicionalesInicial>
+                    <CondicionalesInicial nombreUser ={Usuario.User}></CondicionalesInicial>
                         <Typography variant="h3" component="h4" sx={{textAlign:"center", paddingBottom:2, paddingTop:0.5}}>Sentencia IF</Typography>
                         
                         <Typography variant="body1" component="p">En esta sección se abordara el tema de condicionales utilizando la sentencia <Typography variant="b" component="b">IF</Typography>. La cual es una de las más utilizadas y principales que nosotros como programadores debemos de tener por defecto en nuestro conocimiento.</Typography>
@@ -35,24 +40,30 @@ function CondicionalIf(props){
                         <Typography variant="h5" component="h4" sx={{paddingTop:2,paddingBottom:2}}>Sintaxis</Typography>
                         <Typography variant="body1" component="p">En todos los casos (o más bien los que conozco) siempre se realizará una comparación de una variable con un valor o de una variable con otra.</Typography>
                         <Typography variant="body1" component="p" sx={{paddingBottom:1}}>Algo como lo siguiente: </Typography>
-                        
-                    </Box>
-                    <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                        <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
-                        <Typography variant="subtitle" component="pre" alignSelf={"center"}>
-                            {`public class Main{
-    public static void main(String[] args){
-        int numero = 2; //Inicializamos el valor de numero con 2
-        if(numero > 1){ //preguntamos ¿2 (numero) es mayot a 1?
-            //CIERTO
-            //imprimos este mensaje
-            System.out.println("Numero es mayor a 1, este tiene el valor de: "+numero);
-        }
-    }
-}`}
-                            </Typography>
+                        <Typography variant="h6" sx={{paddingX:10}}>
+                        <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"stratos.main", color:"#ccc", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
+                            {"public class Main{"}
+                            <br/>
+                            {tab}{"public static void main(String[] args){"}
+                            <br />
+                            {tab}{'int numero = 2;'}<span className="comentario">{'//Inicializamos el valor de numero con 2'}</span>
+                            <br />
+                            {tab}{tab}{"if(numero > 1){"}<span className="comentario">{"//preguntamos ¿2 (numero) es mayot a 1?"}</span>
+                            <br />
+                            {tab}{tab}{tab}{`//CIERTO`}
+                            <br />
+                            {tab}{tab}{tab}{`//imprimos este mensaje`}
+                            <br />
+                            {tab}{tab}{tab}{`System.out.println("Numero es mayor a 1, este tiene el valor de: "+numero);`}
+                            <br />
+                            {tab}{tab}{`}`}
+                            <br />
+                            {tab}{`}`}
+                            <br />
+                            {`}`}
                         </Box>
-                    </Grid>
+                    </Typography>
+                    </Box>
                     <Box sx={{color:'regalBlue.main', backgroundColor: "boticelli.main", paddingY: 5, paddingX: 7}}>
                     <Typography variant="body1" component="p">Como podemos observar en el ejemplo anterior, vemos que la variable numero esta inicializada en 2 y contamos con un if para probar si numero es mayor a 1, lo cual es cierto y entramos en el <b>segmento de código que contiene el bloque</b> de modo que esa sería toda la implementación.</Typography>
                         
@@ -100,7 +111,7 @@ function CondicionalIf(props){
                         </TableContainer>
                         </center>
                         <Typography variant="h4" component="h2" sx={{textAlign:'center'}}>Ejercicios propuestos</Typography>
-                        <Typography variant="body1" component="p">A continuación se mostrará la redacción de los ejercicios que se consideran que los resulvas <b>{props.objeto}</b>, con la finalidad de tener los temas claros y listos para que hagas uso de estos.</Typography>
+                        <Typography variant="body1" component="p">A continuación se mostrará la redacción de los ejercicios que se consideran que los resulvas <b>{Usuario.User}</b>, con la finalidad de tener los temas claros y listos para que hagas uso de estos.</Typography>
                         <Typography variant="body1" component="p">
                             <ol>
                                 <li>Escribe un programa que le pregunte al usuario su edad, a partir de esta imprimir en pantalla si es mayor a 18 y menor a 50 años.</li>
@@ -108,6 +119,14 @@ function CondicionalIf(props){
                                 <li>Escribe un programa que pida al usuario un número, debe imprimir en pantalla si el numero es par, mayor a 2 y menor a 100</li>
                             </ol>
                         </Typography>
+                        <Grid container justifyContent="space-between" alignItems="center" sx={{paddingTop:3}}>
+                            <Grid item sx={{ paddingY:2}}>
+                                <VolverAlMenu />
+                            </Grid>
+                            <Grid item sx={{ paddingY:2}}>
+                                <SiguienteTema />
+                            </Grid>
+                        </Grid>
                     </Box>
                 </Grid>
             </Grid>            

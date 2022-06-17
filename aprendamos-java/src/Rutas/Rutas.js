@@ -14,10 +14,14 @@ import InstalaJava from "../Paginas/Temas/Introduccion/InstalarJava";
 import InstalaNetBeans from "../Paginas/Temas/Introduccion/InstalarNetBeans";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
 import CondicionalElse from "../Paginas/Temas/Condicionales/CondicionalElse";
+import CondicionalIfElse from "../Paginas/Temas/Condicionales/CondicionalIfElse";
+import CondicionalSwitch from "../Paginas/Temas/Condicionales/CondicionalSwitch";
 import CicloFor from "../Paginas/Temas/Ciclos/CicloFor";
 import Primitivos from "../Paginas/Temas/Tipos-de-datos/Primitivos";
 import ManejoDT from "../Paginas/Temas/Tipos-de-datos/ManejoDT";
 import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
+import HolaMundo from "../Paginas/Temas/Manejo-Consola/HolaMundo";
+import ImpresionConsola from "../Paginas/Temas/Manejo-Consola/ImpresionConsola";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -35,8 +39,8 @@ function Rutas() {
                 </Route>
 
                 <Route path="manejo-consola">
-                    <Route path="hola-mundo/:idTema/:idSubtema"></Route>
-                    <Route path="formatos-de-impresion/:idTema/:idSubtema"></Route>
+                    <Route path="hola-mundo/:idTema/:idSubtema" element={<HolaMundo/>}/>
+                    <Route path="formatos-de-impresion/:idTema/:idSubtema" element={<ImpresionConsola/>}/>
                 </Route>
 
                 <Route path="tipos-de-datos">
@@ -46,10 +50,10 @@ function Rutas() {
                 </Route>
 
                 <Route path="condicionales">
-                    <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf objeto={Usuario.User} />}></Route>
-                    <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse objeto = {Usuario.User} />}></Route>
-                    <Route path="sentencia-if-else/:idTema/:idSubtema"></Route>
-                    <Route path="sentencia-switch/:idTema/:idSubtema"></Route>
+                <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf />}></Route>
+                    <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse />}></Route>
+                    <Route path="sentencia-if-else/:idTema/:idSubtema" element={<CondicionalIfElse />}></Route>
+                    <Route path="sentencia-switch/:idTema/:idSubtema" element={<CondicionalSwitch />}></Route>
                 </Route>
 
                 <Route path="estructuras-repetitivas">
