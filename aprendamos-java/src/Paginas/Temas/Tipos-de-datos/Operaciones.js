@@ -1,5 +1,4 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 //import UserContext from "../../../Contextos/UserContext";
 import * as React from 'react';
@@ -172,9 +171,6 @@ export default function Operaciones() {
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY:2}}>
                                 <VolverAlMenu />
-                            </Grid>
-                            <Grid item sx={{ paddingY:2}}>
-                                <SiguienteTema />
                             </Grid>
                         </Grid>
                     </Box>
