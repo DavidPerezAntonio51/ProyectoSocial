@@ -66,102 +66,10 @@ function CicloDoWhile() {
                                 {"}"}
                             </Box>
                         </Typography>
+                        <br/>
                         <Typography variant="h6" component="p">
-                            Quizá ahora tengas algunas preguntas como ¿En que momento uso un ciclo for? ¿En que momento un ciclo
-                            while? Aunque un ciclo while puede configurarse para que funcione de manera similar a un ciclo for
-                            existe una respuesta fácil a las preguntas planteadas.
-                        </Typography>
-                        <Instrucciones steps={whilePreguntas.steps} />
-                        <br />
-                        <Typography variant="h6" component="p">
-                            Ahora observa el siguiente ejemlo. El ciclo while se repetirá hasta que el numero aleatorio generado
-                            sea igual a uno.
-                        </Typography>
-                        <Typography variant="h6" >
-                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
-                                {"public class Main{"}
-                                <br />
-                                {tab}{"public static void main(String[] args){"}
-                                <br />
-                                {tab}{tab}{"int numero = 3;"}<span className="comentario">//inicializamos la variable que tendra el numero aleatorio </span>
-                                <br />
-                                {tab}{tab}{"while(numero != 1){"}<span className="comentario">//definimos que el ciclo se ejecute Mientras el numero sea diferente de 1 </span>
-                                <br />
-                                {tab}{tab}{tab}{'numero = (int)(Math.random()*10+1);'}<span className="comentario">//generamos un numero aleatorio entre 1 y 10</span>
-                                <br />
-                                {tab}{tab}{tab}{'System.out.println("El numero aleatorio es: " + numero);'}<span className="comentario">//mostramos el numero generado</span>
-                                <br />
-                                {tab}{tab}{"}"}
-                                <br />
-                                {tab}{"}"}
-                                <br />
-                                {"}"}
-                            </Box>
-                        </Typography>
-                        <br />
-                        <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
-                            ¡Cuidado con los ciclos infinitos!
-                        </Typography>
-                        <Typography variant="h6" component="p">
-                            En el siguiente código veremos que también en los ciclos while podríamos tener casos en los que
-                            nuestros ciclos sean infinitos. Podemos ver que la condición siempre se cumplirá pues los numeros
-                            aleatorios siempre seran entre 1 y 10, entonces la condicion simepre sera verdadera y debido a
-                            eso el ciclo se quedara en un bucle infinito.
-                        </Typography>
-                        <Typography variant="h6" >
-                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
-                                {"public class Main{"}
-                                <br />
-                                {tab}{"public static void main(String[] args){"}
-                                <br />
-                                {tab}{tab}{"int numero = 3;"}<span className="comentario">//inicializamos la variable que tendra el numero aleatorio </span>
-                                <br />
-                                {tab}{tab}{"while(numero != 15){"}<span className="comentario">//definimos que el ciclo se ejecute Mientras el numero sea diferente de 1 </span>
-                                <br />
-                                {tab}{tab}{tab}{'numero = (int)(Math.random()*10+1);'}<span className="comentario">//generamos un numero aleatorio entre 1 y 10</span>
-                                <br />
-                                {tab}{tab}{tab}{'System.out.println("El numero aleatorio es: " + numero);'}<span className="comentario">//mostramos el numero generado</span>
-                                <br />
-                                {tab}{tab}{"}"}
-                                <br />
-                                {tab}{"}"}
-                                <br />
-                                {"}"}
-                            </Box>
-                        </Typography>
-                        <br />
-                        <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
-                            ¡Cuidado con los ciclos inservibles!
-                        </Typography>
-                        <Typography variant="h6" component="p">
-                            En el siguiente código te mostraremos un ciclo que nunca se ejecuta. Esto ocurre debido a que
-                            la condicion sera falsa desde el inicio, por lo tanto no entraremos al ciclo.
-                        </Typography>
-                        <Typography variant="h6" >
-                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
-                                {"public class Main{"}
-                                <br />
-                                {tab}{"public static void main(String[] args){"}
-                                <br />
-                                {tab}{tab}{"int numero = 3;"}<span className="comentario">//inicializamos la variable que tendra el numero aleatorio con un 3 </span>
-                                <br />
-                                {tab}{tab}{"while(numero == 0){"}<span className="comentario">//definimos que el ciclo se ejecute Mientras el numero sea igual a 0 </span>
-                                <br />
-                                {tab}{tab}{tab}{'numero = (int)(Math.random()*10+1);'}<span className="comentario">//generamos un numero aleatorio entre 1 y 10</span>
-                                <br />
-                                {tab}{tab}{tab}{'System.out.println("El numero aleatorio es: " + numero);'}<span className="comentario">//mostramos el numero generado</span>
-                                <br />
-                                {tab}{tab}{"}"}
-                                <br />
-                                {tab}{"}"}
-                                <br />
-                                {"}"}
-                            </Box>
-                        </Typography>
-                        <br />
-                        <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
-                            Ahora {Usuario.User} es momento de poner a prueba lo aprendido con los siguientes ejercicios,
-                            no te preocupes si no lo logras a la primera, es importante que hagas el intento de resolverlos.
+                            Ya que este es el único cambio importante respecto al ciclo while, creo que ya estas preparado para 
+                            algunos ejercicios, serán los mismos que en la sección anterior, pero adaptados a la nueva sintaxis.
                         </Typography>
                         <br />
                         <Typography variant="h4" component="h3">
@@ -184,7 +92,7 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{tab}{'int contador = 0;'}
                                     <br />
-                                    {tab}{tab}{"while(contador<fin){"}<span className="comentario">//definimos la condicion de paro</span>
+                                    {tab}{tab}{"do{"}
                                     <br />
                                     {tab}{tab}{tab}{'if(contador%2==0){'}<span className="comentario">//usando el operador modulo verificamos si es par</span>
                                     <br />
@@ -194,7 +102,7 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{tab}{tab}{"contador++;"}<span className="comentario">//incrementamos el contador</span>
                                     <br />
-                                    {tab}{tab}{"}"}
+                                    {tab}{tab}{"}while(contador<fin);"}<span className="comentario">//evaluamos la condicion y sabremos si ejecutamos de nuevo o no</span>
                                     <br />
                                     {tab}{"}"}
                                     <br />
@@ -216,15 +124,15 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{"public static void main(String[] args){"}
                                     <br />
-                                    {tab}{tab}<span className="comentario">//{"Iniciamos las variables necesarias"}</span>
+                                    {tab}{tab}<span className="comentario">//{"No es necesario iniciar la variable contador pues este ciclo permite que sea el usuario quien la inicie"}</span>
                                     <br />
-                                    {tab}{tab}{'int opcion = 1;'}
+                                    {tab}{tab}{'int opcion;'}
                                     <br />
                                     {tab}{tab}{'Scanner teclado = new Scanner(System.in);'}<span className="comentario">//declaramos la entrada del teclado para poder usarlo</span>
                                     <br />
-                                    {tab}{tab}{"while(opcion=!){"}<span className="comentario">//el ciclo solo se ejcuta mientras la opcion sea diferente de 0</span>
+                                    {tab}{tab}{"do{"}
                                     <br />
-                                    {tab}{tab}{tab}<span className="comentario">//Se muestran las opciones del menú</span>
+                                    {tab}{tab}{tab}<span className="comentario">//primero ejecuta el bloque de codigo y despues revisa la condicion al final</span>
                                     <br />
                                     {tab}{tab}{tab}{'System.out.println("1. Opcion 1");'}
                                     <br />
@@ -234,7 +142,7 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{tab}{tab}{'opcion = teclado.nextInt();'}<span className="comentario">//se lee un numero entero desde el teclado y lo guardamos en la variable opcion</span>
                                     <br />
-                                    {tab}{tab}{"}"}
+                                    {tab}{tab}{"}while(opcion=!);"}<span className="comentario">//si la opcion fue diferente de 0 el ciclo se repite</span>
                                     <br />
                                     {tab}{"}"}
                                     <br />
@@ -264,13 +172,13 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{tab}<span className="comentario">//{"Iniciamos las variables necesarias"}</span>
                                     <br />
-                                    {tab}{tab}{'int numero=1; '}
+                                    {tab}{tab}{'int numero; '}<span className="comentario">//{"no es necesario inicializar esta variable, pues se puede hacer dentro del ciclo"}</span>
                                     <br />
                                     {tab}{tab}{'int aleatorio = (int)(Math.random()*30+1);'}
                                     <br />
                                     {tab}{tab}{'Scanner teclado = new Scanner(System.in);'}<span className="comentario">//declaramos la entrada del teclado para poder usarlo</span>
                                     <br />
-                                    {tab}{tab}{"while(numero!=0 && numero != 7){"}<span className="comentario">//el ciclo solo se ejcuta mientras la opcion sea diferente de 0 o no se haya adivinado el numero</span>
+                                    {tab}{tab}{"do{"}
                                     <br />
                                     {tab}{tab}{tab}<span className="comentario">//Se muestran las opciones del menú</span>
                                     <br />
@@ -278,7 +186,7 @@ function CicloDoWhile() {
                                     <br />
                                     {tab}{tab}{tab}{'numero = sc.nextInt();'}
                                     <br />
-                                    {tab}{tab}{"}"}
+                                    {tab}{tab}{"}while(numero!=0 && numero != aleatorio);"}<span className="comentario">//se revisa la condicion al final</span>
                                     <br />
                                     {tab}{tab}{'System.out.println("¡Has adivinado!");'}
                                     <br />

@@ -268,7 +268,7 @@ function CicloWhile() {
                                     <br />
                                     {tab}{tab}{'Scanner teclado = new Scanner(System.in);'}<span className="comentario">//declaramos la entrada del teclado para poder usarlo</span>
                                     <br />
-                                    {tab}{tab}{"while(numero!=0 && numero != 7){"}<span className="comentario">//el ciclo solo se ejcuta mientras la opcion sea diferente de 0 o no se haya adivinado el numero</span>
+                                    {tab}{tab}{"while(numero!=0 && numero != aleatorio){"}<span className="comentario">//el ciclo solo se ejcuta mientras la opcion sea diferente de 0 o no se haya adivinado el numero</span>
                                     <br />
                                     {tab}{tab}{tab}<span className="comentario">//Se muestran las opciones del menú</span>
                                     <br />
