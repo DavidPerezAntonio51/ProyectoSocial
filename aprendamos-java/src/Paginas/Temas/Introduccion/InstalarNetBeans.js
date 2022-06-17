@@ -52,7 +52,7 @@ function InstalarNetBeans() {
                         <br></br>
                         <Typography variant="body1" component="p">
                             Sin más que decir, vamos a instalar nuestro IDE favorito, para ello es necesario ingresar su página oficial,
-                            la cual puedes acceder en este <a href='https://netbeans.apache.org/download/index.html' target='_blank'> <b>enlace</b></a>.
+                            la cual puedes acceder en este <a href='https://netbeans.apache.org/download/index.html' rel="noreferrer" target='_blank'> <b>enlace</b></a>.
                             Aquí estará la versión más reciente para descargar, por lo que recomendamos ampliamente que descargues esta última
                             para no tener problemas.
                         </Typography>
