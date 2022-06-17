@@ -17,6 +17,8 @@ import CicloFor from "../Paginas/Temas/Ciclos/CicloFor";
 import Primitivos from "../Paginas/Temas/Tipos-de-datos/Primitivos";
 import ManejoDT from "../Paginas/Temas/Tipos-de-datos/ManejoDT";
 import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
+import HolaMundo from "../Paginas/Temas/Manejo-Consola/HolaMundo";
+import ImpresionConsola from "../Paginas/Temas/Manejo-Consola/ImpresionConsola";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -34,8 +36,8 @@ function Rutas() {
                 </Route>
 
                 <Route path="manejo-consola">
-                    <Route path="hola-mundo/:idTema/:idSubtema"></Route>
-                    <Route path="formatos-de-impresion/:idTema/:idSubtema"></Route>
+                    <Route path="hola-mundo/:idTema/:idSubtema" element={<HolaMundo/>}/>
+                    <Route path="formatos-de-impresion/:idTema/:idSubtema" element={<ImpresionConsola/>}/>
                 </Route>
 
                 <Route path="tipos-de-datos">
