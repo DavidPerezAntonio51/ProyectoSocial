@@ -74,17 +74,17 @@ const QueEsProgramar = () => {
                     <List>
                         <ListItem>
                             <ListItemText 
-                                primary = "- Debe ser preciso (No debería presentar errores al resolver un problema)"
+                                primary = "- Debe ser preciso (No debería presentar errores al resolver un problema)."
                             />
                         </ListItem>
                         <ListItem>
                             <ListItemText 
-                                primary = "- Debe tener un inicio y un final"
+                                primary = "- Debe tener un inicio y un final."
                             />
                         </ListItem>
                         <ListItem>
                             <ListItemText 
-                                primary = "- En un punto laboral es imporante que sea legible y cualquier persona pueda comprenderlo"
+                                primary = "- En un punto laboral es importante que sea legible y cualquier persona pueda comprenderlo."
                             />
                         </ListItem>
                     </List>

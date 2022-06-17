@@ -10,6 +10,7 @@ import ManejoArray from "../Paginas/Temas/Arreglos/ManejoArreglos";
 import ComoCodigo from "../Paginas/Temas/Introduccion/ComoFuncionaCodigo";
 import QueEsProgramar from "../Paginas/Temas/Introduccion/QueEsProgramar";
 import TuPuedes from "../Paginas/Temas/Introduccion/TuTambienPuedes";
+import PseudocodigoDiagramas from "../Paginas/Temas/Introduccion/PsudocodigoDiagramas";
 import InstalaJava from "../Paginas/Temas/Introduccion/InstalarJava";
 import InstalaNetBeans from "../Paginas/Temas/Introduccion/InstalarNetBeans";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
@@ -23,6 +24,7 @@ import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
 import HolaMundo from "../Paginas/Temas/Manejo-Consola/HolaMundo";
 import ImpresionConsola from "../Paginas/Temas/Manejo-Consola/ImpresionConsola";
 import CicloWhile from "../Paginas/Temas/Ciclos/CicloWhile";
+import CicloDoWhile from "../Paginas/Temas/Ciclos/CicloDoWhile";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -33,7 +35,7 @@ function Rutas() {
                 <Route path="introduccion">
                     <Route path="que-es-programar/:idTema/:idSubtema" element={<QueEsProgramar />}></Route>
                     <Route path="programar-es-facil/:idTema/:idSubtema" element={<TuPuedes />}></Route>
-                    <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/:idSubtema"></Route>
+                    <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/:idSubtema" element={<PseudocodigoDiagramas />}></Route>
                     <Route path="como-funciona-un-codigo/:idTema/:idSubtema" element={<ComoCodigo />}/>
                     <Route path="instalacion-java/:idTema/:idSubtema" element={<InstalaJava />}/>
                     <Route path="instalacion-netBeans/:idTema/:idSubtema" element={<InstalaNetBeans />} />
@@ -61,7 +63,7 @@ function Rutas() {
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
                     <Route path="ciclo-for/:idTema/:idSubtema" element={<CicloFor/>}/>
                     <Route path="ciclo-while/:idTema/:idSubtema" element={<CicloWhile/>}/>
-                    <Route path="ciclo-do-while/:idTema/:idSubtema"/>
+                    <Route path="ciclo-do-while/:idTema/:idSubtema" element={<CicloDoWhile/>}/>
                 </Route>
 
                 <Route path="arreglos">
