@@ -34,6 +34,41 @@ function CondicionalElse(){
                                     <br />
                                     {tab}{"public static void main(String[] args){"}
                                     <br />
+                                    {tab}{tab}{"int numero;"}
+                                    <br />
+                                    {tab}{tab}{"if(expresion){"}
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"/* VERDADERO"}</span>
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"* Bloque de desarrollo en caso de que sea verdadero"}</span>
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"*/"}</span>
+                                    <br />
+                                    {tab}{tab}{"}else{"}<span className="comentario">{'//caso contrario a la expresion ungresada'}</span>
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"/* FALSO"}</span>
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"* Bloque de desarrollo en caso de que sea falsa la condición"}</span>
+                                    <br />
+                                    {tab}{tab}{tab}<span className="comentario">{"*/"}</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br />
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </Grid>
+                        <Typography variant="h5" component="h4" sx={{paddingTop:2,paddingBottom:2, paddingY:2}}>Ejemplo:</Typography>
+                        <br />
+                        <Grid item sx={{p:1, backgroundColor: "stratos.main"}}>
+                            <Typography variant="h6" sx={{paddingX:4, paddingY:1}}>
+                                <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
                                     {tab}{tab}{"int numero = 5;"}<span className="comentario">{'//Inicializamos el valor de numero con 2'}</span>
                                     <br />
                                     {tab}{tab}{"if(numero > 0 && numero < 3){"}<span className="comentario">{'//preguntamos ¿numero es mayor a 0 y menor a 3?'}</span>

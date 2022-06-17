@@ -40,29 +40,55 @@ function CondicionalIf(){
                         <Typography variant="h5" component="h4" sx={{paddingTop:2,paddingBottom:2}}>Sintaxis</Typography>
                         <Typography variant="body1" component="p">En todos los casos (o más bien los que conozco) siempre se realizará una comparación de una variable con un valor o de una variable con otra.</Typography>
                         <Typography variant="body1" component="p" sx={{paddingBottom:1}}>Algo como lo siguiente: </Typography>
-                        <Typography variant="h6" sx={{paddingX:10}}>
-                        <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"stratos.main", color:"#ccc", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
-                            {"public class Main{"}
-                            <br/>
-                            {tab}{"public static void main(String[] args){"}
-                            <br />
-                            {tab}{'int numero = 2;'}<span className="comentario">{'//Inicializamos el valor de numero con 2'}</span>
-                            <br />
-                            {tab}{tab}{"if(numero > 1){"}<span className="comentario">{"//preguntamos ¿2 (numero) es mayot a 1?"}</span>
-                            <br />
-                            {tab}{tab}{tab}{`//CIERTO`}
-                            <br />
-                            {tab}{tab}{tab}{`//imprimos este mensaje`}
-                            <br />
-                            {tab}{tab}{tab}{`System.out.println("Numero es mayor a 1, este tiene el valor de: "+numero);`}
-                            <br />
-                            {tab}{tab}{`}`}
-                            <br />
-                            {tab}{`}`}
-                            <br />
-                            {`}`}
-                        </Box>
-                    </Typography>
+                        <Grid item sx={{p:1, backgroundColor: "stratos.main"}}>
+                            <Typography variant="h6" sx={{paddingX:10}}>
+                                <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
+                                    {"public class Main{"}
+                                    <br/>
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{'int numero;'}
+                                    <br />
+                                    {tab}{tab}{"if(expresion){"}
+                                    <br />
+                                    {tab}{tab}{tab}{`//CIERTO`}
+                                    <br />
+                                    {tab}{tab}{tab}{`//imprimos un mensaje o mandamos a llamar a una función`}
+                                    <br />
+                                    {tab}{tab}{`}`}
+                                    <br />
+                                    {tab}{`}`}
+                                    <br />
+                                    {`}`}
+                                </Box>
+                            </Typography>
+                        </Grid>
+                        <Typography variant="h5" component="h4" sx={{paddingTop:2,paddingBottom:2, paddingY:2}}>Ejemplo:</Typography>
+                        <Grid item sx={{p:1, backgroundColor: "stratos.main"}}>
+                            <Typography variant="h6" sx={{paddingX:10}}>
+                                <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
+                                    {"public class Main{"}
+                                    <br/>
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{'int numero = 2;'}<span className="comentario">{'//Inicializamos el valor de numero con 2'}</span>
+                                    <br />
+                                    {tab}{tab}{"if(numero > 1){"}<span className="comentario">{"//preguntamos ¿2 (numero) es mayot a 1?"}</span>
+                                    <br />
+                                    {tab}{tab}{tab}{`//CIERTO`}
+                                    <br />
+                                    {tab}{tab}{tab}{`//imprimos este mensaje`}
+                                    <br />
+                                    {tab}{tab}{tab}{`System.out.println("Numero es mayor a 1, este tiene el valor de: "+numero);`}
+                                    <br />
+                                    {tab}{tab}{`}`}
+                                    <br />
+                                    {tab}{`}`}
+                                    <br />
+                                    {`}`}
+                                </Box>
+                            </Typography>
+                        </Grid>
                     </Box>
                     <Box sx={{color:'regalBlue.main', backgroundColor: "boticelli.main", paddingY: 5, paddingX: 7}}>
                     <Typography variant="body1" component="p">Como podemos observar en el ejemplo anterior, vemos que la variable numero esta inicializada en 2 y contamos con un if para probar si numero es mayor a 1, lo cual es cierto y entramos en el <b>segmento de código que contiene el bloque</b> de modo que esa sería toda la implementación.</Typography>
