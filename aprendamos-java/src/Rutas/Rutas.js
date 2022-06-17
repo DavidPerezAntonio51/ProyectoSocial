@@ -22,6 +22,7 @@ import ManejoDT from "../Paginas/Temas/Tipos-de-datos/ManejoDT";
 import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
 import HolaMundo from "../Paginas/Temas/Manejo-Consola/HolaMundo";
 import ImpresionConsola from "../Paginas/Temas/Manejo-Consola/ImpresionConsola";
+import CicloWhile from "../Paginas/Temas/Ciclos/CicloWhile";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -59,7 +60,7 @@ function Rutas() {
                 <Route path="estructuras-repetitivas">
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
                     <Route path="ciclo-for/:idTema/:idSubtema" element={<CicloFor/>}/>
-                    <Route path="ciclo-while/:idTema/:idSubtema"/>
+                    <Route path="ciclo-while/:idTema/:idSubtema" element={<CicloWhile/>}/>
                     <Route path="ciclo-do-while/:idTema/:idSubtema"/>
                 </Route>
 
