@@ -57,7 +57,7 @@ function InstalarNetBeans() {
                             para no tener problemas.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img1} height="400" width="800" />
+                            <img src={img1} alt="Imagen 1" height="400" width="800" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             Al igual que como ocurría con <b>Java Development Kit (JDK)</b>, se nos presentan las distintas versiones para Windows,
@@ -65,7 +65,7 @@ function InstalarNetBeans() {
                             la instalación para Windows.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img2} height="360" width="800" />
+                            <img src={img2} alt="Imagen 2" height="360" width="800" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             Una vez que el archivo ejecutable se haya instalado, ahora lo abrimos, en la primera ventana se nos dará a elegir que es lo que
@@ -74,21 +74,21 @@ function InstalarNetBeans() {
                             de los módulos para utilizarlos después.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img3} height="380" width="500" />
+                            <img src={img3} alt="Imagen 3" height="380" width="500" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             Como suele suceder con este tipo de software, tendremos que aceptar los términos de la licencia, basta con palomear la casilla correspondiente
                             y dar clic en siguiente.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img4} height="380" width="500" />
+                            <img src={img4} alt="Imagen 4" height="380" width="500" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             Ahora tenemos las direcciones de instalación, la primera es la ubicación donde vamos a instalar el IDE y sus componentes, si deseas puedes
                             cambiarla o dejarla así como está por defecto.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img5} height="380" width="500" />
+                            <img src={img5} alt="Imagen 5" height="380" width="500" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             En la segunda dirección hay que tener mucho cuidado {Usuario.User}, ¿recuerdas la sección anterior cuando instalaste JDK?, bueno, pues es un buen
@@ -100,20 +100,20 @@ function InstalarNetBeans() {
                             En esta última ventana solo se te preguntará si quieres que NetBeans busque actualizaciones automáticamente, si lo deseas, déjala marcada y da clic en instalar.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img6} height="380" width="500" />
+                            <img src={img6} alt="Imagen 6" height="380" width="500" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             Y después de todo eso, ahora ya solo queda esperar a que se instalen los segmentos clave y los módulos adicionales, y ¡listo! ya tenemos nuestro IDE instalado correctamente.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img7} height="380" width="500" />
+                            <img src={img7} alt="Imagen 7" height="380" width="500" />
                         </Grid>
                         <Typography variant="body1" component="p">
                             NetBeans es una herramienta muy útil para principiantes o usuarios que no deseen meterse de lleno con la terminal del sistema, ya que como se mencionó al principio, tiene muchas
                             utilidades, como que cuenta con su propio compilador, depurador, asistente para crear proyectos, entre muchas cosas más que pueden facilitar la tarea de crear un proyecto en Java.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img8} height="380" width="700" />
+                            <img src={img8} alt="Imagen 8" height="380" width="700" />
                         </Grid>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY: 2 }}>

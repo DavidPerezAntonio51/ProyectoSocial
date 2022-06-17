@@ -108,7 +108,7 @@ function ComoFuncionaCodigo() {
                                                                     nivel se realiza o bien mediante compiladores de código o mediante intérpretes de código, según el lenguaje
                                                                     de programación y el entorno elegido." />
                                         </ListItemButton>
-                                        <Typography><center><img src={img15} height="250" width="400" /></center></Typography>
+                                        <Typography><center><img src={img15} alt="Imagen 1" height="250" width="400" /></center></Typography>
                                         <br></br>
                                     </List>
                                 </Collapse>
@@ -128,7 +128,7 @@ function ComoFuncionaCodigo() {
                                                                     Ahora bien, aunque tu puedas entender que es lo que hacen estas instrucciones, tu computadora no es capáz de procesar
                                                                     por si sola lo que le estás pidiendo, es aqui donde entra el trabajo de un compilador" />
                                         </ListItemButton>
-                                        <Typography><center><img src={img14} height="350" width="400" /></center></Typography>
+                                        <Typography><center><img src={img14} alt="Imagen 2" height="350" width="400" /></center></Typography>
                                         <br></br>
                                     </List>
                                 </Collapse>
@@ -146,7 +146,7 @@ function ComoFuncionaCodigo() {
                                                                     el programa fuente y lo traduce a otro equivalente escrito en otro lenguaje (por ejemplo, en lenguaje máquina). Su acción
                                                                     equivale a la de un traductor humano, que toma un libro y produce otro equivalente escrito en otra lengua." />
                                         </ListItemButton>
-                                        <Typography><center><img src={img16} height="250" width="400" /></center></Typography>
+                                        <Typography><center><img src={img16} alt="Imagen 3" height="250" width="400" /></center></Typography>
 
                                     </List>
                                 </Collapse>
@@ -165,7 +165,7 @@ function ComoFuncionaCodigo() {
                                                                     el usuario únicamente vería grandes cantidades de símbolos sin ningún sentido, de ahí que se denominen de bajo nivel. El resultado de
                                                                     este proceso suele ser un archivo que el usuario pueda ejecutar." />
                                         </ListItemButton>
-                                        <Typography><center><img src={img17} height="200" width="600" /></center></Typography>
+                                        <Typography><center><img src={img17} alt="Imagen 4" height="200" width="600" /></center></Typography>
                                         <br></br>
                                     </List>
                                 </Collapse>
