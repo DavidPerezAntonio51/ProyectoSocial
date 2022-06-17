@@ -9,7 +9,6 @@ import img3 from '../../../assets/InstalaJava/img3.png';
 import img4 from '../../../assets/InstalaJava/img4.png';
 import img5 from '../../../assets/InstalaJava/img5.png';
 import img6 from '../../../assets/InstalaJava/img6.png';
-import img7 from '../../../assets/InstalaJava/img7.png';
 import img8 from '../../../assets/InstalaJava/img8.png';
 import img9 from '../../../assets/InstalaJava/img9.png';
 import img11 from '../../../assets/InstalaJava/img11.png';
@@ -134,12 +133,10 @@ function InstalarJava() {
                             <img src={img11} height="160" width="650" />
                         </Grid>
                         <Typography variant="body1" component="p">
-                            Para acceder a la lista de variables de entorno, basta con que escribas la palabra variables en la barra de búsqueda de Windows, selecciona la opción <b><i>“Editar las variables de entorno del sistema”</i></b>, se abrirá una pequeña ventana de propiedades,
+                            Para acceder a la lista de variables de entorno, basta con que escribas las palabras <i>“Variables de entorno”</i> en la barra de búsqueda de Windows, selecciones la opción <b><i>“Editar las variables de entorno del sistema”</i></b>, se abrirá una pequeña ventana de propiedades del sistema,
                             y casi en la esquina inferior derecha estará el botón de <b><i>“Variables de entorno”</i></b>, has clic en él.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>
-                            <img src={img7} width="500" height="250" />
-
                             <img src={img8} height="350" width="300" />
                         </Grid>
                         <Typography variant="body1" component="p">

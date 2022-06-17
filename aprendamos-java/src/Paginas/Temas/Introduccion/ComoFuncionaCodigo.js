@@ -13,6 +13,10 @@ import Collapse from '@mui/material/Collapse';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+import img14 from '../../../assets/InstalaJava/img14.png';
+import img15 from '../../../assets/InstalaJava/img15.png';
+import img16 from '../../../assets/InstalaJava/img16.png';
+import img17 from '../../../assets/InstalaJava/img17.png';
 
 function ComoFuncionaCodigo() {
     const Usuario = useContext(UserContext);
@@ -71,7 +75,8 @@ function ComoFuncionaCodigo() {
                     }}>
                         <Typography variant="body1" component="p">
                             Bien {Usuario.User}, ahora que ya explicamos lo que es el pseudocódigo y los diagramas de flujo,
-                            vamos a revisar de manera más formal el código y cómo es que funciona.
+                            vamos a revisar de manera más formal el código y cómo es que funciona en tu computadora. ¿O es que a caso creías que
+                            los códigos se compilaban y ejecutaban con magía?.
                         </Typography>
                         <br />
                         <Typography variant="h6" component="p" >
@@ -81,11 +86,9 @@ function ComoFuncionaCodigo() {
                                 aria-labelledby="nested-list-subheader"
                                 subheader={
                                     <ListSubheader
-                                        sx={{ textAlign: 'center', border: 1, borderColor: 'primary.main', borderRadius: 2, m: 2, backgroundColor: "boticelli.main", color: "regalBlue.main", fontWeight: "bold",fontSize: "body1", p: 2 }}
+                                        sx={{ textAlign: 'center', border: 1, borderColor: 'primary.main', borderRadius: 2, m: 2, backgroundColor: "boticelli.main", color: "regalBlue.main", fontWeight: "bold", fontSize: "h3", p: 2 }}
                                         component="div" id="nested-list-subheader">
-                                        De manera básica, podemos decir que un código es una serie de instrucciones que son intrepretadas y traducidas para poder
-                                        ser ejecutadas por el CPU, pasando de ser un código fuente de lenguaje de alto nivel a uno de bajo nivel, y esto realizándolo
-                                        a través de un compilador.
+                                        Vamos a revisar qué es un código y qué es lo que pasa cuando lo queremos ejecutar.
                                     </ListSubheader>
                                 }
                             >
@@ -105,13 +108,15 @@ function ComoFuncionaCodigo() {
                                                                     nivel se realiza o bien mediante compiladores de código o mediante intérpretes de código, según el lenguaje
                                                                     de programación y el entorno elegido." />
                                         </ListItemButton>
+                                        <Typography><center><img src={img15} height="250" width="400" /></center></Typography>
+                                        <br></br>
                                     </List>
                                 </Collapse>
                                 <ListItemButton onClick={handleClick2}>
                                     <ListItemIcon>
                                         <DoubleArrowIcon />
                                     </ListItemIcon>
-                                    <ListItemText primary="Lenguaje de alto nivel" />
+                                    <ListItemText primary="Código de un lenguaje de alto nivel" />
                                     {open2 ? <ExpandLess /> : <ExpandMore />}
                                 </ListItemButton>
                                 <Collapse in={open2} timeout="auto" unmountOnExit>
@@ -119,15 +124,19 @@ function ComoFuncionaCodigo() {
                                         <ListItemButton sx={{ pl: 4 }}>
                                             <ListItemText primary="Java es un lenguaje de alto nivel, ¿qué significa esto? muy simple, es un lenguaje cuyas instrucciones y algoritmos
                                                                     pueden ser interpretados por un humano, donde podemos ver fácilmente las variables, matrices, objetos, aritmética
-                                                                    compleja o expresiones booleanas, subrutinas y funciones, bucles, hilos, cierres y otros conceptos de informática abstracta." />
+                                                                    compleja o expresiones booleanas, subrutinas y funciones, bucles, hilos, cierres y otros conceptos de informática abstracta.
+                                                                    Ahora bien, aunque tu puedas entender que es lo que hacen estas instrucciones, tu computadora no es capáz de procesar
+                                                                    por si sola lo que le estás pidiendo, es aqui donde entra el trabajo de un compilador" />
                                         </ListItemButton>
+                                        <Typography><center><img src={img14} height="350" width="400" /></center></Typography>
+                                        <br></br>
                                     </List>
                                 </Collapse>
                                 <ListItemButton onClick={handleClick3}>
                                     <ListItemIcon>
                                         <DoubleArrowIcon />
                                     </ListItemIcon>
-                                    <ListItemText primary="Compilador" />
+                                    <ListItemText primary="Compilación de un código" />
                                     {open3 ? <ExpandLess /> : <ExpandMore />}
                                 </ListItemButton>
                                 <Collapse in={open3} timeout="auto" unmountOnExit>
@@ -137,13 +146,15 @@ function ComoFuncionaCodigo() {
                                                                     el programa fuente y lo traduce a otro equivalente escrito en otro lenguaje (por ejemplo, en lenguaje máquina). Su acción
                                                                     equivale a la de un traductor humano, que toma un libro y produce otro equivalente escrito en otra lengua." />
                                         </ListItemButton>
+                                        <Typography><center><img src={img16} height="250" width="400" /></center></Typography>
+
                                     </List>
                                 </Collapse>
                                 <ListItemButton onClick={handleClick4}>
                                     <ListItemIcon>
                                         <DoubleArrowIcon />
                                     </ListItemIcon>
-                                    <ListItemText primary="Lenguaje de bajo nivel" />
+                                    <ListItemText primary="Código de un lenguaje de bajo nivel" />
                                     {open4 ? <ExpandLess /> : <ExpandMore />}
                                 </ListItemButton>
                                 <Collapse in={open4} timeout="auto" unmountOnExit>
@@ -151,8 +162,11 @@ function ComoFuncionaCodigo() {
                                         <ListItemButton sx={{ pl: 4 }}>
                                             <ListItemText primary="Después de que el código fuente ya está traducido a un lenguaje de bajo nivel, es aquí cuando la CPU puede leer las instrucciones para poder
                                                                     ejecutarlas, cabe mencionar que muchas veces estas instrucciones no son mas que una serie de cadenas binarias que si se intentaran leer,
-                                                                    el usuario únicamente vería grandes cantidades de símbolos sin ningún sentido, de ahí que se denominen de bajo nivel." />
+                                                                    el usuario únicamente vería grandes cantidades de símbolos sin ningún sentido, de ahí que se denominen de bajo nivel. El resultado de
+                                                                    este proceso suele ser un archivo que el usuario pueda ejecutar." />
                                         </ListItemButton>
+                                        <Typography><center><img src={img17} height="200" width="600" /></center></Typography>
+                                        <br></br>
                                     </List>
                                 </Collapse>
                                 <ListItemButton onClick={handleClick5}>
