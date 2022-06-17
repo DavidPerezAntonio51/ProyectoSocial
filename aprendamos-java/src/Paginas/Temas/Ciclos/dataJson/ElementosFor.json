@@ -1,0 +1,15 @@
+{
+    "steps": [{
+            "label": "Variable de inicialización",
+            "description": "Es la variable en la que va a iniciar el contador de tu ciclo, por convención se le suele nombrar con el nombre de “i”, pero en realidad puede tomar cualquier nombre que tu desees."
+        },
+        {
+            "label": "Condición",
+            "description": "Este elemento nos ayudará a determinar si nuestro ciclo seguirá ejecutándose o debe detenerse. (Es importante tener cuidado con las condiciones pues podríamos crear un ciclo infinito)."
+        },
+        {
+            "label": "Modificador",
+            "description": "Este modificador es la cantidad de unidades que vamos a incrementar o decrementar a nuestro contador, podemos sumar o restar números al contador e incluso multiplicar o dividir el valor del contador según nuestras necesidades."
+        }
+    ]
+}

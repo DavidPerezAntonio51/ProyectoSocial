@@ -1,0 +1,19 @@
+{
+    "steps": [{
+            "label": "Variable de inicialización",
+            "description": "Como puedes observar la variable de inicialización debe ser un numero entero, por eso lo declaramos con el prefijo int, además la iniciamos con un valor de i = 0. Hay detalles a destacar, esta variable solo va a estar disponible dentro del cuerpo del for y solo va a existir durante su ejecución, así que podríamos crear una variable con el mismo nombre fuera del ciclo. Además como ya mencionamos este nombre i, es solo por conveniencia, podrías utilizar cualquier nombre que desees."
+        },
+        {
+            "label": "Condición",
+            "description": "La condición es muy importante, en este caso definimos una condición de i<600, con esto estamos especificando que mientras esa i se mantenga debajo de 600, el código que definimos dentro del cuerpo del for se ejecutará, hasta que esa condición sea falsa, ya que i se inicio en 0 se cumple esa condición."
+        },
+        {
+            "label": "Modificador",
+            "description": "El modificador nos indica cuanto se debe incrementar la variable que definimos, ¿Cómo ocurre esto? Una vez que se comprueba que la condición es verdadera se ejecutan las líneas dentro del cuerpo del ciclo, una vez que termina de ejecutar el cuerpo incrementara la variable i según lo establecido en el modificador, regresa al inicio a comprobar la condición de nuevo si esta condición es verdadera ejecutara el cuerpo una vez más, y seguirá así hasta que la condición sea falsa, esto solo ocurrirá cuando el valor de i sea igual o mayor que 600."
+        },
+        {
+            "label": "Cuerpo Interno For",
+            "description": "Dentro del cuerpo podemos crear variables, estas variables solo estarán disponibles durante la ejecución del for, además se crearan cada vez que el for realice un nuevo ciclo, por otro lado si tomamos una variable que se declaro antes del ciclo, esta no cambiara su valor a menos que nosotros lo especifiquemos, ese cambio de valor se ejecutara el mismo numero de veces que se ejecute el ciclo. Cualquier otro código que hemos visto hasta ahora se puede ejecutar dentro de un for sin mayor problema."
+        }
+    ]
+}

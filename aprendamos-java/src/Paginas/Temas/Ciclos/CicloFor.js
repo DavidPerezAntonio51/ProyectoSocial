@@ -1,11 +1,15 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { useContext } from "react";
+import { useContext, } from "react";
 import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
+import Instrucciones from "../../../Componentes/ComponentesDeLosTemas/Ciclos/ListaForElementos";
 import UserContext from "../../../Contextos/UserContext";
+import ElementosFor from "./dataJson/ElementosFor.json";
+import ExplicacionFor from "./dataJson/ExplicacionFor.json"
 
 function CicloFor() {
     const Usuario = useContext(UserContext);
+    const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return (
         <Container sx={{ paddingY: 6 }}>
             <Grid container>
@@ -30,48 +34,115 @@ function CicloFor() {
                         paddingY: 5,
                     }}>
                         <Typography variant="h6" component="p">
-                            Con lo aprendido hasta ahora es posible que te hayas dado cuenta de que al momento de estar programando
-                            hay algunas instrucciones o códigos que es necesario estar repitiendo muchas veces. Seguramente has intentado
-                            copiar y pegar varias veces este código usando el típico "CTRL+C" y "CTRL+V", es una solución lógica
-                            y no está mal ya que aun estas aprendiendo, pero no es la mejor manera.
+                            Hola {Usuario.User} ya que ahora conoces la importancia de los ciclos en la programación es momento de
+                            mostrarte el ciclo for. Este ciclo depende de 3 elementos importantes 
                         </Typography>
                         <br />
                         <Typography variant="h6" component="p">
-                            Duplicar el código de esa forma puede traer varios problemas consigo. El primero de estos problemas es
-                            que los archivos fuente de tu código se harán innecesariamente grandes; en el caso de requerirse hacer
-                            modificaciones en un futuro a tu código será muy complicado, muy tardado y muy cansado poder llevarlas
-                            a cabo.
+                            Este ciclo es de los mas utilizados, a continuacion te mostramos la sintaxis usada para este ciclo:
                         </Typography>
                         <br />
+                        <Typography variant="h6" >
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main", padding:2}}>
+                                {"public class Main{"}
+                                <br/>
+                                {tab}{"public static void main(String[] args){"}
+                                <br/>
+                                {tab}{tab}{"for(inicializacion; condición; modificador){"}<span className="comentario">//aqui se declara todo lo necesario para el ciclo</span>
+                                <br/>
+                                {tab}{tab}<span className="comentario">//Todas las instrucciones que se repetiran van aqui</span>
+                                <br/>
+                                {tab}{tab}{"}"}
+                                <br/>
+                                {tab}{"}"}
+                                <br/>
+                                {"}"}
+                            </Box>
+                        </Typography>
+                        <Instrucciones steps={ElementosFor.steps}/>
+                        <br/>
                         <Typography variant="h6" component="p">
-                            Pero no te preocupes {Usuario.User} para eso existen los llamados bucles o ciclos. Comencemos por lo
-                            primero, la definición. Intenta aprenderla, ya que puede ser una pregunta de examen si estas cursando
-                            esta materia en una escuela.
+                                Como recordaras te pedimos imprimir tu nombre 600 veces, ahora te mostraremos ese mismo código 
+                                utilizando ciclos y veras lo fácil que es utilizarlos.
                         </Typography>
-                        <br />
-                        <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
-                            Definición: Un bucle o ciclo es una secuencia de instrucciones de código que se ejecuta repetidas veces,
-                            hasta que la condición asignada a dicho bucle deja de cumplirse.
+                        <Typography variant="h6" >
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main", padding:2}}>
+                                {"public class Main{"}
+                                <br/>
+                                {tab}{"public static void main(String[] args){"}
+                                <br/>
+                                {tab}{tab}<span className="comentario">//{"inicializacion;condición;(modificador)"}</span>
+                                <br/>
+                                {tab}{tab}{"for(int i = 0; i<600; i++){"}
+                                <br/>
+                                {tab}{tab}{tab}{'System.out.println("'}{Usuario.User}{'");'}<span className="comentario">//Escribimos la linea que muestra el nombre solo una vez</span>
+                                <br/>
+                                {tab}{tab}{"}"}
+                                <br/>
+                                {tab}{"}"}
+                                <br/>
+                                {"}"}
+                            </Box>
                         </Typography>
-                        <br />
+                        <Instrucciones steps={ExplicacionFor.steps}/>
+                        <br/>
+                        <Typography variant="h6" component="p" sx={{fontWeight: "bold"}}>
+                            ¡Cuidado con los ciclos infinitos!
+                        </Typography>
                         <Typography variant="h6" component="p">
-                            Muy bien {Usuario.User} ahora que ya conoces la definición hay que tener en cuenta unas recomendaciones
-                            sobre los bucles, deben estar construidos de manera tal que se pueda tener control de la cantidad de
-                            repeticiones a realizar, de lo contrario se generaría un ciclo de ejecución infinita que podría desencadenar
-                            un desborde de memoria y en consecuencia un fallo de la aplicación, o un bloqueo de la misma porque el flujo
-                            de ejecución quedaría estancado en el ciclo, sobrecargando de tareas al procesador de la máquina que ejecuta
-                            el programa.
+                            En el código a continuación tenemos un ciclo infinito, pues no importa cuando se decremente la 
+                            variable i, esta variable nunca será mayor que 600 asi que la condición siempre será verdadera 
+                            y tendremos un ciclo infinito.
                         </Typography>
-                        <br />
+                        <Typography variant="h6" >
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main", padding:2}}>
+                                {"public class Main{"}
+                                <br/>
+                                {tab}{"public static void main(String[] args){"}
+                                <br/>
+                                {tab}{tab}{"for(int i = 300; i>600; i--){"}
+                                <br/>
+                                {tab}{tab}{tab}{'System.out.println("'}{Usuario.User}{'");'}
+                                <br/>
+                                {tab}{tab}{"}"}
+                                <br/>
+                                {tab}{"}"}
+                                <br/>
+                                {"}"}
+                            </Box>
+                        </Typography>
+                        <br/>
+                        <Typography variant="h6" component="p" sx={{fontWeight: "bold"}}>
+                            ¡Cuidado con los ciclos inservibles!
+                        </Typography>
                         <Typography variant="h6" component="p">
-                            Excelente ahora ya sabes a nivel teórico cual es la función de los ciclos en la programación, en los siguientes
-                            temas conocerás mas a fondo los ciclos for, while y doWhile a nivel teórico y a nivel practico en Java.
+                            En el siguiente código te mostraremos un ciclo que nunca se ejecuta. El problema 
+                            ocurre cuando iniciamos la variable con un 1, y la condición pide que la variable 
+                            i sea menor que 1, así que una vez que se detecta la condición falsa automáticamente 
+                            se salta el cuerpo del ciclo. Así que siempre ten cuidado con las condiciones que uses. 
+                        </Typography>
+                        <Typography variant="h6" >
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main", padding:2}}>
+                                {"public class Main{"}
+                                <br/>
+                                {tab}{"public static void main(String[] args){"}
+                                <br/>
+                                {tab}{tab}{"for(int i = 1; i<1; i++){"}
+                                <br/>
+                                {tab}{tab}{tab}{'System.out.println("'}{Usuario.User}{'");'}
+                                <br/>
+                                {tab}{tab}{"}"}
+                                <br/>
+                                {tab}{"}"}
+                                <br/>
+                                {"}"}
+                            </Box>
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
-                            <Grid item sx={{ paddingY:2}}>
+                            <Grid item sx={{ paddingY: 2 }}>
                                 <VolverAlMenu />
                             </Grid>
-                            <Grid item sx={{ paddingY:2}}>
+                            <Grid item sx={{ paddingY: 2 }}>
                                 <SiguienteTema />
                             </Grid>
                         </Grid>

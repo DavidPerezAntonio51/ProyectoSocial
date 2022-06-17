@@ -49,7 +49,7 @@ function Ciclos() {
                             Supongamos que te solicitamos un código que imprima tu nombre 600 veces
                         </Typography>
                         <Typography variant="h6" >
-                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main"}}>
+                            <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace: 'nowrap', backgroundColor:"stratos.main", color:"boticelli.main", padding:2}}>
                                 {"public class Main{"}
                                 <br/>
                                 {tab}{"public static void main(String[] args){"}
