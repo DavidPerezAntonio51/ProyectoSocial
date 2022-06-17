@@ -36,7 +36,7 @@ const PseudocodigoDiagramas = () => {
                         En esta ocasión nos enfocaremos al pseudocódigo, que lo podríamos ver como una forma de interpretar los pasos que realizará el programa a realizar haciendo uso de un lenguaje que sea comprensible por las personas. Esto no tiene que ver con codificar aún, sino con análizar la lógica que hay detrás de lo que se va a realizar; véase el siguiente ejemplo <br/> <br/>
                     </Typography>
                     <center>
-                    <img src={require("../../../assets/img/pseudo.jpg")}></img>
+                    <img src={require("../../../assets/img/pseudo.jpg")}  alt="Imagen pseudocódigo"></img>
                     </center>
                     <Typography align="justify" variant="body1" component="p">
                         <br/> <br/>
@@ -66,7 +66,7 @@ const PseudocodigoDiagramas = () => {
                         Los diagrama de flujo son herramientas muy útiles que solemos utilizar los programadores para describir el funcionamiento de un respectivo algoritmo de forma gráfica, para ello es importante conocer la símbología que nos permitirá hacer un buen uso de estos diagramas.
                     </Typography>
                     <center>
-                     <img src={require("../../../assets/img/Simbologia.png")}></img>
+                     <img src={require("../../../assets/img/Simbologia.png")}  alt="Símbolos de los diagramas de flujo"></img>
                     </center>
                     <Typography align="justify" variant="body1" component="p">
                         <br/>
@@ -74,7 +74,7 @@ const PseudocodigoDiagramas = () => {
                         <br/>
                     </Typography>
                     <center>
-                        <img src={require("../../../assets/img/diagramaEjemplo.png")}></img>
+                        <img src={require("../../../assets/img/diagramaEjemplo.png")} alt="Diagrama de ejemplo"></img>
                     </center>
                     <Typography align="justify" variant="body1" component="p">
                         <br/>
@@ -94,7 +94,7 @@ const PseudocodigoDiagramas = () => {
                         <br/>
                     </Typography>
                     <center>
-                        <img src={require("../../../assets/img/diagramaEjercicio.png")}></img>
+                        <img src={require("../../../assets/img/diagramaEjercicio.png")}  alt="Diagrama de ejercicio"></img>
                     </center>
                     <MostrarRespuesta>
                         <Typography align="justify" variant="body1" component="p">

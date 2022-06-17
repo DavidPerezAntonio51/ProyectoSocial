@@ -19,7 +19,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import CodeIcon from '@mui/icons-material/Code';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
@@ -80,7 +80,7 @@ function HolaMundo(props){
                             >
                                  <ListItemButton onClick={handleClick1}>
                                     <ListItemIcon>
-                                    <DoubleArrowIcon />
+                                    <CodeIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Netbeans" />
                                     {open1 ? <ExpandLess /> : <ExpandMore />}
@@ -88,30 +88,30 @@ function HolaMundo(props){
                                 <Collapse in={open1} timeout="auto" unmountOnExit>
                                     <List component="div" disablePadding>
                                     <ListItemText primary={<Typography style={{ color: "black" }}>Así se estructura el entorno de Netbeans: <br></br><br></br>
-                                        <center><img src={img1} height="400" width="800"/></center></Typography>}/>
+                                        <center><img src={img1} height="400" width="800" alt="algo1"/></center></Typography>}/>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Damos en la pestaña "File", posteriormente damos en la opción "New project: "</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img2} height="400" width="800" /></center>
+                                        <center><img src={img2} height="400" width="800" alt="algo2"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Se nos abrirá una ventana como la siguiente, seleccionaremos "Java with Ant" en la sección de Categories y posteriormente "Java Application" en la sección de Projects y finalmente daremos en "Next"</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img3} height="400" width="800" /></center>
+                                        <center><img src={img3} height="400" width="800" alt="algo3"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Se nos abrirá esta nueva ventana y en la parte de "Project Name" le daremos un nombre, en este caso {Usuario.User} yo recomiendo poner el mismo nombre y finalmente dar en el botón Finish</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img4} height="400" width="800" /></center>
+                                        <center><img src={img4} height="400" width="800" alt="algo4"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Muy bien {Usuario.User} has terminado de crear tu primer archivo Java en Netbeans, en la siguiente sesión veremos como ejecutar nuestro primer Hola Mundo</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img5} height="400" width="800" /></center>
+                                        <center><img src={img5} height="400" width="800" alt="algo5"/></center>
                                         <br></br><br></br>
                                     </List>
                                 </Collapse>
                                 
                                 <ListItemButton onClick={handleClick2}>
                                     <ListItemIcon>
-                                    < DoubleArrowIcon />
+                                    < CodeIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="CMD" />
                                     {open2 ? <ExpandLess /> : <ExpandMore />}
@@ -119,19 +119,19 @@ function HolaMundo(props){
                                 <Collapse in={open2} timeout="auto" unmountOnExit>
                                     <List component="div" disablePadding>
                                         <ListItemText primary={<Typography style={{ color: "black" }}>Buscaremos la aplicación de "Bloc de notas" y lo abriremos: <br></br><br></br>
-                                        <img src={img6} height="400" width="800" /></Typography>}/>
+                                        <img src={img6} height="400" width="800" alt="algo6"/></Typography>}/>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Copiaremos este código inicial para poder hacer un archivo Java</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img7} height="500" width="500" /></center>
+                                        <center><img src={img7} height="500" width="500" alt="algo7"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Posteriormente, guardaremos el archivo yendo a la pestaña "Archivo"</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img8} height="400" width="800" /></center>
+                                        <center><img src={img8} height="400" width="800" alt="algo8"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Se nos abrirá esta nueva donde podremos escoger donde guardarlo, pero antes {Usuario.User} le pondremos en el recuadro después de "Nombre de archivo:" HolaMundo.java, le damos guardar y con esto ya tendremos nuestro primer archivo Java.</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img9} height="400" width="800" /></center>
+                                        <center><img src={img9} height="400" width="800" alt="algo9"/></center>
                                         <br></br><br></br>
                                     </List>
                                 </Collapse>

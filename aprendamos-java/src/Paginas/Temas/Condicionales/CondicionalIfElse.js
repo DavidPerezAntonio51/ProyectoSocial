@@ -4,6 +4,7 @@ import {Table, TableHead, TableRow, TableCell, TableBody} from "@mui/material";
 import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import UserContext from "../../../Contextos/UserContext";
+import MostrarRespuesta from "../../../Componentes/ComponentesDeLosTemas/MostrarResppuesta";
 import { useContext } from "react";
 
 function CondicionalIfElse(){
@@ -30,21 +31,21 @@ function CondicionalIfElse(){
                         <Grid item sx={{p:1, backgroundColor: "stratos.main"}}>
                             <Typography variant="h6" sx={{paddingX:10}}>
                                 <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:15}}>
-                                    {"import java.util.Scanner;"}<span className="comentario">{'//Este es una importación de elementos de Java'}</span>
+                                    {"import java.util.Scanner;"}&nbsp;&nbsp;<span className="comentario">{'//Este es una importación de elementos de Java'}</span>
                                     <br />
                                     {"public class Main{"}
                                     <br />
                                     {tab}{"public static void main(String[] args){"}
                                     <br />
-                                    {tab}{tab}{"Scanner entrada = new Scanner(System.in);"}<span className="comentario">{'//Creamos el objeto para realizar la obtención de la entrada'}</span>
+                                    {tab}{tab}{"Scanner entrada = new Scanner(System.in);"}&nbsp;&nbsp;<span className="comentario">{'//Creamos el objeto para realizar la obtención de la entrada'}</span>
                                     <br />
-                                    {tab}{tab}{"float datoUsuario;"}<span className="comentario">{'//Creamos la variable que usaremos para almacenar la entrada'}</span>
+                                    {tab}{tab}{"float datoUsuario;"}&nbsp;&nbsp;<span className="comentario">{'//Creamos la variable que usaremos para almacenar la entrada'}</span>
                                     <br />
-                                    {tab}{tab}{'System.out.println("Ingresa el valor de tu renta anual: ");'}<span className="comentario">{'//Almacenamos el valor desde la entrada'}</span>
+                                    {tab}{tab}{'System.out.println("Ingresa el valor de tu renta anual: ");'}&nbsp;&nbsp;<span className="comentario">{'//Almacenamos el valor desde la entrada'}</span>
                                     <br />
                                     {tab}{tab}{"entrada.nextFloat(datoUsuario);"}
                                     <br />
-                                    {tab}{tab}{"if(datoUsuario > 0){"}<span className="comentario">{'//Comprobamos que la entrada seá correcta'}</span>
+                                    {tab}{tab}{"if(datoUsuario > 0){"}&nbsp;&nbsp;<span className="comentario">{'//Comprobamos que la entrada seá correcta'}</span>
                                     <br />
                                     {tab}{tab}{tab}{"if(datoUsuario >= 0.01 && datoUsuario <= 7735){"}
                                     <br />
@@ -91,7 +92,107 @@ function CondicionalIfElse(){
                         <Typography variant="body1" component="p">
                             <ol>
                                 <li>Escribir un programa que le pida un número al usuario, deberá de delimitar si el número es par y mayor a 20, mostrando el mensaje de “Tu número cumple con las condiciones”, en caso de que sea par pero menor a 20, deberá enseñar el mensaje de “Tu número solo cumple con una condición revisa de nuevo tu entrada” y el caso de que no cumpla ninguna de las opciones, deberá mostrar “Tu número no cumple con ninguna condición, se termina la ejecución…”.</li>
-                                <li>Escribir un programa que le pida el número celular al usuario, este debera corroborarse que la longitud del número sea de 10 digitos, apartir de este se debe de comprobar que sus elementos sean diferentes.</li>
+                                {tab}<MostrarRespuesta>
+                                                <Typography variant="h6" sx={{paddingX:10}}>
+                                                    <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:12}}>
+                                                        {"import java.util.Scanner;"}
+                                                        <br />
+                                                        {"public class Main{"}
+                                                        <br/>
+                                                        {tab}{"public static void main(String[] args){"}
+                                                        <br />
+                                                        {tab}{'int numero = 0;'}&nbsp;&nbsp;<span className="comentario">{'//creamos la variable para obtener el numero'}</span>
+                                                        <br />
+                                                        {tab}{'Scanner entrada = new Scanner(System.in);'}&nbsp;&nbsp;<span className="comentario">{'//creamos el objeto para obtener la entrada del usuario'}</span>
+                                                        <br />
+                                                        {tab}{'System.out.println("Ingrese el numero: ");'}&nbsp;&nbsp;<span className="comentario">{'//Imprimimos la indicación que el usuario debe hacer'}</span>
+                                                        <br />
+                                                        {tab}{'numero = entrada.nextInt();'}&nbsp;&nbsp;<span className="comentario">{'//Almacenamos la entrada del usuario'}</span>
+                                                        <br />
+                                                        {tab}{tab}{"if( (numero % 2 == 0) && numero > 20 ){"}&nbsp;&nbsp;<span className="comentario">{"//preguntamos ¿si el numero es par y si es mayor a 20?"}</span>
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//Condición cierta`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//imprimos este mensaje`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("Tu numero cumple con las condiciones: "+numero);`}
+                                                        <br />
+                                                        {tab}{tab}{`}else if( (numero % 2 == 0) && numero < 20 ){`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//Condición cierta`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//imprimos este mensaje`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("Tu numero solo cumple con una condicion, revisa de nuevo tu entrada: "+numero);`}
+                                                        <br />
+                                                        {tab}{tab}{`}else{`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//No cumple ninguna condición, de modo que imprimos este mensaje`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("Tu numero no cumple con nunguna condicion, se termina la ejecucion: "+numero);`}
+                                                        <br />
+                                                        {tab}{tab}{`}`}
+                                                        <br />
+                                                        {tab}{`}`}
+                                                        <br />
+                                                        {`}`}
+                                                    </Box>
+                                                </Typography>
+                                        </MostrarRespuesta>
+
+                                <li>Escribir un programa que le pida al usuario dos números, deberá mostrar cuál de los dos es mayor, en esta sección deberá mostrar la diferencia donde sea positiva, por ejemplo, si a es mayor a b, deberá mostrar a-b y caso contrario y también considerar que si son iguales mostrar en pantalla un mensaje.</li>
+                                {tab}<MostrarRespuesta>
+                                                <Typography variant="h6" sx={{paddingX:10}}>
+                                                    <Box sx={{maxWidth:"calc(90vw - 32px)", overflowX:"auto", overflowY:"unset", whiteSpace:"nowrap", backgroundColor:"#111111", color:"#e1e7f2", paddingY:3, paddingTop:3, paddingX:3, fontSize:12}}>
+                                                        {"import java.util.Scanner;"}
+                                                        <br />
+                                                        {"public class Main{"}
+                                                        <br/>
+                                                        {tab}{"public static void main(String[] args){"}
+                                                        <br />
+                                                        {tab}{'int a, b, resta;'}&nbsp;&nbsp;<span className="comentario">{'//creamos la variable para obtener el numero'}</span>
+                                                        <br />
+                                                        {tab}{'Scanner entrada = new Scanner(System.in);'}&nbsp;&nbsp;<span className="comentario">{'//creamos el objeto para obtener la entrada del usuario'}</span>
+                                                        <br />
+                                                        {tab}{'System.out.println("Ingrese el numero a: ");'}&nbsp;&nbsp;<span className="comentario">{'//Imprimimos la indicación que el usuario debe hacer'}</span>
+                                                        <br />
+                                                        {tab}{'a = entrada.nextInt();'}&nbsp;&nbsp;<span className="comentario">{'//Almacenamos la entrada del usuario'}</span>
+                                                        <br />
+                                                        {tab}{'System.out.println("Ingrese el numero b: ");'}&nbsp;&nbsp;<span className="comentario">{'//Imprimimos la indicación que el usuario debe hacer'}</span>
+                                                        <br />
+                                                        {tab}{'b = entrada.nextInt();'}&nbsp;&nbsp;<span className="comentario">{'//Almacenamos la entrada del usuario'}</span>
+                                                        <br />
+                                                        {tab}{tab}{"if( a > b ){"}&nbsp;&nbsp;<span className="comentario">{"//preguntamos ¿si a es mayor respecto a b?"}</span>
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//Condición cierta`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`resta = a - b;`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("A es mayor que B, esta es su diferencia: "+resta);`}
+                                                        <br />
+                                                        {tab}{tab}{`}else if( b > a ){`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//Condición cierta`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`resta = b - a;`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("B es mayor que A, esta es su diferencia: "+resta);`}
+                                                        <br />
+                                                        {tab}{tab}{`}else if( a == b ){`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`//Cumple que ambos sean iguales`}
+                                                        <br />
+                                                        {tab}{tab}{tab}{`System.out.println("Ambos numeros son iguales");`}
+                                                        <br />
+                                                        {tab}{tab}{`}`}
+                                                        <br />
+                                                        {tab}{`}`}
+                                                        <br />
+                                                        {`}`}
+                                                    </Box>
+                                                </Typography>
+                                        </MostrarRespuesta>
+                                    
                             </ol>
                         </Typography>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{paddingTop:3}}>
