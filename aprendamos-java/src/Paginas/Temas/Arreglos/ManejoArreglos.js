@@ -135,7 +135,8 @@ function ManejoArray() {
                             backgroundColor: 'boticelli.main',
                             color: "regalBlue.main",
                             paddingX : 7,
-                            paddingY : 2
+                            paddingY : 2,
+                            maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset"
                         }}>
                             <Typography variant = "h5" component = "h3">
                                 <b>Imprimir la suma y multiplicación de un arreglo de 10 numeros enteros</b><br/>
@@ -185,7 +186,8 @@ function ManejoArray() {
                             backgroundColor: 'boticelli.main',
                             color: "regalBlue.main",
                             paddingX : 7,
-                            paddingY : 2
+                            paddingY : 2,
+                            maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset"
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
@@ -261,7 +263,8 @@ function ManejoArray() {
                             backgroundColor: 'boticelli.main',
                             color: "regalBlue.main",
                             paddingX : 7,
-                            paddingY : 2
+                            paddingY : 2,
+                            maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset"
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
