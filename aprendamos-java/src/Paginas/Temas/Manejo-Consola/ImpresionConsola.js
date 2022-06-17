@@ -54,7 +54,7 @@ function ImpresionConsola(props){
                         paddingX: 7,
                         backgroundColor: "boticelli.main",
                         color: "regalBlue.main",
-                        maxWidth: "100%",
+                        minWidth: "54.15vw",
                         paddingY: 5,
                     }}>
                         <Typography variant="body1" component="p">
@@ -62,7 +62,7 @@ function ImpresionConsola(props){
                         </Typography>
                         <br></br>
                         <List
-                            sx={{ width: '100%', maxWidth: '70vw', border: 1, borderColor: 'primary.main', borderRadius: 2, p: 2, textAlign: 'justify'  }}
+                            sx={{ width: '100%', border: 1, borderColor: 'primary.main', borderRadius: 2, p: 2, textAlign: 'justify'  }}
                             component="nav"
                             aria-labelledby="nested-list-subheader"
                             subheader={
