@@ -5,6 +5,11 @@ import { Grid, Typography } from "@mui/material";
 import { Box, Container} from "@mui/system";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import ArreglosInicial from './ArreglosInicial';
+import consola3 from '../../../assets/img/imgConsola3.PNG';
+import consola4 from '../../../assets/img/imgConsola4.PNG';
+import consola5 from '../../../assets/img/imgConsola5.PNG';
+
+
 function ManejoArray() {
     const Usuario = useContext(UserContext);
     return ( 
@@ -12,7 +17,7 @@ function ManejoArray() {
             <Grid item sx={{ minWidth: "100%" }}>
                 <Box sx={{
                     backgroundColor: 'boticelli.main',
-                    color: "black",
+                    color: "regalBlue.main",
                     padding : 7
                 }}>
                     <ArreglosInicial nombreUser ={Usuario.User}></ArreglosInicial>
@@ -57,7 +62,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -74,7 +79,7 @@ function ManejoArray() {
                 </Grid>
 
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     public static void main(String[] args){
@@ -108,12 +113,15 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola3} height = "200" width = "550"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -123,7 +131,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -137,7 +145,7 @@ function ManejoArray() {
                 </Grid>
                 
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     //Declaramos e inicializamos un arreglo de 10 numeros
@@ -173,12 +181,15 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola4} height = "250" width = "650"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -188,7 +199,7 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
@@ -201,7 +212,7 @@ function ManejoArray() {
                     </Grid>   
                 </Grid>
                 <Grid item sx={{p:5, backgroundColor: "stratos.main"}}>
-                    <Box sx={{width:"90%", height:"40%", backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
+                    <Box sx={{width:"90%", height:"40%", maxWidth : "calc(60w - 32px)", overflowX : "auto",overflowY : "unset",backgroundColor:'#111111', color:'#e1e7f2', p:1, fontSize:"70%", padding:"0 0 0 5%"}}>
                         <Typography variant="subtitle" component="pre" alignSelf={"center"}>
                             {`public class Main{
     public static void main(String[] args){
@@ -246,12 +257,15 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
+                            color: "regalBlue.main",
                             paddingX : 7,
                             paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
                                Resultado en la consola: 
+                               <Grid sx = {{textAlign : "center", padding : 5}}>
+                                    <img src = {consola5} height = "600" width = "830"/>
+                                </Grid>
                             </Typography>
                         </Box>
                     </Grid>   
@@ -261,8 +275,9 @@ function ManejoArray() {
                     <Grid item sx={{ minWidth: "100%" }}>
                         <Box sx={{
                             backgroundColor: 'boticelli.main',
-                            color: "black",
-                            padding : 7
+                            color: "regalBlue.main",
+                            paddingX : 7,
+                            paddingY : 2
                         }}>
                             <Typography variant = "h5" component = "h3">
                                 <b>Ejercicios propuestos</b>
