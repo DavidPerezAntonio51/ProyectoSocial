@@ -1,0 +1,11 @@
+{
+    "steps": [{
+            "label": "¿En que momento uso un ciclo for?",
+            "description": "El ciclo for lo utilizaremos a menudo en problemas donde nosotros conocemos la cantidad de veces que se debe ejecutar el ciclo para cierta tarea. Por ejemplo: si debemos registrar a 200 empleados, leer 100 números o mostrar 600 veces algún mensaje."
+        },
+        {
+            "label": "¿En que momento uso un ciclo while?",
+            "description": "El ciclo while lo utilizaremos en casos donde nosotros no sabemos con seguridad la cantidad de veces que debemos ejecutar el ciclo. Por ejemplo: se deben leer varios números desde el teclado y debemos terminar la lectura cuando se ingrese el numero 0, o si deseas registrar las edades de personas y quieres detenerte cuando una edad sea mayor de 80 años. Como puedes ver aquí la cantidad de veces que se ejecuta el ciclo es muy variable."
+        }
+    ]
+}
