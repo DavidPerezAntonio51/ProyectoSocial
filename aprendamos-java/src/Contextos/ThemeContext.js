@@ -1,4 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { fontSize } from "@mui/system";
 
 const theme = createTheme({
     palette: {
@@ -64,6 +65,24 @@ const theme = createTheme({
                     "&.Mui-completed": {
                         "color": "#001B48"
                     },
+                }
+            }
+        },
+        MuiDialogTitle:{
+            styleOverrides:{
+                root:{
+                    color:"#02457A",
+                    fontWeight: "bold"
+                }
+            }
+        },
+        MuiDialogContent:{
+            styleOverrides:{
+                root:{
+                    color:"#02457A"
+                },
+                dividers:{
+                    color:"#001B48"
                 }
             }
         }
