@@ -7,7 +7,7 @@ import MostrarRespuesta from "../../../Componentes/ComponentesDeLosTemas/Mostrar
 import UserContext from "../../../Contextos/UserContext";
 import whilePreguntas from './dataJson/whilePreguntas.json';
 
-function CicloWhile() {
+function CicloDoWhile() {
     const Usuario = useContext(UserContext);
     const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return (
@@ -21,7 +21,7 @@ function CicloWhile() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center" }}>
-                            Ciclo While
+                            Ciclo Do While
                         </Typography>
                     </Grid>
                 </Box>
@@ -34,14 +34,16 @@ function CicloWhile() {
                         paddingY: 5,
                     }}>
                         <Typography variant="h6" component="p">
-                            Hola {Usuario.User} ahora es el turno de conocer sobre el ciclo while, while traducido al español
-                            significa mientras, como su nombre lo indica es un ciclo que se ejecutara mientras se cumpla una
-                            condición, a diferencia del ciclo for este ciclo solo depende de la condición.
+                            Ahora veremos el último de los ciclos que es el do while, este ciclo comparte una gran similitud 
+                            con el ciclo while, solo existe una pequeña diferencia a nivel de sintaxis, la palabra "do" antes 
+                            del while, ¿esto en que nos afecta?
                         </Typography>
                         <br />
-                        <Typography variant="h6" component="p" sx={{ fontWeight: "bold" }}>
-                            Pero no debes olvidar que debe haber un mecanismo para evitar que el ciclo se ejecute de manera
-                            infinita.
+                        <Typography variant="h6" component="p">
+                            Pues este ciclo nos permite evitar un problema que teníamos con los 2 ciclos anteriores, ¿aun 
+                            recuerdas cuales eran esos problemas? Así es {Usuario.User} los bucles infinitos y los bucles 
+                            inservibles, el problema que se soluciona con este ciclo es el de los bucles inservibles, pues 
+                            este ciclo nos asegura la ejecución del código al menos una vez.
                         </Typography>
                         <br />
                         <Typography variant="h6" component="p">
@@ -53,11 +55,11 @@ function CicloWhile() {
                                 <br />
                                 {tab}{"public static void main(String[] args){"}
                                 <br />
-                                {tab}{tab}{"while(condición){"}<span className="comentario">//declaracion del ciclo</span>
+                                {tab}{tab}{"do{"}
                                 <br />
                                 {tab}{tab}<span className="comentario">//Todas las instrucciones que se repetiran van aqui</span>
                                 <br />
-                                {tab}{tab}{"}"}
+                                {tab}{tab}{"}while(condición);"}<span className="comentario">//condicion que verifica si vuelve a ejecutarse o no</span>
                                 <br />
                                 {tab}{"}"}
                                 <br />
@@ -290,9 +292,6 @@ function CicloWhile() {
                             <Grid item sx={{ paddingY: 2 }}>
                                 <VolverAlMenu />
                             </Grid>
-                            <Grid item sx={{ paddingY: 2 }}>
-                                <SiguienteTema />
-                            </Grid>
                         </Grid>
                     </Box>
                 </Grid>
@@ -301,4 +300,4 @@ function CicloWhile() {
     );
 }
 
-export default CicloWhile;
+export default CicloDoWhile;

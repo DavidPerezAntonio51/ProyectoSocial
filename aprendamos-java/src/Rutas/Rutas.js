@@ -23,6 +23,7 @@ import Operaciones from "../Paginas/Temas/Tipos-de-datos/Operaciones";
 import HolaMundo from "../Paginas/Temas/Manejo-Consola/HolaMundo";
 import ImpresionConsola from "../Paginas/Temas/Manejo-Consola/ImpresionConsola";
 import CicloWhile from "../Paginas/Temas/Ciclos/CicloWhile";
+import CicloDoWhile from "../Paginas/Temas/Ciclos/CicloDoWhile";
 
 function Rutas() {
     const Usuario = useContext(UserContext);
@@ -61,7 +62,7 @@ function Rutas() {
                     <Route path="que-es-un-ciclo/:idTema/:idSubtema" element={<Ciclos/>}/>
                     <Route path="ciclo-for/:idTema/:idSubtema" element={<CicloFor/>}/>
                     <Route path="ciclo-while/:idTema/:idSubtema" element={<CicloWhile/>}/>
-                    <Route path="ciclo-do-while/:idTema/:idSubtema"/>
+                    <Route path="ciclo-do-while/:idTema/:idSubtema" element={<CicloDoWhile/>}/>
                 </Route>
 
                 <Route path="arreglos">
