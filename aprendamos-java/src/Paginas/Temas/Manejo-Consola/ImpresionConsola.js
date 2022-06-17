@@ -83,15 +83,15 @@ function ImpresionConsola(props){
                                 <Collapse in={open1} timeout="auto" unmountOnExit>
                                     <List component="div" disablePadding>
                                     <ListItemText primary={<Typography style={{ color: "black" }}>Le damos click en el botón que parece un triánngulo para poder correr el programa inicial y poder ver si funciona correctamente. En la parte de abajo tiene que aparecer ese mensaje:<br></br><br></br>
-                                        <center><img src={img1} height="400" width="800" alt="netbeans1"/></center></Typography>}/>
+                                        <center><img src={img1} height="400" width="800" alt="algo12"/></center></Typography>}/>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Le agregamos "System.out.println("Hola Mundo");" al programa y guardamos los cambios</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img2} height="400" width="800" alt="netbeans2" /></center>
+                                        <center><img src={img2} height="400" width="800" alt="algo13"/></center>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Finalmente le daremos click al botón en forma de triángulo para su compilación y ejecución, nos tiene que mostrar algo en la parte inferior:</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img3} height="400" width="800" alt="netbeans5"/></center>
+                                        <center><img src={img3} height="400" width="800" alt="algo14"/></center>
                                         <br></br><br></br>
                                     </List>
                                 </Collapse>
@@ -106,12 +106,12 @@ function ImpresionConsola(props){
                                 <Collapse in={open2} timeout="auto" unmountOnExit>
                                     <List component="div" disablePadding>
                                         <ListItemText primary={<Typography style={{ color: "black" }}>Buscaremos la carpeta en donde esta nuestro archivo Java, una vez estando ahi {Usuario.User} le daremos click en la barra de direcciones y escribiremos cmd, le damos enter<br></br><br></br>
-                                        <img src={img4} height="400" width="800" alt="netbeans4"/></Typography>}/>
+                                        <img src={img4} height="400" width="800" alt="algo22"/></Typography>}/>
                                         <br></br><br></br>
                                         <Typography style={{ color: "black" }}>Abrimos la consola con la teclas "windows + r", escribiremos cmd y estando adentro escribiremos la primera instrucción:
                                         "javac HolaMundo.java", damos enter y después escribiremos "java HolaMundo", se nos mostrará algo así:</Typography>
                                         <br></br><br></br>
-                                        <center><img src={img5} height="500" width="800" alt="netbeans3" /></center>
+                                        <center><img src={img5} height="500" width="800" alt="algo23"/></center>
                                         <br></br><br></br>
                                     </List>
                                 </Collapse>
