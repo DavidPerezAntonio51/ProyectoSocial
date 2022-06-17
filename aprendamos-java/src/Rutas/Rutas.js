@@ -9,6 +9,7 @@ import Ciclos from "../Paginas/Temas/Ciclos/QueEsUnCiclo";
 import ManejoArray from "../Paginas/Temas/Arreglos/ManejoArreglos";
 import ComoCodigo from "../Paginas/Temas/Introduccion/ComoFuncionaCodigo";
 import QueEsProgramar from "../Paginas/Temas/Introduccion/QueEsProgramar";
+import TuPuedes from "../Paginas/Temas/Introduccion/TuTambienPuedes";
 import InstalaJava from "../Paginas/Temas/Introduccion/InstalarJava";
 import InstalaNetBeans from "../Paginas/Temas/Introduccion/InstalarNetBeans";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
@@ -26,7 +27,7 @@ function Rutas() {
             <Route path="/temas" element={Usuario.User===null?<Navigate to={"/"}/>:<NavBar/>}>
                 <Route path="introduccion">
                     <Route path="que-es-programar/:idTema/:idSubtema" element={<QueEsProgramar />}></Route>
-                    <Route path="programar-es-fácil/:idTema/:idSubtema"></Route>
+                    <Route path="programar-es-facil/:idTema/:idSubtema" element={<TuPuedes />}></Route>
                     <Route path="pseudocodigo-y-diagramas-de-flujo/:idTema/:idSubtema"></Route>
                     <Route path="como-funciona-un-codigo/:idTema/:idSubtema" element={<ComoCodigo />}/>
                     <Route path="instalacion-java/:idTema/:idSubtema" element={<InstalaJava />}/>

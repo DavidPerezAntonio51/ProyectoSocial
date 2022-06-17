@@ -7,7 +7,7 @@ import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver
 const QueEsProgramar = () => {
     const Usuario = useContext(UserContext);
     return (
-        <Container maxWidth="xl">
+        <Container sx={{ paddingY: 6 }}>
             <Grid container>
                 <Box sx={{
                     backgroundColor: "boticelli.main",
