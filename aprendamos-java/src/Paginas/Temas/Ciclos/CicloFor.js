@@ -160,15 +160,17 @@ function CicloFor() {
                                     <br />
                                     {tab}{tab}<span className="comentario">//{"Iniciamos las variables de inicio y fin"}</span>
                                     <br />
-                                    {tab}{tab}{'int inicio = 0'}
+                                    {tab}{tab}{'int inicio = 30'}
                                     <br />
-                                    {tab}{tab}{'int fin = 50'}
+                                    {tab}{tab}{'int fin = 600'}
                                     <br/>
-                                    {tab}{tab}{}
-                                    <br/>
-                                    {tab}{tab}{"for(int i = 0; i<600; i++){"}
+                                    {tab}{tab}{"for(int i = inicio; i<=fin; i++){"}<span className="comentario">//definimos el ciclo</span>
                                     <br />
-                                    {tab}{tab}{tab}{'System.out.println("'}{Usuario.User}{'");'}<span className="comentario">//Escribimos la linea que muestra el nombre solo una vez</span>
+                                    {tab}{tab}{tab}{'if(i%2==0){'}<span className="comentario">//usando el operador modulo verificamos si es par</span>
+                                    <br />
+                                    {tab}{tab}{tab}{tab}{'System.out.println("El número "+ i + " es par");'}<span className="comentario">//mostramos el numero en consola</span>
+                                    <br />
+                                    {tab}{tab}{tab}{"}"}
                                     <br />
                                     {tab}{tab}{"}"}
                                     <br />
@@ -178,12 +180,89 @@ function CicloFor() {
                                 </Box>
                             </Typography>
                         </MostrarRespuesta>
+                        <br/>
                         <Typography variant="h4" component="h3">
                             Ejercicio 2:
                         </Typography>
+                        <Typography variant="h6" component="p">
+                            Realice un programa en el que se pueda imprimir un rectángulo en consola utilizando el 
+                            símbolo '*', debe usar 2 ciclos for.
+                        </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" component="p">
+                                Como dato curioso podemos tener ciclos dentro de ciclos, se le conoce como ciclos anidados. 
+                                El ciclo interno se repetirá tantas veces como lo solicite el ciclo externo
+                            </Typography>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos las variables necesarias"}</span>
+                                    <br />
+                                    {tab}{tab}{'int largo = 20'}
+                                    <br/>
+                                    {tab}{tab}{'int alto = 10'}
+                                    <br/>
+                                    {tab}{tab}{"for(int i = 1; i<=alto; i++){"}<span className="comentario">//el primer </span>
+                                    <br/>
+                                    {tab}{tab}{tab}{"for(int j = 1; i<=ancho; i++){"}
+                                    <br/>
+                                    {tab}{tab}{tab}{'}'}
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("El total a pagar es: " + total);'}<span className="comentario">//mostramos el total a pagar</span>
+                                    <br />
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
+                        <br/>
                         <Typography variant="h4" component="h3">
                             Ejercicio 3:
                         </Typography>
+                        <Typography variant="h6" component="p">
+                            Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó $10 ,el segundo $20, 
+                            el tercero $40 y así sucesivamente. Realizar un programa para determinar cuánto debe pagar 
+                            mensualmente y el total de lo que pagará después de los 20 meses.
+                        </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos las variables necesarias"}</span>
+                                    <br />
+                                    {tab}{tab}{'int meses = 20'}
+                                    <br/>
+                                    {tab}{tab}{'int MontoPago = 10'}
+                                    <br/>
+                                    {tab}{tab}{'int total = 0'}
+                                    <br/>
+                                    {tab}{tab}{"for(int i = 1; i<=meses; i++){"}<span className="comentario">//el ciclo se repetirá la cantidad de meses a pagar</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'System.out.println("El monto del mes "+ i + " es: "+ MontoPago);'}<span className="comentario">//mostramos el monto a pagar este mes</span>
+                                    <br />
+                                    {tab}{tab}{tab}{'total=total+MontoPago'}<span className="comentario">//el monto a pagar de este mes se agrega al total a pagar</span>
+                                    <br />
+                                    {tab}{tab}{tab}{'MontoPago*=2'}<span className="comentario">//despues de mostrar el monto y sumarlo al total se duplica el monto a pagar para el siguiente mes</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("El total a pagar es: " + total);'}<span className="comentario">//mostramos el total a pagar</span>
+                                    <br />
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY: 2 }}>
                                 <VolverAlMenu />
