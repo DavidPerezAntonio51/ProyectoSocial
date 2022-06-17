@@ -13,6 +13,8 @@ import InstalaJava from "../Paginas/Temas/Introduccion/InstalarJava";
 import InstalaNetBeans from "../Paginas/Temas/Introduccion/InstalarNetBeans";
 import CondicionalIf from "../Paginas/Temas/Condicionales/CondicionalIf";
 import CondicionalElse from "../Paginas/Temas/Condicionales/CondicionalElse";
+import CondicionalIfElse from "../Paginas/Temas/Condicionales/CondicionalIfElse";
+import CondicionalSwitch from "../Paginas/Temas/Condicionales/CondicionalSwitch";
 import CicloFor from "../Paginas/Temas/Ciclos/CicloFor";
 import Primitivos from "../Paginas/Temas/Tipos-de-datos/Primitivos";
 import ManejoDT from "../Paginas/Temas/Tipos-de-datos/ManejoDT";
@@ -47,10 +49,10 @@ function Rutas() {
                 </Route>
 
                 <Route path="condicionales">
-                    <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf objeto={Usuario.User} />}></Route>
-                    <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse objeto = {Usuario.User} />}></Route>
-                    <Route path="sentencia-if-else/:idTema/:idSubtema"></Route>
-                    <Route path="sentencia-switch/:idTema/:idSubtema"></Route>
+                <Route path="sentencia-if/:idTema/:idSubtema" element={<CondicionalIf />}></Route>
+                    <Route path="sentencia-else/:idTema/:idSubtema" element={<CondicionalElse />}></Route>
+                    <Route path="sentencia-if-else/:idTema/:idSubtema" element={<CondicionalIfElse />}></Route>
+                    <Route path="sentencia-switch/:idTema/:idSubtema" element={<CondicionalSwitch />}></Route>
                 </Route>
 
                 <Route path="estructuras-repetitivas">
