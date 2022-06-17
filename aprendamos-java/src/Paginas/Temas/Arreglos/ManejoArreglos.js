@@ -8,10 +8,12 @@ import ArreglosInicial from './ArreglosInicial';
 import consola3 from '../../../assets/img/imgConsola3.PNG';
 import consola4 from '../../../assets/img/imgConsola4.PNG';
 import consola5 from '../../../assets/img/imgConsola5.PNG';
+import MostrarRespuesta from "../../../Componentes/ComponentesDeLosTemas/MostrarResppuesta";
 
 
 function ManejoArray() {
     const Usuario = useContext(UserContext);
+    const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return ( 
         <Container padding = "5" sx={{ paddingY: 6 }}>
             <Grid item sx={{ minWidth: "100%" }}>
@@ -294,8 +296,41 @@ function ManejoArray() {
                             <Typography variant = "h5" component = "h3">
                                 Ejercicio 1. <br/>
                                 Que el usuario llene un arreglo de 5 numeros y que el programa imprima los 
-                                elementos ordenados de manera ascendente, descendente y el numero elevado a la potencia 2
+                                elementos elevados al cuadrado
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Inicializamos el arreglo"}</span>
+                                    <br />
+                                    {tab}{tab}{''}
+                                    <br/>
+                                    {tab}{tab}{''}
+                                    <br/>
+                                    {tab}{tab}{"for (int i = 0; i < 10; i++) {"}<span className="comentario">//Ciclo que iterara la peticion de numeros</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'System.out.println("Dame un numero: ");'}<span className="comentario">//Pedimos los valores</span>
+                                    <br />
+                                    {tab}{tab}{tab}{'arregloEnteros[i] = sc.nextInt();'}<span className="comentario">//Leemos los valores</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{tab}{"for (int i = 0; i < 10; i++) {"}<span className="comentario">//Ciclo que iterara la impresion de valores</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'System.out.println("El elemento "+arregloEnteros[i]+"elevado al cuadrado es: "+Math.pow(arregloEnteros[i], 2));'}<span className="comentario">//Imprimimos</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
@@ -303,13 +338,65 @@ function ManejoArray() {
                             Crear un arreglo con 5 cadenas, unir las 5 cadenas en una sola e imprimir cuantos caracteres tiene
                             la nueva cadena
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Inicializamos el arreglo con las cadenas"}</span>
+                                    <br />
+                                    {tab}{tab}{'String arregloCadenas[] = {"Hola","Adios","Nunca","Siempre","Mundo"};'}
+                                    <br/>
+                                    {tab}{tab}{'String cadena = "";'}<span className="comentario">//{"Declaramos cadena donde se almacenaran los elementos del arreglo"}</span>
+                                    <br/>
+                                    {tab}{tab}{"for (int i = 0; i < 10; i++) {"}<span className="comentario">//Ciclo que recorrera todo el arreglo</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'cadena.concat(arregloCadenas[i]);'}<span className="comentario">//Juntamos las cadenas con el metodo concat</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("Los caracteres de la cadena son: "+cadena.length());'}<span className="comentario">//Imprimimos lo solicitado</span>
+                                    <br />
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
                             Ejercicio 3. <br/>
-                            Pide al usuario por teclado una frase y pasa sus caracteres a un array de caracteres. 
+                            Inicializa un arreglo con una palabra y pasa sus caracteres a un array de caracteres. 
                             Puedes hacer con o sin métodos de String.
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos las variables necesarias"}</span>
+                                    <br />
+                                    {tab}{tab}{'String myString = "string";'}
+                                    <br/>
+                                    {tab}{tab}{'char[] myChars = myString.toCharArray();'}
+                                    <br/>
+                                    {tab}{tab}{"for (int i=0; i<myChars.length; i++){"}<span className="comentario">//Ciclo que iterara todos las caracteres de la cadena</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'System.out.println(myChars[i]);'}<span className="comentario">//Imprimimos las caracteres que ya son parte del nuevo arreglo</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
 
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY:2}}>

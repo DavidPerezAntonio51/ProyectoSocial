@@ -35,6 +35,7 @@ function Bienvenida() {
                             Somo alumnos de la Escuela Superior de Computo (ESCOM) y formamos parte del
                             Instituto Politecnico Nacional
                         </Typography>
+                        <br />
                         <Typography variant="h4" component="h3">
                             ¿Cuál es nuestro Objetivo?
                         </Typography>
@@ -44,6 +45,7 @@ function Bienvenida() {
                             a programar desde lo más fundamental y paso a paso, tratando de eliminar a medida de lo posible
                             la frustración que muchas veces provoca el empezar a trabajar estas habilidades.
                         </Typography>
+                        <br />
                         <Typography variant="h4" component="h3">
                             ¿Porqué hacemos esto?
                         </Typography>
@@ -59,7 +61,8 @@ function Bienvenida() {
                             Deseamos de todo corazón que este curso logre el objetivo en tu vida que es aprender a programar
                             y que esto abra oportunidades profesionales que mejoren tu calidad de vida.
                             <br></br>
-                            APRENDAMOS A PROGRAMAR EN JAVA...
+                            <br></br>
+                            ¡Bien, aprendamos a programar en Java, {Usuario.User}!
                         </Typography>
                     </Grid>
                 </Box>

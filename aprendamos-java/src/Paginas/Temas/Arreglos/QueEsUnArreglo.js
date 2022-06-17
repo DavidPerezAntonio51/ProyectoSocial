@@ -18,10 +18,11 @@ import arre2 from '../../../assets/img/imgArreglos2.jpg';
 import ArreglosInicial from './ArreglosInicial';
 import consola1 from '../../../assets/img/imgConsola1.PNG';
 import consola2 from '../../../assets/img/imgConsola2.PNG';
-
+import MostrarRespuesta from "../../../Componentes/ComponentesDeLosTemas/MostrarResppuesta";
 
 function Arreglo() {
     const Usuario = useContext(UserContext);
+    const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
     return ( 
         <Container padding = "5" sx={{ paddingY: 6 }}>    
             <Grid>
@@ -398,6 +399,27 @@ function Arreglo() {
                                 </li>
                             </ul>
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos los arreglos"}</span>
+                                    <br />
+                                    {tab}{tab}{'int [] arregloEnteros = {1,2,3,4,5,6,7,8,9,0};'}
+                                    <br/>
+                                    {tab}{tab}{'char [] arregloLetras = {"a","b","c","d","e","f","g","h","i","j"};'}
+                                    <br/>
+                                    {tab}{tab}{'String [] arregloCadenas = {"Abraham","Romero","Angeles","veintiuno","futbol"};'}
+                                    <br/>
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
@@ -405,10 +427,39 @@ function Arreglo() {
                             Con los 3 arreglos declarados del ejercicio 1, imprime lo siguiente: 
                             <ul>
                                 <li> Los elementos 0, 5 y 9 del arreglo de numeros enteros </li>
-                                <li> Los elementos 0, 1, 7 y 8 del arreglo de las letras del alfabeto </li>
+                                <li> Los elementos 0, 1, y 7 del arreglo de las letras del alfabeto </li>
                                 <li> Imprime los elementos necesarios del arreglo de cadenas para formar tu nombre completo </li>
                             </ul>
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos los arreglos"}</span>
+                                    <br />
+                                    {tab}{tab}{'int [] arregloEnteros = {1,2,3,4,5,6,7,8,9,0};'}
+                                    <br/>
+                                    {tab}{tab}{'char [] arregloLetras = {"a","b","c","d","e","f","g","h","i","j"};'}
+                                    <br/>
+                                    {tab}{tab}{'String [] arregloCadenas = {"Abraham","Romero","Angeles","veintiuno","futbol"};'}
+                                    <br/>
+                                    {tab}{tab}<span className="comentario">//{"Imprimimos lo solicitado"}</span>
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("Los elementos 0, 5 y 9 del arreglo de numeros es: "+arregloEnteros[0]+","+arregloEnteros[5]+","+arregloEnteros[9]);'}
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("Los elementos 0, 1 y 7 del arreglo de letras es: "+arregloLetras[0]+","+arregloLetras[1]+","+arregloLetras[7]);'}
+                                    <br/>
+                                    {tab}{tab}{'System.out.println("Mi nombre es: "+arregloCadenas[0]+","+arregloCadenas[1]+","+arregloCadenas[2]);'}
+                                    <br/>
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         <br/>
 
                         <Typography variant = "h5" component = "h3">
@@ -419,6 +470,31 @@ function Arreglo() {
                             "Hola mi amigo numero 1 es 'NOMBRE DE TU AMIGO' y su edad es: 'EDAD DE TU AMIGO'"
                             Asi hasta listar a tus 5 amigos del 1 al 5.
                         </Typography>
+                        <MostrarRespuesta>
+                            <Typography variant="h6" >
+                                <Box sx={{ maxWidth: "calc(60vw - 32px)", overflowX: "auto", overflowY: "unset", whiteSpace: 'nowrap', backgroundColor: "stratos.main", color: "boticelli.main", padding: 2 }}>
+                                    {"public class Main{"}
+                                    <br />
+                                    {tab}{"public static void main(String[] args){"}
+                                    <br />
+                                    {tab}{tab}<span className="comentario">//{"Iniciamos los arreglos"}</span>
+                                    <br />
+                                    {tab}{tab}{'int [] Edades = {21,20,30,31,15};'}
+                                    <br/>
+                                    {tab}{tab}{'String [] Amigos = {"Amigo1","Amigo2","Amigo3","Amigo4","Amigo5"};'}
+                                    <br/>
+                                    {tab}{tab}{"for (int i = 0; i < 5; i++) {"}<span className="comentario">//Iniciamos el ciclo que recorrera ambos arreglos</span>
+                                    <br/>
+                                    {tab}{tab}{tab}{'System.out.println("Mi amigo "+i+"es: "+Amigos[i]+"Y su edad es: "+Edades[i]);'}<span className="comentario">//Mostramos la informacion recorriendo los indices</span>
+                                    <br />
+                                    {tab}{tab}{"}"}
+                                    <br/>
+                                    {tab}{"}"}
+                                    <br />
+                                    {"}"}
+                                </Box>
+                            </Typography>
+                        </MostrarRespuesta>
                         
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY:2}}>
