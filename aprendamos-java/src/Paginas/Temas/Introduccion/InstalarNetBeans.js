@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useContext } from "react";
-import SiguienteTema from "../../../Componentes/ComponentesDeLosTemas/BotonSiguienteTema";
 import VolverAlMenu from "../../../Componentes/ComponentesDeLosTemas/BotonVolver";
 import UserContext from "../../../Contextos/UserContext";
 import img1 from '../../../assets/InstalaNetBeans/IMG1.png';
@@ -118,9 +117,6 @@ function InstalarNetBeans() {
                         <Grid container justifyContent="space-between" alignItems="center" sx={{ paddingTop: 3 }}>
                             <Grid item sx={{ paddingY: 2 }}>
                                 <VolverAlMenu />
-                            </Grid>
-                            <Grid item sx={{ paddingY: 2 }}>
-                                <SiguienteTema />
                             </Grid>
                         </Grid>
                     </Box>
