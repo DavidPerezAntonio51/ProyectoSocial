@@ -50,7 +50,7 @@ function InstalarJava() {
                         </Typography>
                         <br></br>
                         <Typography variant="body1" component="p">
-                            Lo primero que debemos hacer acceder a la página de <a href='https://www.oracle.com/java/technologies/downloads/' target='_blank'> <b>descargas</b></a> oficial de Oracle,
+                            Lo primero que debemos hacer acceder a la página de <a href='https://www.oracle.com/java/technologies/downloads/' rel="noreferrer" target='_blank'> <b>descargas</b></a> oficial de Oracle,
                             ahí se nos proveerán diversas opciones para poder descargar el <b>Kit de Desarrollo Estándar (JDK) de Java</b>, este Kit es necesario ya que, sin él,
                             no podremos compilar ningún programa en dicho
                             lenguaje, además sus componentes son necesarios para el <b>IDE NetBeans</b>, el cual explicaremos en la siguiente sección.
@@ -85,7 +85,7 @@ function InstalarJava() {
                         </Grid>
                         <Typography variant="body1" component="p">
                             Entonces ahora dejamos que el instalador continue su proceso, cuando haya finalizado tendremos una opción para poder ver la documentación de JDK (<b>Next Steps</b>),
-                            que de igual forma puedes acceder haciendo clic <a href='https://docs.oracle.com/en/java/javase/17/index.html' target='_blank'> aquí</a>, nunca está de más revisar
+                            que de igual forma puedes acceder haciendo clic <a href='https://docs.oracle.com/en/java/javase/17/index.html' rel="noreferrer" target='_blank'> aquí</a>, nunca está de más revisar
                             documentación oficial de Oracle.
                         </Typography>
                         <Grid sx={{ textAlign: "center", padding: 5 }}>

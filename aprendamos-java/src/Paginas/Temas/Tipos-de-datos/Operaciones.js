@@ -38,9 +38,7 @@ export default function Operaciones() {
                 }}>
                     <Grid item>
                         <Typography variant="h3" sx={{ textAlign: "center", mb: 3}}>
-                            Estructuras secuenciales
-                            <br />
-                            (Manejo de los tipos de dato)
+                            Operaciones con datos primitivos
                         </Typography>
                     </Grid>
                 </Box>
@@ -126,11 +124,11 @@ export default function Operaciones() {
                         <Typography 
                             sx={{fontSize: "1.2rem", textAlign: "start", border: "2px solid", padding: "0.6rem", width: "19rem", marginTop: "1rem", borderRadius: "0.5rem"}}
                             variant="h6" component="p">
-                            suma = 3 + 7;             // Retorna 10<br />
-                            resta = 5 - 2;            // Retorna 3<br />
-                            multiplicacion = 3 * 2;   // Retorna 6 <br />
-                            division = 4 / 2;         // Retorna 2 <br />       
-                            resto = 5 % 3;            // Retorna 2 <br />                   
+                            suma = 3 + 7;             &lt;--- Retorna 10<br />
+                            resta = 5 - 2;            &lt;--- Retorna 3<br />
+                            multiplicacion = 3 * 2;   &lt;--- Retorna 6 <br />
+                            division = 4 / 2;         &lt;--- Retorna 2 <br />       
+                            resto = 5 % 3;            &lt;--- Retorna 2 <br />                   
                         </Typography>
                         <br />
                         <br />
@@ -142,8 +140,8 @@ export default function Operaciones() {
                         <Typography 
                             sx={{fontSize: "1.2rem", textAlign: "start", border: "2px solid", padding: "0.6rem", width: "50%", marginTop: "1rem", borderRadius: "0.5rem"}}
                             variant="h6" component="p">
-                            suma = vble1 + 3;   // Sumamos 3 al valor de la variable vble1<br />
-                            resta = vble1 - 4;  // Restamos 4 al valor de la variable vble1
+                            suma = vble1 + 3;   &lt;--- Sumamos 3 al valor de la variable vble1<br />
+                            resta = vble1 - 4;  &lt;--- Restamos 4 al valor de la variable vble1
                         </Typography>
                         <br />
                         <Typography 
